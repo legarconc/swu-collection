@@ -183,7 +183,7 @@ describe("scoring", () => {
 describe("shipped deck portfolio", () => {
   const deckFile = deckFileJson as DeckFile;
   const realDb: CardDatabase = JSON.parse(
-    readFileSync(path.resolve(__dirname, "../../public/cards.json"), "utf8"),
+    readFileSync(path.resolve(__dirname, "../../../data/cards.json"), "utf8"),
   );
 
   it("contains exactly 15 decks with one prestige and one showcase", () => {
