@@ -1,0 +1,9 @@
+node_modules/
+site/node_modules/
+site/dist/
+site/public/cards.json
+.DS_Store
+*.local
+*.tsbuildinfo
+Master_Collection.txt
+Master_Collection_(All_cards).csv

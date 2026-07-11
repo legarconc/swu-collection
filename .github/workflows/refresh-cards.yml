@@ -1,0 +1,42 @@
+name: Refresh card data
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch and normalize card data
+        run: node scripts/fetch-cards.mjs
+      - name: Commit changed card data
+        id: commit
+        run: |
+          if git diff --quiet -- data/cards.json; then
+            echo "Card data is already current."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cards.json
+          git commit -m "chore: refresh SWU card data"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+      - name: Deploy the refreshed database
+        if: steps.commit.outputs.changed == 'true'
+        run: gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}

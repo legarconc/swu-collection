@@ -1,0 +1,30 @@
+{
+  "name": "swu-collection-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare-data": "node scripts/copy-data.mjs",
+    "predev": "npm run prepare-data",
+    "dev": "vite",
+    "prebuild": "npm run prepare-data",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "papaparse": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/papaparse": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}
