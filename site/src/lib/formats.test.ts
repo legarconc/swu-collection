@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import type { CardDatabase } from "../types";
 import { mergeCollections } from "./collection";
+import { cardImage } from "./cards";
 import { exportFull, exportSwudb, parseCollectionFile } from "./formats";
 
 const database: CardDatabase = {
@@ -25,6 +26,11 @@ const database: CardDatabase = {
 };
 
 describe("collection imports", () => {
+  it("uses the matching non-foil artwork for CDN-blocked foil images", () => {
+    expect(cardImage(database.cards["SOR-172"], "Standard Foil")).toBe("172.png");
+    expect(cardImage(database.cards["SOR-379"], "Hyperspace Foil")).toBe("379.png");
+  });
+
   it("parses quoted HoloDeck fields and prices", () => {
     const text = '# count,name,subtitle,set,number,variant,rarity,is_foil,price_each,price_total\n2,"Open, Fire",,SOR,172,Standard,Common,False,0.02 €,0.04 €\n1,Agent Kallus,Seeking the Rebels,SOR,379,Hyperspace Foil,Rare,True,2.00 €,2.00 €';
     const result = parseCollectionFile(text, database);
