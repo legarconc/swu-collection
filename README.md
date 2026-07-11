@@ -108,6 +108,16 @@ The import summary lists every unknown `SET NUMBER`. Sync card data and try agai
 
 Collections live only in each browser. Open **Import / Export** and import your latest TXT or CSV backup. GitHub Pages does not store a copy.
 
+## Decks (Phase 2)
+
+The **Decks** tab ships 15 researched, deterministic deck recommendations built exclusively from the owner's collection — no AI runs in the app. Deck data lives in `site/src/data/decks.json` and is validated on every build by `scripts/validate-decks.mjs` (exactly 50 cards, 3-copy limit by card identity, zero aspect penalties, real printings, SWUDB export round-trip). When the ignored collection export is present locally, the script additionally verifies every copy and printing against owned quantities; in CI that check is skipped.
+
+Each deck guide shows the full list with owned variants, cost curve, type and arena distribution, opening-hand and mulligan advice, key combos, weaknesses, owned alternatives, clearly separated unowned "future acquisitions" (never part of the 50 or the export), and a copy/download SWUDB JSON export. One deck is the prestige build and one the cosmetic showcase build.
+
+Reusable game knowledge, update instructions, scoring rules, and set-specific research live in [Deck Intelligence documentation](docs/deck-intelligence/README.md). Add one guide under `docs/deck-intelligence/sets/` whenever a new set enters the collection; keep general principles in `general-strategy.md` so later deck batches build on the same foundation.
+
+Spark of Rebellion rotated out of Premier in March 2026, so the decks are labeled Premier-style / Eternal-legal rather than Premier-legal.
+
 ## Local development
 
 Node.js 22 or newer is recommended.
@@ -134,4 +144,3 @@ To refresh card data locally, run `node scripts/fetch-cards.mjs` from the reposi
 Never add personal collection exports to Git. The two provided master collection filenames are already ignored, and generated exports should be kept outside the repository. The committed `data/cards.json` contains public card information only.
 
 SWU-DB is a community data source. This project is not affiliated with Lucasfilm, Disney, Fantasy Flight Games, or SWU-DB.
-

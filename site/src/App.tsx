@@ -4,8 +4,10 @@ import { cardImage } from "./lib/cards";
 import { mergeCollections, setEntryCount } from "./lib/collection";
 import { downloadText } from "./lib/download";
 import { exportFull, exportSwudb, parseCollectionFile, type ImportResult } from "./lib/formats";
+import { DecksView } from "./DecksView";
+import { Modal } from "./Modal";
 
-type View = "collection" | "stats" | "transfer" | "settings";
+type View = "collection" | "decks" | "stats" | "transfer" | "settings";
 const STORAGE_KEY = "swu-collection-v1";
 const MODIFIED_KEY = "swu-collection-modified-v1";
 
@@ -21,7 +23,6 @@ function readCollection(): CollectionEntry[] {
 const totalCount = (entries: CollectionEntry[]) => entries.reduce((sum, item) => sum + item.count, 0);
 const cardKey = (entry: Pick<CollectionEntry, "set" | "number">) => `${entry.set}-${entry.number}`;
 const cardsLabel = (count: number) => `${count} ${count === 1 ? "card" : "cards"}`;
-let lastDialogTrigger: HTMLElement | null = null;
 
 function App() {
   const [database, setDatabase] = useState<CardDatabase | null>(null);
@@ -31,15 +32,6 @@ function App() {
   const [view, setView] = useState<View>("collection");
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [adding, setAdding] = useState(false);
-
-  useEffect(() => {
-    const rememberTrigger = (event: MouseEvent) => {
-      const trigger = event.target instanceof Element ? event.target.closest<HTMLElement>("button, [role='button']") : null;
-      if (trigger) lastDialogTrigger = trigger;
-    };
-    document.addEventListener("click", rememberTrigger, true);
-    return () => document.removeEventListener("click", rememberTrigger, true);
-  }, []);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}cards.json`)
@@ -74,6 +66,7 @@ function App() {
       <div className="content-shell">
         <header className="topbar"><Brand /><span className="collection-total">{cardsLabel(totalCount(entries))}</span></header>
         {view === "collection" && <CollectionView database={database} entries={entries} onSelect={setSelectedKey} onAdd={() => setAdding(true)} />}
+        {view === "decks" && <DecksView database={database} entries={entries} onSelectCard={setSelectedKey} />}
         {view === "stats" && <StatsView database={database} entries={entries} />}
         {view === "transfer" && <TransferView database={database} entries={entries} onImport={(incoming, mode) => save(mergeCollections(entries, incoming, mode))} />}
         {view === "settings" && <SettingsView database={database} entries={entries} lastModified={lastModified} onClear={() => save([])} />}
@@ -92,10 +85,10 @@ function Brand() {
 function Navigation({ view, onChange }: { view: View; onChange: (view: View) => void }) {
   const tabs: Array<{ id?: View; icon: string; label: string; disabled?: boolean }> = [
     { id: "collection", icon: "▦", label: "Collection" },
+    { id: "decks", icon: "◇", label: "Decks" },
     { id: "stats", icon: "⌁", label: "Stats" },
     { id: "transfer", icon: "⇅", label: "Import / Export" },
     { id: "settings", icon: "⚙", label: "Settings" },
-    { icon: "◇", label: "Deck Builder", disabled: true },
   ];
   return <div className="nav-items">{tabs.map((tab) => <button key={tab.label} className={tab.id === view ? "active" : ""} disabled={tab.disabled} title={tab.disabled ? "Coming soon" : undefined} onClick={() => tab.id && onChange(tab.id)}><span>{tab.icon}</span><small>{tab.label}</small>{tab.disabled && <em>Soon</em>}</button>)}</div>;
 }
@@ -175,33 +168,6 @@ function AddCardSheet({ database, entries, onClose, onAdd }: { database: CardDat
   return <Modal title="Add card" onClose={onClose}>{!selected ? <><label className="field-label" htmlFor="add-search">Search the full card database</label><div className="search-wrap"><span>⌕</span><input id="add-search" autoFocus type="search" placeholder="Card name, set, or number" value={query} onChange={(e) => setQuery(e.target.value)} /></div><div className="search-results">{query.length < 2 && <p>Type at least two characters.</p>}{matches.map((card) => <button key={card.key} onClick={() => { setSelected(card); setVariant(card.defaultVariant); }}><img src={card.images.front} alt="" /><span><strong>{card.name}</strong><small>{card.subtitle || "No subtitle"}</small><em>{card.set} {card.number} · {card.defaultVariant}</em></span></button>)}</div></> : <div className="add-selection"><button className="back-link" onClick={() => setSelected(null)}>← Search again</button><div className="selected-card"><img src={cardImage(selected, variant)} alt={selected.name} onError={(event) => { event.currentTarget.src = selected.images.front; }} /><div><h2>{selected.name}</h2><p>{selected.subtitle}</p><label>Printing<select value={variant} onChange={(e) => setVariant(e.target.value)}>{Object.keys(selected.printings).map((item) => <option key={item}>{item}</option>)}</select></label><label>Count<input type="number" min="1" inputMode="numeric" value={count} onChange={(e) => setCount(e.target.value)} /></label><button className="primary wide" disabled={!validCount} onClick={() => validCount && onAdd(selected, variant, parsedCount)}>{entries.some((entry) => cardKey(entry) === selected.key && entry.variant === variant) ? "Update count" : "Add to collection"}</button></div></div></div>}</Modal>;
 }
 
-function Modal({ title, onClose, children }: { title: string; onClose: () => void; children: React.ReactNode }) {
-  const modalRef = useRef<HTMLElement>(null);
-  const closeRef = useRef(onClose);
-  closeRef.current = onClose;
-  useEffect(() => {
-    const previousFocus = lastDialogTrigger?.isConnected
-      ? lastDialogTrigger
-      : document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    const modal = modalRef.current;
-    const focusable = () => [...(modal?.querySelectorAll<HTMLElement>('button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), [tabindex]:not([tabindex="-1"])') || [])];
-    focusable()[0]?.focus();
-    const handleKey = (event: KeyboardEvent) => {
-      if (event.key === "Escape") closeRef.current();
-      if (event.key !== "Tab") return;
-      const items = focusable();
-      if (!items.length) return;
-      const first = items[0];
-      const last = items[items.length - 1];
-      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
-      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
-    };
-    addEventListener("keydown", handleKey);
-    return () => { removeEventListener("keydown", handleKey); if (previousFocus?.isConnected) previousFocus.focus(); };
-  }, []);
-  return <div className="modal-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}><section ref={modalRef} className="modal" role="dialog" aria-modal="true" aria-label={title}><header><strong>{title}</strong><button aria-label="Close" onClick={onClose}>×</button></header><div className="modal-body">{children}</div></section></div>;
-}
-
 function TransferView({ database, entries, onImport }: { database: CardDatabase; entries: CollectionEntry[]; onImport: (entries: CollectionEntry[], mode: "replace" | "merge") => void }) {
   const fileRef = useRef<HTMLInputElement>(null);
   const [pending, setPending] = useState<ImportResult | null>(null);
@@ -237,7 +203,7 @@ function SettingsView({ database, entries, lastModified, onClear }: { database: 
   const repo = import.meta.env.VITE_GITHUB_REPOSITORY || (location.hostname.endsWith(".github.io") ? `${location.hostname.split(".")[0]}/${location.pathname.split("/").filter(Boolean)[0]}` : "");
   const syncUrl = repo ? `https://github.com/${repo}/actions/workflows/refresh-cards.yml` : "";
   const clear = () => { if (confirm(`Clear all ${totalCount(entries)} cards from this device? This cannot be undone unless you exported a backup.`)) onClear(); };
-  return <main><div className="page-heading"><div><p className="eyebrow">Device and data</p><h1>Settings</h1><p>Collection data never leaves your browser.</p></div></div><div className="settings-list"><section><div><h2>Card database</h2><p>Generated {new Date(database.generatedAt).toLocaleString()} · {database.cardCount} printing records</p></div>{syncUrl ? <a className="button primary" href={syncUrl} target="_blank" rel="noreferrer">Sync card data ↗</a> : <button disabled>Sync available after deploy</button>}<p className="setting-help">This opens GitHub. Sign in, choose “Run workflow”, and wait for the Action to finish. The updated database loads on your next visit.</p></section><section><div><h2>Collection</h2><p>Last modified {lastModified ? new Date(lastModified).toLocaleString() : "never"}</p></div><button className="danger" disabled={!entries.length} onClick={clear}>Clear collection</button></section><section><h2>About / how it works</h2><p>SWU Collection is a private, offline-first library. Your collection is saved in this browser’s local storage; the public repository contains only card information. Export a backup before clearing browser data or changing devices.</p><p>Card data comes from the community SWU-DB API through a GitHub Action. The app never calls that API directly.</p></section><section className="coming-soon"><span>◇</span><div><h2>Deck Builder</h2><p>Coming in a later phase. The collection model is ready for it.</p></div></section></div></main>;
+  return <main><div className="page-heading"><div><p className="eyebrow">Device and data</p><h1>Settings</h1><p>Collection data never leaves your browser.</p></div></div><div className="settings-list"><section><div><h2>Card database</h2><p>Generated {new Date(database.generatedAt).toLocaleString()} · {database.cardCount} printing records</p></div>{syncUrl ? <a className="button primary" href={syncUrl} target="_blank" rel="noreferrer">Sync card data ↗</a> : <button disabled>Sync available after deploy</button>}<p className="setting-help">This opens GitHub. Sign in, choose “Run workflow”, and wait for the Action to finish. The updated database loads on your next visit.</p></section><section><div><h2>Collection</h2><p>Last modified {lastModified ? new Date(lastModified).toLocaleString() : "never"}</p></div><button className="danger" disabled={!entries.length} onClick={clear}>Clear collection</button></section><section><h2>About / how it works</h2><p>SWU Collection is a private, offline-first library. Your collection is saved in this browser’s local storage; the public repository contains only card information. Export a backup before clearing browser data or changing devices.</p><p>Card data comes from the community SWU-DB API through a GitHub Action. The app never calls that API directly.</p></section><section className="coming-soon"><span>◇</span><div><h2>Decks</h2><p>Fifteen researched, collection-valid decks live in the Decks tab. Deck data ships with the site and is validated against the card database at build time — the app never calls an AI service.</p></div></section></div></main>;
 }
 
 export default App;

@@ -1,0 +1,5251 @@
+{
+  "generatedAt": "2026-07-11",
+  "formatLabel": "Premier-style construction (exactly 50) · Spark of Rebellion card pool · Eternal/casual legal",
+  "premierLegal": false,
+  "notes": "SOR rotated out of Premier with the March 2026 release of A Lawless Time; these decks follow Premier deck-building rules and are legal in Eternal and casual play. Collector scores are calculated from the dated public card-database price snapshot, never fetched at runtime.",
+  "decks": [
+    {
+      "id": "phoenix-ignition",
+      "name": "Phoenix Ignition",
+      "special": null,
+      "archetype": "Aggro",
+      "secondary": "Go-wide Rebels",
+      "powerBand": "Strongest available",
+      "difficulty": "Beginner",
+      "leader": {
+        "id": "SOR-14",
+        "printing": "SOR-14",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Heroism",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-140",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-140",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-108",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-93",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-93",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-239",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-239",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-158",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-158",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-142",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-142",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-141",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-141",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-240",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-240",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-241",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-241",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-143",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-143",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-161",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-161",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-242",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-242",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-164",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-164",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-243",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-243",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-146",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-146",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-146",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-103",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-103",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-168",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-168",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-168",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-169",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-169",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-149",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-149",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by flooding the board with cheap Rebels and letting Sabine's unavoidable base damage finish what coordinated attacks start, before big defenders stabilize.",
+      "spacePolicy": "Contest lightly (8 space units) — Green Squadron A-Wing and Alliance X-Wing apply pressure while the ground board races.",
+      "guide": {
+        "winCondition": "Deal 30 base damage by round 5-6: wide Rebel boards, Fleet Lieutenant attack triggers, and Sabine's leader tick every round.",
+        "earlyGame": "Rounds 1-2: play a unit every action. SpecForce Soldier strips Sentinel from a blocker; Battlefield Marine is your best rate. Use Sabine's leader action every round — 10+ guaranteed damage over a game. Attack the base unless a Sentinel or Restore unit forces a trade.",
+        "midGame": "Rounds 3-4: deploy Sabine (4 resources) once the board can protect her; her On Attack adds another base tick. Fleet Lieutenant and Rebel Assault convert your width into extra attacks. Wing Leader's 2 Experience makes a Marine or Echo Base Defender trade up.",
+        "lateGame": "Round 5+: Zeb clears a blocker and his 4-damage bonus removes the next one. Mace Windu re-readies on kills to break stalled boards. If the race is close, count Sabine ticks plus Saboteur attacks — Precision Fire ignores Sentinel for exactly this.",
+        "openingPriorities": [
+          "SpecForce Soldier",
+          "Battlefield Marine",
+          "Vanguard Infantry",
+          "Green Squadron A-Wing",
+          "Fleet Lieutenant"
+        ],
+        "mulligan": [
+          "Keep: two units costing 1-2 plus any 3-cost follow-up.",
+          "Keep: one early unit + Fleet Lieutenant + a 2-drop.",
+          "Send back: hands with two or more cards costing 4+ — this deck cannot afford dead early turns.",
+          "Send back: hands relying on the single Rebel Assault to perform."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Fleet Lieutenant",
+              "Battlefield Marine"
+            ],
+            "note": "Fleet Lieutenant's When Played attack gives a Rebel +2/+0 — a Marine hits for 5 the turn it's already in play."
+          },
+          {
+            "cards": [
+              "Wing Leader",
+              "Echo Base Defender"
+            ],
+            "note": "2 Experience turns the 4/3 Sentinel into a 6/5 wall the round it lands."
+          },
+          {
+            "cards": [
+              "Precision Fire",
+              "Rebel Pathfinder"
+            ],
+            "note": "Both ignore Sentinel; Precision Fire also adds +2/+0 to Troopers, so a Pathfinder hits the base for 4."
+          },
+          {
+            "cards": [
+              "Zeb Orrelios — Headstrong Warrior",
+              "Sabine Wren — Galvanized Revolutionary"
+            ],
+            "note": "Zeb removes the blocker and deals 4 more to the next one; Sabine's tick makes every stabilization attempt one round too slow."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Mace Windu or a second Wampa early",
+          "Keep every 1-2 cost unit",
+          "Regional Sympathizers is the first mid-cost card to resource in fast matchups"
+        ],
+        "weaknesses": [
+          "Less burn/reach than historical Sabine lists — Red Three, K-2SO and For a Cause I Believe In are missing, so the deck leans harder on board retention.",
+          "Board sweepers and wide removal (Overwhelming Barrage, AT-AT Suppressor) break the go-wide plan.",
+          "Only one Rebel Assault: treat it as a bonus, not an engine."
+        ],
+        "adjustments": [
+          "Medal Ceremony (owned x3) over Keep Fighting for a wider Experience payoff after alpha strikes.",
+          "Karabast or Heroic Sacrifice (owned x1 each) as extra reach if local metas run big Sentinels.",
+          "Guerilla Attack Pod (owned x2) as a top-end swap for Mace Windu in grindier fields."
+        ],
+        "acquisitions": [
+          "Red Three (SOR) — Raid enabler that historical Sabine lists leaned on.",
+          "K-2SO (SOR) — resilient pressure plus direct base damage.",
+          "For a Cause I Believe In (SOR) — burst reach that closes stalled races."
+        ]
+      },
+      "scores": {
+        "gameplay": 78
+      }
+    },
+    {
+      "id": "painted-hyperdrive",
+      "name": "Painted Hyperdrive",
+      "special": null,
+      "archetype": "Tempo",
+      "secondary": "Space aggro",
+      "powerBand": "Strong",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "SOR-14",
+        "printing": "SOR-280",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "SOR-30",
+        "printing": "SOR-30",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Heroism",
+        "Cunning"
+      ],
+      "cards": [
+        {
+          "id": "SOR-206",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-206",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-208",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-208",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-141",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-141",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-191",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-191",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-191",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-162",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-162",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-163",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-163",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-195",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-195",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-241",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-241",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-147",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-147",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-140",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-140",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-189",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-189",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-142",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-142",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-190",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-190",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-217",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-217",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-220",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-220",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-218",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-218",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-168",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-168",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-168",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-215",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-215",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by splitting pressure across both arenas and using Cunning tricks to remove exactly one blocking action per round until Sabine's clock ends the game.",
+      "spacePolicy": "Dominate — 23 space units make space the primary lane; ground is a distraction the opponent cannot ignore because of Sabine's ticks.",
+      "guide": {
+        "winCondition": "Space damage plus Sabine's guaranteed base ticks. Shoot First and Surprise Strike win the two or three fights that matter; everything else hits the base.",
+        "earlyGame": "Rounds 1-2: Mining Guild TIE and Outer Rim Headhunter contest space immediately; SpecForce Soldier and Leia Organa — Defiant Princess hold ground. Use Sabine's action every round.",
+        "midGame": "Rounds 3-4: deploy Sabine early (4 resources). With a leader unit in play, Outer Rim Headhunter exhausts a defender on each attack — pick the blocker that would trade profitably. Auzituck Liberator Gunship's Ambush removes their best space unit.",
+        "lateGame": "Round 5+: Black One refuels an empty hand (discard, draw 3). Waylay their stabilizer the round it lands; a bounced 6-drop is usually game over on tempo. Count exact lethal: Surprise Strike is +3 reach.",
+        "openingPriorities": [
+          "Mining Guild TIE Fighter",
+          "Outer Rim Headhunter",
+          "SpecForce Soldier",
+          "Leia Organa — Defiant Princess",
+          "Shoot First"
+        ],
+        "mulligan": [
+          "Keep: a 1-cost space unit plus any second cheap body and one trick.",
+          "Keep: Leia Organa — Defiant Princess plus a 2-cost space unit (her ready-a-resource effectively plays both).",
+          "Send back: hands with two or more 4+ cost cards or three tricks and one unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Outer Rim Headhunter",
+              "Sabine Wren — Galvanized Revolutionary"
+            ],
+            "note": "Once Sabine deploys, every Headhunter attack also exhausts a non-leader unit — a free No Good to Me Dead each round."
+          },
+          {
+            "cards": [
+              "Shoot First",
+              "Sabine Wren — Explosives Artist"
+            ],
+            "note": "First-strike damage plus her On Attack ping removes 2-3 HP blockers without taking damage back."
+          },
+          {
+            "cards": [
+              "Snapshot Reflexes",
+              "Auzituck Liberator Gunship"
+            ],
+            "note": "Attach for one resource and attack immediately — an Ambush unit effectively attacks twice in one round."
+          },
+          {
+            "cards": [
+              "Asteroid Sanctuary",
+              "Vanguard Ace"
+            ],
+            "note": "Exhausts their best attacker and shields the Ace, which has grown from every card you played that phase."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Black One early if your hand is full of cheap action",
+          "Keep Waylay for their 5-6 cost play",
+          "Excess Snapshot Reflexes is resource fodder"
+        ],
+        "weaknesses": [
+          "Temporary answers (exhaust, bounce) turn into card disadvantage if the game goes past round 6-7.",
+          "A single wide sweep or two large Sentinels in space can invalidate half the deck's damage.",
+          "Light interaction against upgrades and Restore engines."
+        ],
+        "adjustments": [
+          "Disarm and Sneak Attack (owned x1 each) add trick density against unit-heavy fields.",
+          "Wing Leader can become Star Wing Scout x1 + Vanguard Ace tuning in faster metas."
+        ],
+        "acquisitions": [
+          "Millennium Falcon — Piece of Junk (SOR) — the premier tempo space threat this shell is missing.",
+          "Red Three (SOR) — buffs every Raid attack in the deck."
+        ]
+      },
+      "scores": {
+        "gameplay": 74
+      }
+    },
+    {
+      "id": "bounty-compound-interest",
+      "name": "Bounty Compound Interest",
+      "special": "prestige",
+      "archetype": "Midrange",
+      "secondary": "Premium value",
+      "powerBand": "Strongest available",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "SOR-15",
+        "printing": "SOR-281",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Cunning",
+        "Villainy",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-176",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-176",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-207",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-207",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-227",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-227",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-83",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-83",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-179",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-179",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-229",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-229",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-112",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-112",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-180",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-180",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-211",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-211",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-231",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-231",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-115",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-115",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-379",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-182",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-182",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-183",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-183",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-86",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-86",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-86",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-87",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-87",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-89",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-89",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-217",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-217",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-186",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-186",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-449",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-92",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-92",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-91",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-91",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-187",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-187",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins midrange fights by converting every enemy unit that leaves play into an extra resource through Boba's leader ability, then banking that tempo into premium threats the opponent must answer.",
+      "spacePolicy": "Contest with 12 space units, half of which (Gladiator, Relentless) double as finishers; Waylay and exhaust effects answer what slips through.",
+      "guide": {
+        "winCondition": "Efficient trades plus Boba's refunded resources put you a full play ahead by round 4; Darth Vader, Gladiator Star Destroyer and Relentless close before the opponent recovers.",
+        "earlyGame": "Rounds 1-2: ISB Agent (reveal an event for a ping) and Viper Probe Droid trade early. Shoot First or a well-timed trade triggers Boba: an enemy unit left play, so ready a resource and squeeze in a 1-cost play the same round.",
+        "midGame": "Rounds 3-4: No Good to Me Dead locks the defender Boba Fett — Disintegrator wants to attack: an exhausted unit that stayed in play takes his +3 On Attack, killing almost any 3-4 drop. Superlaser Technician trades and ramps. Kallus ambushes into their board and draws on unique defeats.",
+        "lateGame": "Round 5+: Darth Vader — Commanding the First Legion pulls ISB Agents, Snowtrooper Lieutenants or a Superlaser Technician out of the deck for free while ambushing. Relentless blanks their first event each round — deploy it when their hand is stacked with removal. Overwhelming Barrage is the board-swing finisher.",
+        "openingPriorities": [
+          "ISB Agent",
+          "Viper Probe Droid",
+          "Superlaser Technician",
+          "No Good to Me Dead",
+          "Boba Fett — Disintegrator"
+        ],
+        "mulligan": [
+          "Keep: an early unit, a 3-cost play and one removal/trick.",
+          "Keep: Superlaser Technician hands — he is both curve and ramp.",
+          "Send back: hands with two or more 6+ cost cards; the deck earns its top end, it does not open with it."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "No Good to Me Dead",
+              "Boba Fett — Disintegrator"
+            ],
+            "note": "The lock keeps the unit exhausted through the regroup phase, so Disintegrator's +3 trigger is guaranteed next round."
+          },
+          {
+            "cards": [
+              "Waylay",
+              "Boba Fett — Collecting the Bounty"
+            ],
+            "note": "Bounce counts as leaving play: undo their tempo play and get a resource refund on top."
+          },
+          {
+            "cards": [
+              "Darth Vader — Commanding the First Legion",
+              "Superlaser Technician"
+            ],
+            "note": "Vader's search can drop Technicians that later convert into resources — ramp attached to a 5/7 Ambush body."
+          },
+          {
+            "cards": [
+              "Bounty Hunter Crew",
+              "Overwhelming Barrage"
+            ],
+            "note": "The Crew's When Played recovers your best spent event; Barrage twice ends most boards."
+          },
+          {
+            "cards": [
+              "Agent Kallus — Seeking the Rebels",
+              "Gladiator Star Destroyer"
+            ],
+            "note": "Gladiator grants Sentinel to protect Kallus, who keeps drawing as unique units die around him."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Relentless or I Had No Choice before round 4",
+          "Keep exactly one big threat in hand at all times",
+          "Never resource removal against midrange"
+        ],
+        "weaknesses": [
+          "No Energy Conversion Lab or Devastator, so the historical Boba Command top-end is approximated, not replicated.",
+          "One copy each of the marquee legendaries — drawing them is a luxury, not the plan.",
+          "Fast go-wide aggro can outpace the value engine if early trades are declined."
+        ],
+        "adjustments": [
+          "Bib Fortuna (owned x1) discounts your event suite in slower metas.",
+          "Blizzard Assault AT-AT (owned, incl. Hyperspace/foil printings) as an alternative finisher over Relentless.",
+          "Cartel Spacer (owned x1) adds an exhaust effect that also feeds the Disintegrator lock."
+        ],
+        "acquisitions": [
+          "Fett's Firespray (SOR) — the defining Boba tempo vehicle this list lacks.",
+          "Cunning (SOR) — the flexible double-Cunning event, playable here penalty-free only with a Cunning base swap.",
+          "Traitorous (SOR) — steal effects convert Boba triggers twice."
+        ]
+      },
+      "scores": {
+        "gameplay": 80
+      }
+    },
+    {
+      "id": "inferno-redline",
+      "name": "Inferno Redline",
+      "special": null,
+      "archetype": "Control",
+      "secondary": "Attrition",
+      "powerBand": "Strong",
+      "difficulty": "Advanced",
+      "leader": {
+        "id": "SOR-2",
+        "printing": "SOR-2",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-27",
+        "printing": "SOR-27",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Vigilance",
+        "Villainy",
+        "Aggression"
+      ],
+      "cards": [
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-32",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-32",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-32",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-129",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-129",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-33",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-33",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-229",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-229",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-34",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-34",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-131",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-131",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-66",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-66",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-132",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-132",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-133",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-133",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-37",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-37",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-39",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-39",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-165",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-165",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-135",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-135",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-399",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-139",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-139",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-76",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-77",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-77",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-77",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-78",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-78",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-41",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-41",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-42",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-42",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-174",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-174",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by defeating every unit the opponent commits, healing the damage race away through Iden, and turning the corner with Palpatine once the opponent's hand is empty.",
+      "spacePolicy": "Answer, don't contest: 6 space bodies plus cross-arena removal (Open Fire, Vanquish, Takedown, Force Choke) handle space threats on your terms.",
+      "guide": {
+        "winCondition": "Attrition: trade removal for units at profit, gain 1 base HP per enemy death via Iden's leader action, then win with Emperor Palpatine's 6-damage sweep into a stabilized board.",
+        "earlyGame": "Rounds 1-2: Death Star Stormtrooper and Scout Bike Pursuer trade early; Death Trooper's When Played kills a 2-HP unit (put his self-damage on Scout Bike Pursuer to turn on its Grit). Use Iden's action every round an enemy unit died — it is 10+ healing across a game.",
+        "midGame": "Rounds 3-5: Make an Opening shrinks a unit into Takedown range and heals; Force Choke kills a 5-HP problem (the card they draw matters less than the body). Deploy Iden at 6 — Shielded, and she heals on every enemy death while the removal suite fires.",
+        "lateGame": "Round 6+: Emperor Palpatine — Master of the Dark Side spreads 6 damage on arrival and Overwhelms; AT-AT Suppressor exhausts their whole ground arena for a free swing turn. Smoke and Cinders empties their reloaded hand in true control mirrors.",
+        "openingPriorities": [
+          "Death Star Stormtrooper",
+          "Scout Bike Pursuer",
+          "Death Trooper",
+          "Force Choke",
+          "Make an Opening"
+        ],
+        "mulligan": [
+          "Keep: one early body plus two pieces of interaction.",
+          "Keep: Death Trooper plus any 1-2 cost unit.",
+          "Send back: hands with both Palpatines or multiple 5+ cost cards.",
+          "Against aggro: prioritize First Legion Snowtrooper and cheap bodies over expensive removal."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Make an Opening",
+              "Takedown"
+            ],
+            "note": "-2/-2 pulls a 7-HP unit into Takedown's 5-HP kill range, and the heal advances the attrition plan."
+          },
+          {
+            "cards": [
+              "Death Trooper",
+              "First Legion Snowtrooper"
+            ],
+            "note": "Death Trooper damages their unit; the Snowtrooper gets +2/+0 and Overwhelm attacking anything damaged."
+          },
+          {
+            "cards": [
+              "Fifth Brother — Fear Hunter",
+              "Iden Versio — Infero Squad Commander"
+            ],
+            "note": "His self-ping stacks Raid while every kill he finishes feeds Iden's healing."
+          },
+          {
+            "cards": [
+              "AT-AT Suppressor",
+              "Emperor Palpatine — Master of the Dark Side"
+            ],
+            "note": "Exhaust their ground arena, then deploy Palpatine and split 6 damage without retaliation."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource one Palpatine early if both are drawn",
+          "Search Your Feelings fetches the missing piece — never resource it",
+          "Excess Vanquish copies are resources against aggro"
+        ],
+        "weaknesses": [
+          "No Avenger or Superlaser Blast: the classic hard-control endgame is approximated by Palpatine and card-quality wins.",
+          "Vehicle-heavy boards blank Force Choke (non-Vehicle only).",
+          "Slow starts lose to disciplined aggro; mulligan aggressively for early interaction."
+        ],
+        "adjustments": [
+          "Power of the Dark Side is a second Vanquish in unique-heavy metas (owned x1, already included — swap Occupier Siege Tank for a 3rd Cell Block Guard variant of the plan).",
+          "Academy Defense Walker can become AT-ST x2 (owned) if Sentinel matters less than Overwhelm reach."
+        ],
+        "acquisitions": [
+          "Avenger (SOR) — the forced-sacrifice capital ship every Vigilance control deck wants.",
+          "Superlaser Blast (SOR) — the true board reset.",
+          "Ruthless Raider (SOR) — early Villainy tempo with reach."
+        ]
+      },
+      "scores": {
+        "gameplay": 76
+      }
+    },
+    {
+      "id": "project-stardust-grind",
+      "name": "Project Stardust Grind",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Attrition / ramp",
+      "powerBand": "Strong",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "SOR-1",
+        "printing": "SOR-1",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Vigilance",
+        "Villainy",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-32",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-32",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-32",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-33",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-33",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-83",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-83",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-63",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-63",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-84",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-84",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-66",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-66",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-115",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-115",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-379",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-86",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-86",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-37",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-37",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-85",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-85",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-31",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-31",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-39",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-39",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-88",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-88",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-89",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-89",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-87",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-87",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-76",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-77",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-77",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-77",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-78",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-78",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-41",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-41",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-91",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-91",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-92",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-92",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-126",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-126",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins long board fights by making damaged Imperial units better than clean ones — Krennic's +1/+0, Experience from the Walker, and Superlaser ramp grind out value every exchange.",
+      "spacePolicy": "Contest with 8 space bodies (System Patrol Craft Sentinels, Gladiators); Vanquish and Takedown cover what they cannot.",
+      "guide": {
+        "winCondition": "Favorable trades all game: damaged survivors get +1/+0 under Krennic, Superlaser Technicians convert deaths into ramp, and Blizzard Assault AT-AT or Relentless arrive a round early to end it.",
+        "earlyGame": "Rounds 1-2: Scout Bike Pursuer (Grit) and Viper Probe Droid trade; Death Trooper's self-damage is a feature — the damaged unit gets +1/+0 from Krennic and Grit stacks. Resupply on round 2-3 if the hand is heavy.",
+        "midGame": "Rounds 3-5: Grand Moff Tarkin — Death Star Overseer refills with 2 Imperial units. Deploy Krennic at 5: his Restore 2 plus the anthem flips every trade. Academy Defense Walker hands out Experience to your battle-scarred board.",
+        "lateGame": "Round 6+: Blizzard Assault AT-AT's excess damage cleaves through chump blockers; Relentless shuts off their answer events; The Emperor's Legion returns a traded wave for round-after-round pressure. Darth Vader — Commanding the First Legion swings any board he ambushes into.",
+        "openingPriorities": [
+          "Scout Bike Pursuer",
+          "Death Trooper",
+          "Superlaser Technician",
+          "Resupply",
+          "Grand Moff Tarkin — Death Star Overseer"
+        ],
+        "mulligan": [
+          "Keep: a 2-cost body, a 3-cost play and ramp (Resupply/Technician).",
+          "Keep: Death Trooper plus Scout Bike Pursuer — the self-damage line is your strongest start.",
+          "Send back: hands of only 6+ cost ships and walkers, even with Resupply."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Death Trooper",
+              "Director Krennic — Aspiring to Authority"
+            ],
+            "note": "Self-damaging your own trooper turns Krennic's anthem on: a 4/1 that already killed a 2-drop."
+          },
+          {
+            "cards": [
+              "Academy Defense Walker",
+              "Scout Bike Pursuer"
+            ],
+            "note": "Experience on damaged units: the Grit bike becomes a 3/5+ Sentinel-protected attacker."
+          },
+          {
+            "cards": [
+              "Superlaser Technician",
+              "Blizzard Assault AT-AT"
+            ],
+            "note": "Technician deaths ramp you to an 8-cost 9/9 a full round early."
+          },
+          {
+            "cards": [
+              "The Emperor's Legion",
+              "Overwhelming Barrage"
+            ],
+            "note": "Trade your whole board, Barrage theirs, then return your units to hand for two more rounds of bodies."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Relentless/Vader if drawn before round 4",
+          "Keep Vanquish against ramp decks",
+          "Inferno Four is flex — resource it when the curve is set"
+        ],
+        "weaknesses": [
+          "Krennic rewards damaged survivors: mass hard removal (Vanquish effects) that skips the damage step wastes his bonus.",
+          "Ramp draws without payoffs (or payoffs without ramp) are the main losing pattern.",
+          "Little reach — the deck wins on board, not burn, so Restore-heavy decks prolong games."
+        ],
+        "adjustments": [
+          "Rukh (owned x2) — second copy over Inferno Four against unique midrange.",
+          "97th Legion (owned x2) scales with the ramp plan if games go past round 7 in your meta.",
+          "Lieutenant Childsen (owned x1) adds a Sentinel that grows with your Vigilance hand."
+        ],
+        "acquisitions": [
+          "Devastator (SOR) — the top-end this archetype was built around historically.",
+          "Superlaser Blast (SOR) — converts the defensive shell into true control."
+        ]
+      },
+      "scores": {
+        "gameplay": 72
+      }
+    },
+    {
+      "id": "senates-long-game",
+      "name": "The Senate's Long Game",
+      "special": null,
+      "archetype": "Control",
+      "secondary": "Sacrifice / ramp",
+      "powerBand": "Strong",
+      "difficulty": "Advanced",
+      "leader": {
+        "id": "SOR-6",
+        "printing": "SOR-6",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-29",
+        "printing": "SOR-29",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Command",
+        "Villainy",
+        "Cunning"
+      ],
+      "cards": [
+        {
+          "id": "SOR-83",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-83",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-176",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-176",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-205",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-205",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-227",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-227",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-79",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-79",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-226",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-226",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-229",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-229",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-112",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-112",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-180",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-180",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-211",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-211",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-183",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-183",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-86",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-86",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-232",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-232",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-88",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-88",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-89",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-89",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-87",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-87",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-186",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-186",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-449",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-187",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-187",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-91",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-91",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-92",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-92",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by feeding cheap Imperial bodies to Palpatine's engine — every sacrifice is a damage ping plus a card — until eight resources deploy the Emperor to steal the game.",
+      "spacePolicy": "Contest with 13 space units led by triple Gladiator Star Destroyer; space is where this deck's mid-game actually lives.",
+      "guide": {
+        "winCondition": "Out-value everything: sacrifice fodder becomes removal and cards, ramp reaches eight resources, then deployed Palpatine takes their best damaged unit and the board follows.",
+        "earlyGame": "Rounds 1-2: ISB Agent, Viper Probe Droid and Jawa Scavenger hold ground. Superlaser Technician is the perfect card: body now, resource when it dies — including to your own leader action.",
+        "midGame": "Rounds 3-5: Palpatine's action (pay 1, exhaust, defeat a friendly unit → 1 damage + draw) should target units that already traded or Motti (his When Defeated readies a Villainy unit for a surprise extra attack). Bounty Hunter Crew ambushes and returns your best event.",
+        "lateGame": "Round 6+: deploy Palpatine at 8 — When Deployed he takes control of a damaged non-leader unit, and his On Attack repeats the sacrifice engine. Relentless protects the turn: their first event does nothing. The Emperor's Legion rebuys everything a sweep or a trade-heavy round lost.",
+        "openingPriorities": [
+          "Superlaser Technician",
+          "ISB Agent",
+          "Viper Probe Droid",
+          "Admiral Motti — Brazen and Scornful",
+          "Gladiator Star Destroyer"
+        ],
+        "mulligan": [
+          "Keep: two cheap bodies plus ramp or a 3-cost play.",
+          "Keep: Technician + Motti — the engine pieces double as curve.",
+          "Send back: payoff-only hands (Relentless/Vader/AT-STs with nothing under 4).",
+          "Against aggro: keep Cell Block Guard and Gamorrean Guards over engine pieces."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Emperor Palpatine — Galactic Ruler",
+              "Superlaser Technician"
+            ],
+            "note": "Sacrificing the Technician gives a ping, a card, AND a ready resource — the whole deck in one action."
+          },
+          {
+            "cards": [
+              "Emperor Palpatine — Galactic Ruler",
+              "Admiral Motti — Brazen and Scornful"
+            ],
+            "note": "Sacrifice Motti after he blocked: ping + draw + ready your best Villainy attacker for a second swing."
+          },
+          {
+            "cards": [
+              "Admiral Piett — Captain of the Executor",
+              "Gladiator Star Destroyer"
+            ],
+            "note": "Piett gives your 6+ cost units Ambush; a Gladiator that attacks immediately while granting Sentinel is a two-for-one."
+          },
+          {
+            "cards": [
+              "The Emperor's Legion",
+              "Emperor Palpatine — Galactic Ruler"
+            ],
+            "note": "Units you sacrificed this phase come back to hand — the engine literally refuels itself."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource one Relentless if both are drawn",
+          "Never resource The Emperor's Legion",
+          "Extra 6-cost bodies are resources until round 4"
+        ],
+        "weaknesses": [
+          "Fast aggro punishes a deck that spends round 3-4 on setup; the Sentinel package is the only speed bump.",
+          "Payoff-heavy draws (three 6+ drops) lose on their own.",
+          "Stolen units return if Palpatine leaves play — do not over-invest in what you borrowed."
+        ],
+        "adjustments": [
+          "Bib Fortuna (owned x1) discounts I Had No Choice and Waylay in grindier games.",
+          "AT-AT Suppressor (owned x2) over AT-ST if ground stalls dominate your meta."
+        ],
+        "acquisitions": [
+          "Force Lightning (SOR) — flexible removal that scales with Palpatine's late game.",
+          "Superlaser Blast (SOR) — the reset button for the games this deck falls behind in."
+        ]
+      },
+      "scores": {
+        "gameplay": 70
+      }
+    },
+    {
+      "id": "march-of-the-first-legion",
+      "name": "March of the First Legion",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Imperial ramp",
+      "powerBand": "Strong",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "SOR-10",
+        "printing": "SOR-10",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Villainy",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-227",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-227",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-129",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-129",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-226",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-226",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-230",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-230",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-229",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-229",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-83",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-83",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-80",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-80",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-139",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-139",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-136",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-136",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-132",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-132",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-231",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-231",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-234",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-234",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-165",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-165",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-232",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-232",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-86",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-86",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-87",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-87",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-88",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-88",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by grinding out early boards with cheap Imperials and leader pings, then deploying Darth Vader into a board he immediately dominates.",
+      "spacePolicy": "Contest with 8 space units (Interceptors, TIE Advanced, Gladiators); Imperial Interceptor's 3-damage ping polices their space on arrival.",
+      "guide": {
+        "winCondition": "Vader's leader action (1 damage to a unit + 1 to base every round you played a Villainy card) accumulates control and clock simultaneously; the deployed Vader plus walker top-end finishes.",
+        "earlyGame": "Rounds 1-2: Death Star Stormtrooper trades up; Snowtrooper Lieutenant's When Played attack trigger with +2/+0 on an Imperial removes 2-3 HP units. Play a Villainy card every round so Vader's action is never wasted.",
+        "midGame": "Rounds 3-5: Veers makes the swarm real; Force Choke and Open Fire clear the mid board. Vader's Lightsaber is held for his round-7 deployment when possible — attached to Darth Vader it deals 4 free damage. Ozzel cheats a Gladiator or AT-ST into play ready (accept the opponent's ready as the price of tempo).",
+        "lateGame": "Round 6+: deploy Vader — his On Attack 2-damage ping plus the Lightsaber usually kills two units in one action. Blizzard Assault AT-AT cleaves; Commanding the First Legion refills the board with free Villainy units mid-combat.",
+        "openingPriorities": [
+          "Death Star Stormtrooper",
+          "Snowtrooper Lieutenant",
+          "Superlaser Technician",
+          "Force Choke",
+          "General Veers — Blizzard Force Commander"
+        ],
+        "mulligan": [
+          "Keep: two cheap Imperials plus removal or Veers.",
+          "Keep: any hand with turn-1 and turn-2 plays and one 4+ card maximum.",
+          "Send back: double 6+ hands; Vader is your top end, the deck does not need more."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Vader's Lightsaber",
+              "Darth Vader — Dark Lord of the Sith"
+            ],
+            "note": "Played on the deployed Vader leader: 4 damage to a ground unit, then his On Attack pings 2 more — a 2-cost removal spell stapled to +3/+1."
+          },
+          {
+            "cards": [
+              "Admiral Ozzel — Overconfident",
+              "Gladiator Star Destroyer"
+            ],
+            "note": "Ozzel puts the Gladiator in ready; it grants Sentinel immediately and threatens an attack the same round."
+          },
+          {
+            "cards": [
+              "Snowtrooper Lieutenant",
+              "First Legion Snowtrooper"
+            ],
+            "note": "The Lieutenant's attack trigger on a First Legion Snowtrooper into a damaged unit is +4/+0 with Overwhelm."
+          },
+          {
+            "cards": [
+              "Admiral Motti — Brazen and Scornful",
+              "Darth Vader — Commanding the First Legion"
+            ],
+            "note": "Motti's death readies the 5/7 Vader unit for a second attack."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Blizzard Assault AT-AT before round 4",
+          "Keep one removal against midrange",
+          "Maximum Firepower is the flex slot — resource it when behind"
+        ],
+        "weaknesses": [
+          "The leader deploys at 7: falling badly behind before then cannot always be repaired.",
+          "Anthem effects die to cheap removal; the swarm shrinks fast without Veers.",
+          "No Devastator/Energy Conversion Lab means the historical ramp finish is flattened into walkers."
+        ],
+        "adjustments": [
+          "General Tagge (owned x1) is already the flex — swap for a 2nd Maximum Firepower in unit metas.",
+          "Occupier Siege Tank can become AT-ST (owned x4→using 2) if Overwhelm matters more than Grit."
+        ],
+        "acquisitions": [
+          "Devastator (SOR) — Vader Command's classic finisher.",
+          "Emperor's Royal Guard (SOR) — Sentinel body that protects the round Vader deploys."
+        ]
+      },
+      "scores": {
+        "gameplay": 71
+      }
+    },
+    {
+      "id": "kyber-will-not-break",
+      "name": "Kyber Will Not Break",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Force & upgrades",
+      "powerBand": "Experimental",
+      "difficulty": "Advanced",
+      "leader": {
+        "id": "SOR-4",
+        "printing": "SOR-4",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-27",
+        "printing": "SOR-27",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Vigilance",
+        "Heroism",
+        "Aggression"
+      ],
+      "cards": [
+        {
+          "id": "SOR-61",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-61",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-140",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-140",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-64",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-64",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-63",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-63",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-44",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-44",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-65",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-65",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-65",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-47",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-47",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-47",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-46",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-46",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-48",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-48",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-146",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-146",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-146",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-49",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-49",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-315",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-149",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-149",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-69",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-69",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-70",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-70",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-71",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-71",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-54",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-54",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-166",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-166",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-167",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-167",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-73",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-73",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-168",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-168",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-168",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-55",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-55",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-76",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-74",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-74",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by making one durable Force body unkillable-in-practice — Chirrut himself, or a Kanan/Obi-Wan line — and converting upgrades into repeated favorable attacks.",
+      "spacePolicy": "Race it: only 3 space bodies. Restored ARC-170 heals the base while the ground plan executes; Precision Fire and Make an Opening answer space only when it truly threatens lethal.",
+      "guide": {
+        "winCondition": "Upgraded Force units win every combat: Jedi Lightsaber's -2/-2, Chirrut's +0/+2 leader pump, and shields/heals stack until attackers stop being profitable, then the 4-6 cost bodies take over the race.",
+        "earlyGame": "Rounds 1-2: Guardian of the Whills discounts your first upgrade each round; SpecForce Soldier and Wilderness Fighter (Shielded) trade cleanly. Resilient on a Guardian makes an early wall.",
+        "midGame": "Rounds 3-5: deploy Chirrut at 5 — during the action phase he simply refuses to die (0 HP doesn't defeat him until regroup), so aggressive blocks that would kill anything else leave him standing; heal or pump him before regroup and the opponent got nothing. Kanan attacks mill and heal per Spectre (Zeb counts).",
+        "lateGame": "Round 6+: Obi-Wan dies into 2 Experience + a card for a Force unit; The Force Is With Me turns any body into a shielded, experienced attacker mid-combat. Mace cleans up exhausted boards.",
+        "openingPriorities": [
+          "Guardian of the Whills",
+          "SpecForce Soldier",
+          "Wilderness Fighter",
+          "Resilient",
+          "Yoda — Old Master"
+        ],
+        "mulligan": [
+          "Keep: a 1-2 cost body plus one upgrade and interaction.",
+          "Never keep: multiple upgrades without a unit to carry them.",
+          "Send back: hands where nothing costs less than 3."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Chirrut Îmwe — One With the Force",
+              "Repair"
+            ],
+            "note": "Chirrut survives the action phase at 0 HP; healing 3 before regroup makes their whole attack sequence a blank."
+          },
+          {
+            "cards": [
+              "Jedi Lightsaber",
+              "Yoda — Old Master"
+            ],
+            "note": "On a Force unit the saber gives the defender -2/-2 on attack: Yoda kills 3-HP units and takes nothing back."
+          },
+          {
+            "cards": [
+              "Guardian of the Whills",
+              "Devotion"
+            ],
+            "note": "Discounted Restore 2 turns a 2-drop into a heal engine the aggro matchup hates."
+          },
+          {
+            "cards": [
+              "Kanan Jarrus — Revealed Jedi",
+              "Zeb Orrelios — Headstrong Warrior"
+            ],
+            "note": "Two Spectres = 2 mills per Kanan attack, healing per aspect milled — real sustain, occasional information."
+          },
+          {
+            "cards": [
+              "Obi-Wan Kenobi — Following Fate",
+              "Mace Windu — Party Crasher"
+            ],
+            "note": "Obi-Wan's dying gift makes Mace a 7/9 that re-readies on kills."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Mace/second Obi-Wan early",
+          "Keep Make an Opening for real threats",
+          "Force Throw is situational — resource against empty-hand aggro"
+        ],
+        "weaknesses": [
+          "Bounce and hard removal (Waylay, Vanquish, Power of the Dark Side) turn a 3-card investment into a 3-card loss.",
+          "Only one Force Throw and one Jedi Lightsaber owned — the deck cannot rely on drawing them.",
+          "No Fallen Lightsaber; the upgrade suite is a size down from historical Chirrut lists."
+        ],
+        "adjustments": [
+          "Luke's Lightsaber (owned x3) if you also run Luke leader shells — here it stays out because Luke never enters play.",
+          "Entrenched (owned x1) on THEIR attacker is tech against Voltron mirrors.",
+          "Protector (owned x1, double-Vigilance) becomes penalty-free with a Vigilance base swap (Capital City/Dagobah Swamp)."
+        ],
+        "acquisitions": [
+          "Fallen Lightsaber (SOR) — the missing marquee upgrade for Force decks.",
+          "Luke Skywalker — Jedi Knight (SOR) — the top-end this shell dreams about."
+        ]
+      },
+      "scores": {
+        "gameplay": 62
+      }
+    },
+    {
+      "id": "two-fronts-one-rebellion",
+      "name": "Two Fronts, One Rebellion",
+      "special": null,
+      "archetype": "Aggro",
+      "secondary": "Go-wide Rebels",
+      "powerBand": "Strongest available",
+      "difficulty": "Beginner",
+      "leader": {
+        "id": "SOR-9",
+        "printing": "SOR-9",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-26",
+        "printing": "SOR-26",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Command",
+        "Heroism",
+        "Aggression"
+      ],
+      "cards": [
+        {
+          "id": "SOR-93",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-93",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-108",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-140",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-140",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-94",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-94",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-236",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-236",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-238",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-238",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-239",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-239",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-141",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-141",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-240",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-240",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-241",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-241",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-143",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-143",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-242",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-242",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-243",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-243",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-245",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-245",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-103",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-103",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-244",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-244",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-146",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-146",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-146",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-100",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-100",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-102",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-102",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-148",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-148",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by keeping two ready Rebels at all times and compressing two attacks into one Leia action, creating a damage-and-initiative advantage no defensive line can schedule around.",
+      "spacePolicy": "Contest lightly (9 space units); X-Wings and Wing Leader threaten enough that ground defenses cannot consolidate.",
+      "guide": {
+        "winCondition": "Leia's leader action attacks with two Rebels every round — effectively a free action. Anthem effects (Dodonna) and Experience (Wing Leader, Medal Ceremony) make those two attacks lethal math by round 5.",
+        "earlyGame": "Rounds 1-2: deploy Rebels every action — R2-D2 and C-3PO are real cards here (droid bodies that fix draws). Battlefield Marine on curve. Use Leia's action as soon as two Rebels can attack profitably.",
+        "midGame": "Rounds 3-5: deploy Leia at 5; her Raid 1 plus On Attack chains a second Rebel attack. Dodonna turns the whole board +1/+1. Medal Ceremony after a wide attack banks 3 Experience for zero cost.",
+        "lateGame": "Round 5+: Home One restores and revives a fallen Heroism unit at discount; Wedge gives every vehicle Ambush (+1/+1) for surprise lethal from hand. Guerilla Attack Pod readies itself when their base is at 15+ damage.",
+        "openingPriorities": [
+          "Battlefield Marine",
+          "SpecForce Soldier",
+          "R2-D2 — Ignoring Protocol",
+          "Fleet Lieutenant",
+          "Echo Base Defender"
+        ],
+        "mulligan": [
+          "Keep: two 1-2 cost Rebels and any 3-drop.",
+          "Keep: one-drop + Fleet Lieutenant + Dodonna curve.",
+          "Send back: hands with Home One/Wedge and fewer than two early Rebels."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Leia Organa — Alliance General",
+              "Fleet Lieutenant"
+            ],
+            "note": "Fleet Lieutenant's When Played attack plus Leia's double-attack action: three attacks in two actions."
+          },
+          {
+            "cards": [
+              "Medal Ceremony",
+              "Leia Organa — Alliance General"
+            ],
+            "note": "Her action attacks two Rebels; a 0-cost Medal Ceremony then gives both (plus one more) permanent Experience."
+          },
+          {
+            "cards": [
+              "Wedge Antilles — Star of the Rebellion",
+              "Alliance X-Wing"
+            ],
+            "note": "Every vehicle in hand becomes an Ambush threat — an X-Wing arrives as a 3/4 that attacks immediately."
+          },
+          {
+            "cards": [
+              "C-3P0 — Protocol Droid",
+              "R2-D2 — Ignoring Protocol"
+            ],
+            "note": "R2 peeks and can bottom the top card; 3PO then names the cost he saw for a free draw."
+          },
+          {
+            "cards": [
+              "Home One — Alliance Flagship",
+              "Zeb Orrelios — Headstrong Warrior"
+            ],
+            "note": "Revive Zeb for 2: a 5/5 that murders a blocker, under a ship that gives everything Restore."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Home One/Guerilla Attack Pod before round 3",
+          "Keep Rebel Assault only with a board",
+          "Regional Sympathizers is the resource in fast mirrors"
+        ],
+        "weaknesses": [
+          "Sweepers and multi-unit removal break the two-ready-Rebels requirement Leia depends on.",
+          "Missing Red Three, K-2SO and For a Cause I Believe In: less reach than the historical list, so boards must stick.",
+          "Very few events — almost no answers; the deck must always be the aggressor."
+        ],
+        "adjustments": [
+          "Medal Ceremony x3 (owned) in slower metas; the third copy replaces Guerilla Attack Pod.",
+          "Snowspeeder x3 (owned) over C-3PO pair if Vehicle synergy with Wedge matters more than consistency."
+        ],
+        "acquisitions": [
+          "Red Three (SOR), K-2SO (SOR), For a Cause I Believe In (SOR) — the historical Leia aggro power trio."
+        ]
+      },
+      "scores": {
+        "gameplay": 75
+      }
+    },
+    {
+      "id": "kessel-run-on-credit",
+      "name": "Kessel Run on Credit",
+      "special": null,
+      "archetype": "Ramp",
+      "secondary": "Resource-tempo midrange",
+      "powerBand": "Strong",
+      "difficulty": "Advanced",
+      "leader": {
+        "id": "SOR-17",
+        "printing": "SOR-283",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Cunning",
+        "Heroism",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-126",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-126",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-123",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-123",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-189",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-189",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-190",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-190",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-207",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-207",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-206",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-206",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-208",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-208",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-194",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-194",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-112",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-112",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-195",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-195",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-99",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-99",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-114",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-114",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-196",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-196",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-198",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-198",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-213",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-213",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-100",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-100",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-102",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-102",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-217",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-217",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-220",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-220",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-104",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-104",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by borrowing tempo — Han smuggles a resource ahead every round it matters — and spending the loan on threats one round before the opponent's answers line up.",
+      "spacePolicy": "Contest with 15 space units; cheap Cunning fighters harass early while Home One and friends land ahead of schedule.",
+      "guide": {
+        "winCondition": "Resource advantage converted into oversized mid-game turns: a round-5 Home One or a round-4 Chewbacca wall stabilizes or snowballs, and Waylay/Shoot First protect the lead.",
+        "earlyGame": "Rounds 1-2: Mining Guild TIE, Outer Rim Headhunter and Crafty Smuggler contest cheaply. Han's action puts a spare card into play as a ready resource — plan the discard-from-play cost: the loan comes due at the start of next action phase.",
+        "midGame": "Rounds 3-5: Leia — Defiant Princess readies a resource (stacking with Han's loan for +2 tempo rounds). Resupply makes some loans permanent. Bright Hope bounces a spent unit for value and a draw; Escort Skiff ambushes with any Command unit around.",
+        "lateGame": "Round 5+: Home One a round early is usually decisive — it revives a Heroism unit on arrival. Han Solo — Reluctant Hero first-strikes through blockers. U-Wing Reinforcement flips a stalled board with up to 3 free units.",
+        "openingPriorities": [
+          "Mining Guild TIE Fighter",
+          "Leia Organa — Defiant Princess",
+          "Resupply",
+          "Battlefield Marine",
+          "Bright Hope — The Last Transport"
+        ],
+        "mulligan": [
+          "Keep: an early unit plus ramp plus one payoff.",
+          "Keep: double 2-drop hands with Resupply.",
+          "Send back: payoff-only hands — Han's loan needs a board to protect the round it repays.",
+          "Send back: ramp with no payoff above cost 4 unless the rest curves perfectly."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Han Solo — Audacious Smuggler",
+              "Home One — Alliance Flagship"
+            ],
+            "note": "The loan plus Resupply reaches 8 resources on round 5; Home One arrives before their answers do."
+          },
+          {
+            "cards": [
+              "Consortium StarViper",
+              "Escort Skiff"
+            ],
+            "note": "Any other Command unit turns on the Skiff's Ambush — a 4/4 that attacks the moment it lands."
+          },
+          {
+            "cards": [
+              "Bright Hope — The Last Transport",
+              "Lothal Insurgent"
+            ],
+            "note": "Re-buy the Insurgent's disruption When Played; Bright Hope draws you a card for doing it."
+          },
+          {
+            "cards": [
+              "Chewbacca — Loyal Companion",
+              "Waylay"
+            ],
+            "note": "Sentinel that readies when attacked plus bounce on their follow-up: a two-card wall that costs them a whole round."
+          }
+        ],
+        "resourcePriorities": [
+          "Han's action prefers duplicate mid-cost cards",
+          "Never loan-resource a card you will need back — it is defeated, not returned",
+          "U-Wing Reinforcement is a keep in grindy matchups only"
+        ],
+        "weaknesses": [
+          "The loan repayment (defeat a resource) makes sloppy planning lethal: a missed land-back turn can skip a whole play.",
+          "No Millennium Falcon — the historical Han payoff — so the top end leans on Home One alone.",
+          "Aggro decks can ignore the value game and race the loan turns."
+        ],
+        "adjustments": [
+          "Syndicate Lackeys (owned x2) can become Cantina Bouncer + Strafing Gunship (owned x1 each) for more interaction.",
+          "Recruit (owned x5) count is flexible; a third copy smooths payoff finding."
+        ],
+        "acquisitions": [
+          "Millennium Falcon — Piece of Junk (SOR) — the card this leader was designed to cheat out.",
+          "Vanguard Ace at full playset (own 2) — grows absurdly on loan turns."
+        ]
+      },
+      "scores": {
+        "gameplay": 68
+      }
+    },
+    {
+      "id": "hope-in-hyperspace",
+      "name": "Hope in Hyperspace",
+      "special": "showcase",
+      "archetype": "Midrange",
+      "secondary": "Shields & value",
+      "powerBand": "Strong",
+      "difficulty": "Beginner",
+      "leader": {
+        "id": "SOR-5",
+        "printing": "SOR-5",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-289",
+        "variant": "Hyperspace"
+      },
+      "aspects": [
+        "Vigilance",
+        "Heroism",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-236",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-236",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-59",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-59",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-44",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-44",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-53",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-53",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-63",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-63",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-46",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-46",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-47",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-47",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-47",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-65",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-65",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-65",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-66",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-66",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-66",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-249",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-249",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-507",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-115",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-115",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-379",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-244",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-244",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-244",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-48",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-48",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-49",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-49",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-315",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-102",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-102",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-74",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-339",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-74",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-76",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-341",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-76",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-123",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-123",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins on shielded, resilient value units that trade up and heal back — while showing off 14 owned Hyperspace and foil printings without spending a single deck slot on a weak card.",
+      "spacePolicy": "Contest with 7 space units (System Patrol Craft Sentinels + ARC-170s); Make an Opening and Kallus cover the rest.",
+      "guide": {
+        "winCondition": "Every unit demands more resources to remove than it cost: Luke shields what you play, walls hold the ground, and Home One or an experienced Obi-Wan line closes long games.",
+        "earlyGame": "Rounds 1-2: R2-D2 fixes draws; Battlefield Marine and Restored ARC-170 (Restore 1) start the HP race. Luke's leader action (pay 1) shields any Heroism unit you played that phase — use it nearly every round.",
+        "midGame": "Rounds 3-5: Cloud City Wing Guard and Consular Security Force are the sturdiest walls in the pool; Echo Base Defender Sentinel stops aggro cold. Agent Kallus ambushes and starts drawing. Frontier AT-RT ambushes whenever another vehicle is around.",
+        "lateGame": "Round 6+: deploy Luke, attach Luke's Lightsaber — full heal plus shield makes him nearly unkillable, and his On Attack shields another unit every swing. Obi-Wan trades into 2 Experience + a card; Home One turns the accumulated value into a finish.",
+        "openingPriorities": [
+          "R2-D2 — Ignoring Protocol",
+          "Battlefield Marine",
+          "Restored ARC-170",
+          "Cloud City Wing Guard",
+          "Echo Base Defender"
+        ],
+        "mulligan": [
+          "Keep: two plays for rounds 1-2 plus one 3-4 cost wall.",
+          "Keep: any hand with early units and Make an Opening.",
+          "Send back: hands with Home One plus two other 4+ cards."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Luke Skywalker — Faithful Friend",
+              "Luke's Lightsaber"
+            ],
+            "note": "On the deployed Luke: heal ALL damage, add a shield, and every later attack shields another unit — the namesake line of the deck."
+          },
+          {
+            "cards": [
+              "Snowspeeder",
+              "Frontier AT-RT"
+            ],
+            "note": "Two Ambush vehicles that enable each other; the Snowspeeder also exhausts an enemy ground vehicle on attack."
+          },
+          {
+            "cards": [
+              "Agent Kallus — Seeking the Rebels",
+              "Vigilant Honor Guards"
+            ],
+            "note": "Uniques die constantly in long games; Kallus banks a card each round while the Guards keep Sentinel up."
+          },
+          {
+            "cards": [
+              "Make an Opening",
+              "Yoda — Old Master"
+            ],
+            "note": "-2/-2 plus base heal, then Yoda's Restore attacks — this deck wins damage races it never seems to run."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Home One before round 4",
+          "Recruit early to find curve, resource it late",
+          "Keep Repair against aggro, resource against control"
+        ],
+        "weaknesses": [
+          "Missing Luke Skywalker — Jedi Knight, the natural finisher — the late game is honest value, not a haymaker.",
+          "Low aggression: bad draws turn into durable-but-passive boards that lose to ramped finishers.",
+          "Shield-hate (Saboteur) blunts the leader's whole ability."
+        ],
+        "adjustments": [
+          "All 14 non-Standard printings here are the strongest cosmetic build the collection supports without hurting the list; further foils exist only on off-aspect cards.",
+          "Fleet Lieutenant (owned x5) can replace 2-1B pair for a more aggressive slant.",
+          "A Capital City (Hyperspace, owned x2) base swap trades the Command splash for mono-Vigilance and makes the owned foil Vigilance event penalty-free."
+        ],
+        "acquisitions": [
+          "Luke Skywalker — Jedi Knight (SOR) — the missing crown jewel, in Hyperspace if the collection is to stay showcase-first."
+        ]
+      },
+      "scores": {
+        "gameplay": 70
+      }
+    },
+    {
+      "id": "promotion-by-fire",
+      "name": "Promotion by Fire",
+      "special": null,
+      "archetype": "Aggro",
+      "secondary": "Imperial swarm",
+      "powerBand": "Strong",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "SOR-7",
+        "printing": "SOR-274",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "SOR-25",
+        "printing": "SOR-25",
+        "variant": "Standard Foil"
+      },
+      "aspects": [
+        "Command",
+        "Villainy",
+        "Aggression"
+      ],
+      "cards": [
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-227",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-227",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-226",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-226",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-129",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-129",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-230",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-230",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-79",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-79",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-81",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-81",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-229",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-229",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-225",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-225",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-132",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-132",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-231",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-231",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-84",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-84",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-83",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-83",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-234",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-234",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-139",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-139",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-165",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-165",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by promoting cheap Imperials into veterans — Tarkin's Experience every round, Tagge and TIE Advanced stacking more — and cashing the swarm in before attrition catches up.",
+      "spacePolicy": "Contest with 9 space units; TIE Advanced doubles as ground-swarm support by dumping Experience on a trooper.",
+      "guide": {
+        "winCondition": "A wide Imperial board where every body is one Experience bigger than it should be, plus Tarkintown's epic ping and Maximum Firepower converting power into removal.",
+        "earlyGame": "Rounds 1-2: lead with Death Star Stormtrooper/Snowtrooper Lieutenant; Tarkin's action promotes whichever unit the opponent must now answer. Viper Probe Droid scouts their plan.",
+        "midGame": "Rounds 3-5: Veers turns the swarm sideways; Grand Moff Tarkin — Death Star Overseer refills with two more Imperials. First Legion Snowtrooper plus Tarkintown's epic action (3 damage to a damaged unit) executes anything mid-sized.",
+        "lateGame": "Round 5+: deploy Tarkin — his On Attack gives a second Experience every swing. Maximum Firepower with two veterans on board is 6-10 damage to one target. Occupier Siege Tank with Grit finishes damaged races.",
+        "openingPriorities": [
+          "Death Star Stormtrooper",
+          "Snowtrooper Lieutenant",
+          "First Legion Snowtrooper",
+          "Admiral Motti — Brazen and Scornful",
+          "General Veers — Blizzard Force Commander"
+        ],
+        "mulligan": [
+          "Keep: two 1-2 cost Imperials plus a 3-cost play.",
+          "Keep: aggressive hands even without payoffs — Tarkin's action IS the payoff.",
+          "Send back: hands with Superlaser Technician as the only early play (he is ramp, not defense)."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Grand Moff Tarkin — Oversector Governor",
+              "Death Star Stormtrooper"
+            ],
+            "note": "One Experience makes the 3/1 a 4/2 — suddenly it trades with 2-drops AND hits like a 4-drop."
+          },
+          {
+            "cards": [
+              "Maximum Firepower",
+              "TIE Advanced"
+            ],
+            "note": "TIE Advanced pumps a friendly Imperial by 2 Experience, then Firepower uses both units' power on one target."
+          },
+          {
+            "cards": [
+              "Tarkintown — Lothal",
+              "First Legion Snowtrooper"
+            ],
+            "note": "The base pings a damaged unit for 3; the Snowtrooper then attacks it at +2/+0 with Overwhelm."
+          },
+          {
+            "cards": [
+              "Admiral Ozzel — Overconfident",
+              "Grand Moff Tarkin — Death Star Overseer"
+            ],
+            "note": "Ozzel flashes in the tutor Tarkin ready — refill and a surprise attacker in one action."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Occupier Siege Tank early",
+          "Superlaser Technician is a resource in every hand without ramp targets",
+          "Keep Force Choke for Sentinels"
+        ],
+        "weaknesses": [
+          "Removal erases invested Experience — do not over-promote one body.",
+          "Tarkintown's 25 HP means every race is 5 damage tighter; count both clocks every round.",
+          "Sweepers (none exist in SOR at rate, but Barrage-style effects) still beat width."
+        ],
+        "adjustments": [
+          "Seasoned Shoretrooper scales if games go long — a 3rd copy is not owned; General Tagge (owned x1) fits the same slot.",
+          "Catacombs of Cadera (owned, 30 HP) is the safe-base variant when the meta is aggressive."
+        ],
+        "acquisitions": [
+          "Emperor's Royal Guard (SOR) and Superlaser Blast (SOR) for a tougher long game."
+        ]
+      },
+      "scores": {
+        "gameplay": 69
+      }
+    },
+    {
+      "id": "walking-carpet-counterpunch",
+      "name": "Walking Carpet Counterpunch",
+      "special": null,
+      "archetype": "Control",
+      "secondary": "Defensive tempo / Sentinels",
+      "powerBand": "Experimental",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "SOR-3",
+        "printing": "SOR-3",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-29",
+        "printing": "SOR-29",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Vigilance",
+        "Heroism",
+        "Cunning"
+      ],
+      "cards": [
+        {
+          "id": "SOR-61",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-61",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-59",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-59",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-236",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-236",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-60",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-60",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-325",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-44",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-44",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-189",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-189",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-207",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-207",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-63",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-63",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-194",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-194",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-46",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-46",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-65",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-65",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-65",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-195",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-195",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-196",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-196",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-48",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-48",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-198",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-198",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-49",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-49",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-315",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-218",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-218",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-73",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-73",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by refusing to let the opponent pick fights — Chewbacca's leader action flashes in Sentinels mid-phase — then counterpunching with tricks once their attacks are spent.",
+      "spacePolicy": "Contest with 9 space units including Sentinel walls (System-free: Distant Patroller, ARC-170, Auzituck); Waylay answers capital-class threats.",
+      "guide": {
+        "winCondition": "Stabilize behind Sentinels and healing, generate small value edges (Obi-Wan, Yoda, 2-1B), then win the long game with Han's first-strike and an unanswered board.",
+        "earlyGame": "Rounds 1-2: cheap bodies only if needed — the deck's trick is patience. Chewbacca's action plays a 3-or-less unit WITH Sentinel during the action phase: hold Cloud City Wing Guard and drop it exactly when their attacker commits.",
+        "midGame": "Rounds 3-5: Vigilant Honor Guards + 2-1B (heal 2 on attack) keeps the Sentinel condition alive. Chewbacca — Loyal Companion readies whenever attacked — a wall that counterattacks. Leia DP and Waylay steal back the tempo their removal spent.",
+        "lateGame": "Round 6+: deploy Chewbacca (Grit Sentinel that grows as it's hit). Han Solo — Reluctant Hero ambushes and first-strikes through their best blocker; Obi-Wan's death converts into a bigger threat plus a card.",
+        "openingPriorities": [
+          "Guardian of the Whills",
+          "Restored ARC-170",
+          "Leia Organa — Defiant Princess",
+          "Cloud City Wing Guard",
+          "Consular Security Force"
+        ],
+        "mulligan": [
+          "Keep: early presence in at least one arena plus a 3-cost body for the leader action.",
+          "Keep: reactive hands with Waylay/Asteroid Sanctuary only alongside two units.",
+          "Send back: hands that cannot act before round 3."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Chewbacca — Walking Carpet",
+              "Cloud City Wing Guard"
+            ],
+            "note": "Flash Sentinel: their attacker is already committed when the wall appears, eating the hit on your terms."
+          },
+          {
+            "cards": [
+              "2-1B Surgical Droid",
+              "Vigilant Honor Guards"
+            ],
+            "note": "Heal 2 keeps the Guards undamaged, which keeps their Sentinel online permanently."
+          },
+          {
+            "cards": [
+              "Chewbacca — Loyal Companion",
+              "Moment of Peace"
+            ],
+            "note": "A shielded ready-when-attacked Sentinel is a wall that wins every exchange it doesn't dodge."
+          },
+          {
+            "cards": [
+              "Han Solo — Reluctant Hero",
+              "Asteroid Sanctuary"
+            ],
+            "note": "First-strike ambush, then exhaust their counterattacker and shield Han's escort."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Han/Obi-Wan duplicates early",
+          "Keep exactly two tricks; resource the rest",
+          "Distant Patroller is a resource after round 4"
+        ],
+        "weaknesses": [
+          "FFG's own retrospective rates Chewbacca among the weakest SOR leaders — this is a fun counterpunch deck, not a tournament pick (hence the 'Experimental' power band).",
+          "A 7-cost leader deploy arrives after many games are decided.",
+          "Reactive draws against control do very little; the deck must adopt the beatdown role it is not built for."
+        ],
+        "adjustments": [
+          "Cantina Bouncer (owned x1) is strong here but always costs +2 with Chewbacca and a Cunning base because its second Cunning icon is uncovered. Use it only if deliberately accepting that penalty.",
+          "Repair x2 (owned) over Moment of Peace against burn-heavy fields."
+        ],
+        "acquisitions": [
+          "Millennium Falcon — Piece of Junk (SOR) for a real space threat."
+        ]
+      },
+      "scores": {
+        "gameplay": 58
+      }
+    },
+    {
+      "id": "rogue-cell-initiative",
+      "name": "Rogue Cell Initiative",
+      "special": null,
+      "archetype": "Tempo",
+      "secondary": "Rebel tactics",
+      "powerBand": "Experimental",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "SOR-18",
+        "printing": "SOR-18",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Cunning",
+        "Heroism",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-108",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-189",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-189",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-190",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-190",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-239",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-239",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-96",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-96",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-194",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-194",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-240",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-240",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-112",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-112",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-241",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-241",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-99",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-99",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-195",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-195",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-242",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-242",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-243",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-243",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-244",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-244",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-100",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-100",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-199",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-199",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-221",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-221",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-200",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-200",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-103",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-103",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by making every enemy attack slightly unprofitable — Jyn's -1/-0 on defenders — while a wide Rebel board and exhaust effects win the initiative war one action at a time.",
+      "spacePolicy": "Contest with 11 space units; Outmaneuver can freeze the space arena for an alpha strike when the race is on.",
+      "guide": {
+        "winCondition": "Attrition-by-inches: units survive combats they shouldn't (Jyn), Bamboozle and Outmaneuver blank key attacks, and Dodonna-buffed Rebels grind the base down.",
+        "earlyGame": "Rounds 1-2: Rebel bodies on curve; Battlefield Marine and Lothal Insurgent (hand disruption with any second card) are the best openers. Jyn's action makes an early trade favorable almost every round.",
+        "midGame": "Rounds 3-5: Echo Base Defender walls; Rogue Operative's Saboteur+Raid 2 hits bases for 4 through Sentinels. Deploy Jyn at 6 — her passive turns every defensive block worse for them.",
+        "lateGame": "Round 5+: Outmaneuver exhausts an entire arena — set up two-round lethal. Wedge flashes vehicle reinforcements; Bright Hope re-buys a When Played unit and draws.",
+        "openingPriorities": [
+          "Battlefield Marine",
+          "Lothal Insurgent",
+          "Leia Organa — Defiant Princess",
+          "Echo Base Defender",
+          "Rogue Operative"
+        ],
+        "mulligan": [
+          "Keep: two early Rebels or one plus interaction.",
+          "Keep: Lothal Insurgent + any 1-cost card (the disruption trigger needs a second play).",
+          "Send back: trick-heavy hands without a board."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Jyn Erso — Resisting Oppression",
+              "Vanguard Infantry"
+            ],
+            "note": "Defenders at -1/-0 mean the 1/2 trades with 2-power units; her death still banks an Experience token."
+          },
+          {
+            "cards": [
+              "Outmaneuver",
+              "General Dodonna — Massassi Group Commander"
+            ],
+            "note": "Exhaust their ground arena, then swing a +1/+1 Rebel board into nothing."
+          },
+          {
+            "cards": [
+              "Bamboozle",
+              "Spark of Rebellion"
+            ],
+            "note": "Strip the upgrades, peek the hand, discard their answer — tempo AND information."
+          },
+          {
+            "cards": [
+              "Mon Mothma — Voice of the Rebellion",
+              "Rebel Assault"
+            ],
+            "note": "She digs 5 deep for the Rebel card that finishes; Assault doubles the payoff."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource Wedge/Snowspeeder before round 3",
+          "Keep one trick maximum in opening hands",
+          "Regional Sympathizers first out in fast matchups"
+        ],
+        "weaknesses": [
+          "FFG's retrospective rates Jyn low-impact among SOR leaders — tagged 'Experimental' honestly: the deck is fun and coherent, not top-tier.",
+          "Passive effects (Jyn, Dodonna) don't affect the board the round they arrive.",
+          "Split between tempo tricks and board plan; drawing the wrong half loses to focused decks."
+        ],
+        "adjustments": [
+          "Ezra Bridger (owned x1) adds a Spectre value body over 1 Consortium StarViper.",
+          "Waylay 2nd/3rd copies (owned x6 total) if the meta is midrange ships."
+        ],
+        "acquisitions": [
+          "K-2SO (SOR) — exactly this deck's kind of stubborn value.",
+          "Cassian Andor leader (SOR) would let this shell keep its identity with a stronger leader."
+        ]
+      },
+      "scores": {
+        "gameplay": 60
+      }
+    },
+    {
+      "id": "droid-kill-protocol",
+      "name": "Droid Kill Protocol",
+      "special": null,
+      "archetype": "Aggro",
+      "secondary": "Unit swarm (challenge)",
+      "powerBand": "Challenge",
+      "difficulty": "Beginner",
+      "leader": {
+        "id": "SOR-12",
+        "printing": "SOR-12",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Villainy",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-225",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-225",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-157",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-157",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-227",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-227",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-226",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-226",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-129",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-129",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-230",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-230",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-81",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-81",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-111",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-111",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-229",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-229",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-112",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-112",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-132",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-132",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-164",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-164",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-231",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-231",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-108",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-247",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-247",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "This deck wins by never having fewer units than the opponent — IG-88's whole kit pays you for width — and turning that census advantage into Raid-fueled swarm attacks.",
+      "spacePolicy": "Contest with 14 cheap space units; TIE/ln and Patrolling V-Wing exist to keep the unit count up in both arenas.",
+      "guide": {
+        "winCondition": "Board census: IG-88's action gives attackers +1/+0 whenever you have more units, and his deployed side grants everyone Raid 1. Forty-nine units make sure the count is always yours.",
+        "earlyGame": "Rounds 1-2: two units per round when possible (TIE/ln plus a 1-drop). Attack bases relentlessly; trades that cost you a unit but not them are usually wrong.",
+        "midGame": "Rounds 3-5: Veers and Motti make the swarm sting; Snowtrooper Lieutenant triggers extra attacks. Deploy IG-88 at 5 — every other unit gains Raid 1 and the math jumps.",
+        "lateGame": "Round 5+: Wampa and Imperial Interceptor are the whole top end — this deck wins round 6 or plays from behind. Count exact lethal early and spend everything toward it.",
+        "openingPriorities": [
+          "TIE/ln Fighter",
+          "Death Star Stormtrooper",
+          "Cantina Braggart",
+          "Snowtrooper Lieutenant",
+          "Admiral Motti — Brazen and Scornful"
+        ],
+        "mulligan": [
+          "Keep: any hand with three units costing 0-2.",
+          "Send back: anything with two cards costing 4+.",
+          "Never keep a hand that can't play a unit on round 1."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "IG-88 — Ruthless Bounty Hunter",
+              "Cantina Braggart"
+            ],
+            "note": "Raid 2 plus leader-granted Raid 1 plus the census +1: the 0-power joke attacks for 4."
+          },
+          {
+            "cards": [
+              "Snowtrooper Lieutenant",
+              "Death Star Stormtrooper"
+            ],
+            "note": "The Lieutenant's trigger sends the 3/1 in at 5 power on round 2."
+          },
+          {
+            "cards": [
+              "Admiral Motti — Brazen and Scornful",
+              "Wampa"
+            ],
+            "note": "Motti dies, the Wampa readies — Overwhelm twice in one round."
+          },
+          {
+            "cards": [
+              "Patrolling V-Wing",
+              "IG-88 — Ruthless Bounty Hunter"
+            ],
+            "note": "A cantrip that keeps the unit count up is exactly what the census plan wants."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource TIE Advanced and the 4-drops early",
+          "Never resource 1-cost units — they ARE the strategy",
+          "Open Fire is the only answer; keep it for Sentinels"
+        ],
+        "weaknesses": [
+          "FFG explicitly identified IG-88 as a weak SOR leader — this is the portfolio's 'Challenge' deck: play it for fun, not for the win rate.",
+          "One event total: zero answers to anything.",
+          "Any efficient multi-kill (Death Trooper, Barrage) breaks the census math."
+        ],
+        "adjustments": [
+          "Open Fire can become Keep Fighting (owned x3) to re-swing after blocks.",
+          "Underworld Thug slots are flexible — Volunteer Soldier (owned x2) discounts itself with Troopers around."
+        ],
+        "acquisitions": [
+          "For this deck, more copies of what it does: a 3rd TIE Advanced is owned (x4) — the real acquisitions budget belongs to the other 14 decks."
+        ]
+      },
+      "scores": {
+        "gameplay": 52
+      }
+    }
+  ]
+}
