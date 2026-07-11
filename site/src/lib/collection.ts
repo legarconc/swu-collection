@@ -53,6 +53,5 @@ export function deriveVariant(database: CardDatabase, set: string, number: numbe
   const wanted = isFoil ? `${base} Foil` : base;
   if (card.printings[wanted]) return wanted;
   const direct = Object.keys(card.printings).find((variant) => /foil/i.test(variant) === isFoil);
-  return direct || wanted;
+  return direct || null;
 }
-

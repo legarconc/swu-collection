@@ -21,6 +21,7 @@ function readCollection(): CollectionEntry[] {
 const totalCount = (entries: CollectionEntry[]) => entries.reduce((sum, item) => sum + item.count, 0);
 const cardKey = (entry: Pick<CollectionEntry, "set" | "number">) => `${entry.set}-${entry.number}`;
 const cardsLabel = (count: number) => `${count} ${count === 1 ? "card" : "cards"}`;
+let lastDialogTrigger: HTMLElement | null = null;
 
 function App() {
   const [database, setDatabase] = useState<CardDatabase | null>(null);
@@ -30,6 +31,15 @@ function App() {
   const [view, setView] = useState<View>("collection");
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
   const [adding, setAdding] = useState(false);
+
+  useEffect(() => {
+    const rememberTrigger = (event: MouseEvent) => {
+      const trigger = event.target instanceof Element ? event.target.closest<HTMLElement>("button, [role='button']") : null;
+      if (trigger) lastDialogTrigger = trigger;
+    };
+    document.addEventListener("click", rememberTrigger, true);
+    return () => document.removeEventListener("click", rememberTrigger, true);
+  }, []);
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}cards.json`)
@@ -158,14 +168,38 @@ function AddCardSheet({ database, entries, onClose, onAdd }: { database: CardDat
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<CardRecord | null>(null);
   const [variant, setVariant] = useState("");
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState("1");
+  const parsedCount = Number(count);
+  const validCount = Number.isInteger(parsedCount) && parsedCount > 0;
   const matches = query.trim().length < 2 ? [] : Object.values(database.cards).filter((card) => `${card.name} ${card.subtitle} ${card.set} ${card.number}`.toLowerCase().includes(query.toLowerCase())).slice(0, 30);
-  return <Modal title="Add card" onClose={onClose}>{!selected ? <><label className="field-label" htmlFor="add-search">Search the full card database</label><div className="search-wrap"><span>⌕</span><input id="add-search" autoFocus type="search" placeholder="Card name, set, or number" value={query} onChange={(e) => setQuery(e.target.value)} /></div><div className="search-results">{query.length < 2 && <p>Type at least two characters.</p>}{matches.map((card) => <button key={card.key} onClick={() => { setSelected(card); setVariant(card.defaultVariant); }}><img src={card.images.front} alt="" /><span><strong>{card.name}</strong><small>{card.subtitle || "No subtitle"}</small><em>{card.set} {card.number} · {card.defaultVariant}</em></span></button>)}</div></> : <div className="add-selection"><button className="back-link" onClick={() => setSelected(null)}>← Search again</button><div className="selected-card"><img src={cardImage(selected, variant)} alt={selected.name} onError={(event) => { event.currentTarget.src = selected.images.front; }} /><div><h2>{selected.name}</h2><p>{selected.subtitle}</p><label>Printing<select value={variant} onChange={(e) => setVariant(e.target.value)}>{Object.keys(selected.printings).map((item) => <option key={item}>{item}</option>)}</select></label><label>Count<input type="number" min="1" inputMode="numeric" value={count} onChange={(e) => setCount(Math.max(1, Number(e.target.value)))} /></label><button className="primary wide" onClick={() => onAdd(selected, variant, count)}>{entries.some((entry) => cardKey(entry) === selected.key && entry.variant === variant) ? "Update count" : "Add to collection"}</button></div></div></div>}</Modal>;
+  return <Modal title="Add card" onClose={onClose}>{!selected ? <><label className="field-label" htmlFor="add-search">Search the full card database</label><div className="search-wrap"><span>⌕</span><input id="add-search" autoFocus type="search" placeholder="Card name, set, or number" value={query} onChange={(e) => setQuery(e.target.value)} /></div><div className="search-results">{query.length < 2 && <p>Type at least two characters.</p>}{matches.map((card) => <button key={card.key} onClick={() => { setSelected(card); setVariant(card.defaultVariant); }}><img src={card.images.front} alt="" /><span><strong>{card.name}</strong><small>{card.subtitle || "No subtitle"}</small><em>{card.set} {card.number} · {card.defaultVariant}</em></span></button>)}</div></> : <div className="add-selection"><button className="back-link" onClick={() => setSelected(null)}>← Search again</button><div className="selected-card"><img src={cardImage(selected, variant)} alt={selected.name} onError={(event) => { event.currentTarget.src = selected.images.front; }} /><div><h2>{selected.name}</h2><p>{selected.subtitle}</p><label>Printing<select value={variant} onChange={(e) => setVariant(e.target.value)}>{Object.keys(selected.printings).map((item) => <option key={item}>{item}</option>)}</select></label><label>Count<input type="number" min="1" inputMode="numeric" value={count} onChange={(e) => setCount(e.target.value)} /></label><button className="primary wide" disabled={!validCount} onClick={() => validCount && onAdd(selected, variant, parsedCount)}>{entries.some((entry) => cardKey(entry) === selected.key && entry.variant === variant) ? "Update count" : "Add to collection"}</button></div></div></div>}</Modal>;
 }
 
 function Modal({ title, onClose, children }: { title: string; onClose: () => void; children: React.ReactNode }) {
-  useEffect(() => { const close = (event: KeyboardEvent) => event.key === "Escape" && onClose(); addEventListener("keydown", close); return () => removeEventListener("keydown", close); }, [onClose]);
-  return <div className="modal-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}><section className="modal" role="dialog" aria-modal="true" aria-label={title}><header><strong>{title}</strong><button aria-label="Close" onClick={onClose}>×</button></header><div className="modal-body">{children}</div></section></div>;
+  const modalRef = useRef<HTMLElement>(null);
+  const closeRef = useRef(onClose);
+  closeRef.current = onClose;
+  useEffect(() => {
+    const previousFocus = lastDialogTrigger?.isConnected
+      ? lastDialogTrigger
+      : document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const modal = modalRef.current;
+    const focusable = () => [...(modal?.querySelectorAll<HTMLElement>('button:not(:disabled), [href], input:not(:disabled), select:not(:disabled), [tabindex]:not([tabindex="-1"])') || [])];
+    focusable()[0]?.focus();
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeRef.current();
+      if (event.key !== "Tab") return;
+      const items = focusable();
+      if (!items.length) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+    };
+    addEventListener("keydown", handleKey);
+    return () => { removeEventListener("keydown", handleKey); if (previousFocus?.isConnected) previousFocus.focus(); };
+  }, []);
+  return <div className="modal-backdrop" onMouseDown={(e) => e.target === e.currentTarget && onClose()}><section ref={modalRef} className="modal" role="dialog" aria-modal="true" aria-label={title}><header><strong>{title}</strong><button aria-label="Close" onClick={onClose}>×</button></header><div className="modal-body">{children}</div></section></div>;
 }
 
 function TransferView({ database, entries, onImport }: { database: CardDatabase; entries: CollectionEntry[]; onImport: (entries: CollectionEntry[], mode: "replace" | "merge") => void }) {

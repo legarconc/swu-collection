@@ -23,7 +23,17 @@ export function detectFormat(text: string): ImportFormat {
 
 const parsePrice = (value: unknown): number | undefined => {
   if (typeof value !== "string" || !value.trim()) return undefined;
-  const parsed = Number(value.replace(/€/g, "").replace(/\s/g, "").replace(",", "."));
+  let normalized = value.replace(/€/g, "").replace(/\s/g, "");
+  const comma = normalized.lastIndexOf(",");
+  const dot = normalized.lastIndexOf(".");
+  if (comma >= 0 && dot >= 0) {
+    normalized = comma > dot
+      ? normalized.replace(/\./g, "").replace(",", ".")
+      : normalized.replace(/,/g, "");
+  } else if (comma >= 0) {
+    normalized = /,\d{1,2}$/.test(normalized) ? normalized.replace(",", ".") : normalized.replace(/,/g, "");
+  }
+  const parsed = Number(normalized);
   return Number.isFinite(parsed) ? parsed : undefined;
 };
 
@@ -31,20 +41,30 @@ export function parseCollectionFile(text: string, database: CardDatabase): Impor
   const format = detectFormat(text);
   const cleanText = text.replace(/^\uFEFF/, "").replace(/^#\s*/, "");
   const parsed = Papa.parse<Record<string, string>>(cleanText, {
+    delimiter: ",",
     header: true,
     skipEmptyLines: "greedy",
     transformHeader: normalizeHeader,
   });
-  if (parsed.errors.length) {
-    const first = parsed.errors[0];
-    throw new Error(`CSV problem near row ${(first.row ?? 0) + 2}: ${first.message}`);
-  }
-
   const entries: CollectionEntry[] = [];
   const unknown: UnknownRow[] = [];
-  const invalid: Array<{ row: number; reason: string }> = [];
+  const malformed = new Map<number, string[]>();
+  for (const error of parsed.errors) {
+    if (error.code === "UndetectableDelimiter" || error.row === undefined) {
+      throw new Error(`CSV problem: ${error.message}`);
+    }
+    // Papa reports quote-error rows against physical lines, while field
+    // mismatch rows are indexed against parsed data rows when header=true.
+    const dataIndex = error.type === "Quotes" ? Math.max(0, error.row - 1) : error.row;
+    const messages = malformed.get(dataIndex) || [];
+    if (!messages.includes(error.message)) messages.push(error.message);
+    malformed.set(dataIndex, messages);
+  }
+  const invalid: Array<{ row: number; reason: string }> = [...malformed.entries()]
+    .map(([index, messages]) => ({ row: index + 2, reason: messages.join("; ") }));
   parsed.data.forEach((row, index) => {
     const rowNumber = index + 2;
+    if (malformed.has(index)) return;
     const set = String(row.set || "").trim().toUpperCase();
     const number = Number(format === "holodeck" ? row.number : row.cardnumber);
     const count = Number(row.count);
@@ -116,4 +136,3 @@ export function exportFull(entries: CollectionEntry[], database: CardDatabase): 
   }
   return csv(rows);
 }
-

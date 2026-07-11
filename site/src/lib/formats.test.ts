@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { CardDatabase } from "../types";
-import { mergeCollections } from "./collection";
+import { deriveVariant, mergeCollections } from "./collection";
 import { cardImage } from "./cards";
 import { exportFull, exportSwudb, parseCollectionFile } from "./formats";
 
@@ -39,11 +39,50 @@ describe("collection imports", () => {
     expect(result.entries[1]).toMatchObject({ number: 379, variant: "Hyperspace Foil", priceEach: 2 });
   });
 
+  it("parses US and European thousands-separated prices", () => {
+    const us = '# count,name,subtitle,set,number,variant,rarity,is_foil,price_each,price_total\n1,Open Fire,,SOR,172,Standard,Common,False,"1,234.56 €","1,234.56 €"';
+    const eu = '# count,name,subtitle,set,number,variant,rarity,is_foil,price_each,price_total\n1,Open Fire,,SOR,172,Standard,Common,False,"1.234,56 €","1.234,56 €"';
+    expect(parseCollectionFile(us, database).entries[0].priceEach).toBe(1234.56);
+    expect(parseCollectionFile(eu, database).entries[0].priceEach).toBe(1234.56);
+  });
+
   it("reports every unknown and invalid row", () => {
     const text = "Set,CardNumber,Count,IsFoil\nSOR,999,1,False\nBAD,12,2,False\nSOR,nope,1,False";
     const result = parseCollectionFile(text, database);
     expect(result.unknown).toHaveLength(2);
     expect(result.invalid).toHaveLength(1);
+  });
+
+  it("imports valid rows while reporting short and unclosed-quote rows", () => {
+    const short = "Set,CardNumber,Count,IsFoil\nSOR,172,1,False\nTOTAL,3";
+    const shortResult = parseCollectionFile(short, database);
+    expect(shortResult.importedCount).toBe(1);
+    expect(shortResult.invalid).toHaveLength(1);
+    expect(shortResult.invalid[0].row).toBe(3);
+
+    const quote = 'Set,CardNumber,Count,IsFoil\nSOR,172,1,False\n"SOR,379,1,True';
+    const quoteResult = parseCollectionFile(quote, database);
+    expect(quoteResult.importedCount).toBe(1);
+    expect(quoteResult.invalid).toHaveLength(1);
+    expect(quoteResult.invalid[0].row).toBe(3);
+  });
+
+  it("rejects a foil flag when that printing does not exist", () => {
+    const showcase = {
+      ...database,
+      cards: {
+        ...database.cards,
+        "SOR-265": {
+          ...database.cards["SOR-379"],
+          key: "SOR-265", number: 265, defaultVariant: "Showcase",
+          printings: { Showcase: { variant: "Showcase", apiNumber: "265", image: "265.png", backImage: null, marketPrice: null, raw: {} } },
+        },
+      },
+    } satisfies CardDatabase;
+    expect(deriveVariant(showcase, "SOR", 265, true)).toBeNull();
+    const result = parseCollectionFile("Set,CardNumber,Count,IsFoil\nSOR,265,1,True", showcase);
+    expect(result.entries).toHaveLength(0);
+    expect(result.unknown).toHaveLength(1);
   });
 
   it("round-trips SWUDB counts and derives hyperspace foil", () => {

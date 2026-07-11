@@ -1,4 +1,4 @@
-const VERSION = "swu-collection-v1";
+const VERSION = "swu-collection-v2";
 const APP_CACHE = `${VERSION}-app`;
 const IMAGE_CACHE = `${VERSION}-images`;
 const ROOT = new URL("./", self.location.href).pathname;
@@ -38,10 +38,17 @@ self.addEventListener("fetch", (event) => {
   if (isCardImage) {
     event.respondWith(caches.open(IMAGE_CACHE).then(async (cache) => {
       const cached = await cache.match(event.request);
-      if (cached) return cached;
+      if (cached) {
+        await cache.delete(event.request);
+        await cache.put(event.request, cached.clone());
+        return cached;
+      }
       try {
         const response = await fetch(event.request);
-        if (response.ok) { await cache.put(event.request, response.clone()); await trimImages(cache); }
+        if (response.ok || response.type === "opaque") {
+          await cache.put(event.request, response.clone());
+          await trimImages(cache);
+        }
         return response;
       } catch { return Response.error(); }
     }));
@@ -50,8 +57,13 @@ self.addEventListener("fetch", (event) => {
   if (url.origin !== self.location.origin || !url.pathname.startsWith(ROOT)) return;
   event.respondWith(caches.open(APP_CACHE).then(async (cache) => {
     const cached = await cache.match(event.request);
-    const update = fetch(event.request).then((response) => { if (response.ok) cache.put(event.request, response.clone()); return response; });
-    if (cached) { event.waitUntil(update.catch(() => undefined)); return cached; }
-    try { return await update; } catch { return (await cache.match(ROOT)) || Response.error(); }
+    if (url.pathname.includes(`${ROOT}assets/`) && cached) return cached;
+    try {
+      const response = await fetch(event.request);
+      if (response.ok) await cache.put(event.request, response.clone());
+      return response;
+    } catch {
+      return cached || (await cache.match(ROOT)) || Response.error();
+    }
   }));
 });

@@ -7,6 +7,23 @@ const setsPath = path.join(root, "data", "sets.json");
 const outputPath = path.join(root, "data", "cards.json");
 const API_ROOT = "https://api.swu-db.com";
 
+async function fetchSet(set, attempts = 3) {
+  let lastError;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      const response = await fetch(`${API_ROOT}/cards/${set}`, { signal: AbortSignal.timeout(30_000) });
+      if (response.ok) return response.json();
+      const error = new Error(`SWU-DB returned ${response.status} for ${set}`);
+      if (response.status < 500) throw error;
+      lastError = error;
+    } catch (error) {
+      lastError = error;
+    }
+    if (attempt < attempts) await new Promise((resolve) => setTimeout(resolve, attempt * 1_000));
+  }
+  throw lastError;
+}
+
 const sets = JSON.parse(await readFile(setsPath, "utf8"));
 if (!Array.isArray(sets) || !sets.length || sets.some((set) => !/^[A-Z0-9]+$/.test(set))) {
   throw new Error("data/sets.json must be a non-empty JSON array of uppercase set codes.");
@@ -25,9 +42,7 @@ const publicVariant = (value) => {
 
 const rows = [];
 for (const set of sets) {
-  const response = await fetch(`${API_ROOT}/cards/${set}`);
-  if (!response.ok) throw new Error(`SWU-DB returned ${response.status} for ${set}`);
-  const payload = await response.json();
+  const payload = await fetchSet(set);
   if (!payload || !Array.isArray(payload.data)) {
     throw new Error(`Unexpected SWU-DB response for ${set}: missing data array`);
   }
@@ -123,4 +138,3 @@ try {
 }
 await writeFile(outputPath, `${JSON.stringify(database, null, 2)}\n`);
 console.log(`Wrote ${database.cardCount} numeric card records from ${rows.length} printings to data/cards.json.`);
-
