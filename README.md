@@ -131,11 +131,14 @@ npm run dev
 
 To refresh card data locally, run `node scripts/fetch-cards.mjs` from the repository root. To verify a production build, run `npm run build` inside `site`.
 
+The refresh script validates and reapplies `data/card-overrides.json` after downloading card metadata. Add an override only after checking the printed card; collection set/number mistakes should instead be corrected in the private HoloScan export.
+
 ## Decisions
 
 - SWU-DB returns foil API numbers such as `379F`, while collection exports use numeric `379` plus a foil flag or variant. The normalizer groups the suffixed and unsuffixed API records under one numeric key and preserves every raw printing record.
 - “Unique cards” and set completion use the underlying card identity, so Standard and Hyperspace printings do not inflate completion. Collection tiles remain separated by owned card number so the artwork and printing are clear.
 - Future variant strings (for example Showcase or Prestige) are preserved instead of being restricted to a fixed enum.
+- Confirmed upstream name/subtitle errors are kept in `data/card-overrides.json` and reapplied by every refresh; collection exports never need to imitate a public API typo.
 - Prices are optional estimates from imported HoloDeck data. The site labels totals as estimated and does not fetch live prices.
 - The disabled Deck Builder navigation entry is reserved for Phase 2. No recommendation service or secret is included in Phase 1.
 

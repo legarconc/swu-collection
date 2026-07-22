@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const setsPath = path.join(root, "data", "sets.json");
+const overridesPath = path.join(root, "data", "card-overrides.json");
 const outputPath = path.join(root, "data", "cards.json");
 const API_ROOT = "https://api.swu-db.com";
 
@@ -106,6 +107,25 @@ for (const row of rows) {
     cards[key].defaultVariant = variant;
     cards[key].images = { front: row.FrontArt || "", back: row.BackArt || null };
   }
+}
+
+let overrides = {};
+try {
+  overrides = JSON.parse(await readFile(overridesPath, "utf8"));
+} catch (error) {
+  if (error?.code !== "ENOENT") throw error;
+}
+for (const [identityKey, override] of Object.entries(overrides)) {
+  if (!/^[A-Z0-9]+-\d+$/.test(identityKey) || !override || typeof override !== "object" || Array.isArray(override)) {
+    throw new Error(`Invalid card metadata override for ${identityKey}`);
+  }
+  const fields = Object.keys(override);
+  if (!fields.length || fields.some((field) => !["name", "subtitle"].includes(field) || typeof override[field] !== "string")) {
+    throw new Error(`Card metadata override ${identityKey} may contain only string name/subtitle fields.`);
+  }
+  const matching = Object.values(cards).filter((card) => card.identityKey === identityKey);
+  if (!matching.length) throw new Error(`Card metadata override ${identityKey} does not match a synced card identity.`);
+  for (const card of matching) Object.assign(card, override);
 }
 
 const setMetadata = sets.map((code) => {

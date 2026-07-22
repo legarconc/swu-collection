@@ -95,6 +95,32 @@ describe("collection imports", () => {
     expect(restored).toEqual(original);
   });
 
+  it("normalizes HoloScan's foil-first Prestige variant name", () => {
+    const withPrestige = {
+      ...database,
+      cards: {
+        ...database.cards,
+        "ASH-835": {
+          ...database.cards["SOR-379"],
+          key: "ASH-835", set: "ASH", number: 835, name: "Grand Admiral Thrawn",
+          defaultVariant: "Prestige Foil", identityKey: "ASH-33",
+          printings: {
+            "Prestige Foil": {
+              variant: "Prestige Foil", apiNumber: "835F", image: "835F.png",
+              backImage: null, marketPrice: 17.95, raw: {},
+            },
+          },
+        },
+      },
+    } satisfies CardDatabase;
+    const text = "# count,name,subtitle,set,number,variant,rarity,is_foil,price_each,price_total\n1,Grand Admiral Thrawn,Orchestrating His Return,ASH,835,Foil Prestige,Rare,True,17.95 €,17.95 €";
+    const result = parseCollectionFile(text, withPrestige);
+    expect(result.unknown).toHaveLength(0);
+    expect(result.entries).toEqual([
+      { set: "ASH", number: 835, count: 1, variant: "Prestige Foil", priceEach: 17.95 },
+    ]);
+  });
+
   it("exports a HoloDeck-compatible full TXT backup", () => {
     const original = [{ set: "SOR", number: 379, count: 2, variant: "Hyperspace Foil", priceEach: 2 }];
     const text = exportFull(original, database);

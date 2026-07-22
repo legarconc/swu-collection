@@ -37,6 +37,26 @@ const parsePrice = (value: unknown): number | undefined => {
   return Number.isFinite(parsed) ? parsed : undefined;
 };
 
+const resolveHolodeckVariant = (
+  database: CardDatabase,
+  set: string,
+  number: number,
+  value: string,
+  isFoil: boolean,
+): string | null => {
+  const card = database.cards[`${set}-${number}`];
+  if (!card) return null;
+  const requested = value.trim();
+  if (!requested) return deriveVariant(database, set, number, isFoil);
+  const variants = Object.keys(card.printings);
+  const exact = variants.find((variant) => variant.toLowerCase() === requested.toLowerCase());
+  if (exact) return exact;
+  // HoloScan currently exports the ASH Prestige treatment as "Foil Prestige",
+  // while SWU-DB names the same printing "Prestige Foil".
+  const foilLast = requested.replace(/^foil\s+(.+)$/i, "$1 Foil");
+  return variants.find((variant) => variant.toLowerCase() === foilLast.toLowerCase()) || null;
+};
+
 export function parseCollectionFile(text: string, database: CardDatabase): ImportResult {
   const format = detectFormat(text);
   const cleanText = text.replace(/^\uFEFF/, "").replace(/^#\s*/, "");
@@ -79,7 +99,7 @@ export function parseCollectionFile(text: string, database: CardDatabase): Impor
     }
     const isFoil = /^(true|1|yes)$/i.test(String(row.isfoil ?? row.is_foil ?? ""));
     const variant = format === "holodeck"
-      ? String(row.variant || deriveVariant(database, set, number, isFoil) || "Standard").trim()
+      ? resolveHolodeckVariant(database, set, number, String(row.variant || ""), isFoil)
       : deriveVariant(database, set, number, isFoil);
     if (!variant) {
       unknown.push({ row: rowNumber, set, number, reason: "Printing variant could not be determined" });

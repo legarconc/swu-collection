@@ -7,12 +7,13 @@ This directory is the durable research layer behind the site's deterministic dec
 - [general-strategy.md](general-strategy.md) — format-independent rules, archetypes, deck-building heuristics, curves, mulligans, sequencing, and playtesting.
 - [deck-data-schema.md](deck-data-schema.md) — the contract between researched deck data, validation, UI, and SWUDB export.
 - [sets/spark-of-rebellion.md](sets/spark-of-rebellion.md) — Spark of Rebellion mechanics, historical archetypes, current format status, and research sources.
+- [sets/ashes-of-the-empire.md](sets/ashes-of-the-empire.md) — Ashes of the Empire mechanics, Spotlight leaders, archetype seeds, and current format status.
 - Add future set guides as `sets/<set-name>.md`. Keep collection quantities and private exports out of these committed documents.
 
 ## Sources of truth
 
 1. Official rules and format legality come from Fantasy Flight Games.
-2. Public card metadata comes from `data/cards.json`.
+2. Public card metadata comes from generated `data/cards.json`; confirmed upstream name/subtitle corrections live in `data/card-overrides.json` and are reapplied by every refresh.
 3. General recommendations come from the strategy guide and cited historical sources.
 4. Owned quantities and variants come only from ignored local collection exports or on-device collection data.
 5. Published recommendations live in `site/src/data/decks.json`.
@@ -36,6 +37,8 @@ Rules and recommendations must remain visibly distinct. A minimum deck size or c
 7. Run `npm test` and `npm run build` inside `site/`.
 8. Goldfish opening hands, then test against at least one aggro, midrange, and control reference deck.
 9. Record meaningful strategic conclusions in the relevant set guide; do not record private collection rows.
+
+If a scan disagrees with public metadata, verify the printed card before changing the private collection. A wrong set code or collector number belongs in the collection export; a confirmed API spelling or subtitle error belongs in `data/card-overrides.json`. Overrides use canonical gameplay identity keys and therefore apply to Standard, Hyperspace, and foil printings together.
 
 ## Adding more decks
 
@@ -65,4 +68,3 @@ When the portfolio grows, preserve a range of difficulties and play experiences.
 - Keep set research modular. Cross-set conclusions can be promoted into the general guide once they prove broadly applicable.
 - Never commit collection exports, collection-derived price rows, or temporary optimization output.
 - Runtime behavior remains deterministic: no model call, secret, account, or network recommendation service is required.
-
