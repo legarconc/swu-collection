@@ -1,0 +1,429 @@
+# count,name,subtitle,set,number,variant,rarity,is_foil,price_each,price_total
+7,Open Fire,,SOR,172,Standard,Common,False,0.02 €,0.14 €
+4,Consortium StarViper,,SOR,112,Standard,Common,False,0.02 €,0.08 €
+3,Gladiator Star Destroyer,,SOR,86,Standard,Common,False,0.02 €,0.06 €
+2,Relentless,Konstantine's Folly,SOR,89,Standard,Rare,False,0.02 €,0.04 €
+6,Superlaser Technician,,SOR,83,Standard,Common,False,0.02 €,0.12 €
+3,Grand Moff Tarkin,Death Star Overseer,SOR,84,Standard,Special,False,0.02 €,0.06 €
+1,Agent Kallus,Seeking the Rebels,SOR,379,Hyperspace Foil,Rare,True,2.00 €,2.00 €
+4,Mercenary Company,,SOR,117,Standard,Common,False,0.02 €,0.08 €
+3,Blizzard Assault AT-AT,,SOR,88,Standard,Uncommon,False,0.02 €,0.06 €
+3,Strike True,,SOR,127,Standard,Common,False,0.02 €,0.06 €
+2,Overwhelming Barrage,,SOR,92,Standard,Uncommon,False,0.02 €,0.04 €
+4,Recruit,,SOR,123,Standard,Common,False,0.02 €,0.08 €
+4,Death Trooper,,SOR,33,Standard,Common,False,0.02 €,0.08 €
+3,Green Squadron A-Wing,,SOR,141,Standard,Common,False,0.02 €,0.06 €
+1,Search Your Feelings,,SOR,42,Standard,Rare,False,0.02 €,0.02 €
+2,Vanguard Ace,,SOR,191,Standard,Uncommon,False,0.02 €,0.04 €
+1,Black One,Scourge of Starkiller Base,SOR,147,Standard,Legendary,False,0.10 €,0.10 €
+2,Han Solo,Reluctant Hero,SOR,198,Standard,Rare,False,0.02 €,0.04 €
+2,Chewbacca,Loyal Companion,SOR,196,Standard,Uncommon,False,0.02 €,0.04 €
+3,Auzituck Liberator Gunship,,SOR,195,Standard,Common,False,0.02 €,0.06 €
+3,Rogue Operative,,SOR,194,Standard,Common,False,0.02 €,0.06 €
+3,Leia Organa,Defiant Princess,SOR,189,Standard,Special,False,0.02 €,0.06 €
+1,Vigilance,,SOR,58,Standard Foil,Legendary,True,4.00 €,4.00 €
+1,Lieutenant Childsen,Death Star Prison Warden,SOR,35,Standard,Uncommon,False,0.02 €,0.02 €
+6,Cell Block Guard,,SOR,229,Standard,Common,False,0.02 €,0.12 €
+6,Imperial Interceptor,,SOR,132,Standard,Common,False,0.02 €,0.12 €
+3,Admiral Motti,Brazen and Scornful,SOR,226,Standard,Special,False,0.02 €,0.06 €
+5,Death Star Stormtrooper,,SOR,128,Standard,Common,False,0.02 €,0.10 €
+6,Waylay,,SOR,222,Standard,Common,False,0.02 €,0.12 €
+3,I Am Your Father,,SOR,233,Standard,Special,False,0.02 €,0.06 €
+5,Surprise Strike,,SOR,220,Standard,Common,False,0.02 €,0.10 €
+3,Shoot First,,SOR,217,Standard,Uncommon,False,0.02 €,0.06 €
+6,Asteroid Sanctuary,,SOR,218,Standard,Common,False,0.02 €,0.12 €
+5,TIE/ln Fighter,,SOR,225,Standard,Common,False,0.02 €,0.10 €
+2,Admiral Piett,Captain of the Executor,SOR,79,Standard,Uncommon,False,0.02 €,0.04 €
+3,Administrator's Tower,,SOR,29,Standard,Common,False,0.02 €,0.06 €
+3,IG-88,Ruthless Bounty Hunter,SOR,12,Standard,Common,False,0.02 €,0.06 €
+2,Boba Fett,Collecting the Bounty,SOR,15,Standard,Common,False,0.02 €,0.04 €
+1,Luke Skywalker,Faithful Friend,SOR,5,Standard,Special,False,0.30 €,0.30 €
+3,Grand Moff Tarkin,Oversector Governor,SOR,7,Standard,Common,False,0.02 €,0.06 €
+2,Capital City,,SOR,286,Hyperspace,Common,False,0.02 €,0.04 €
+5,Command Center,,SOR,23,Standard,Common,False,0.02 €,0.10 €
+4,Chopper Base,,SOR,30,Standard,Common,False,0.02 €,0.08 €
+7,Alliance X-Wing,,SOR,237,Standard,Common,False,0.02 €,0.14 €
+6,Restored ARC-170,,SOR,44,Standard,Common,False,0.02 €,0.12 €
+2,Wing Leader,,SOR,241,Standard,Uncommon,False,0.02 €,0.04 €
+1,System Patrol Craft,,SOR,66,Standard Foil,Common,True,0.02 €,0.02 €
+4,System Patrol Craft,,SOR,66,Standard,Common,False,0.02 €,0.08 €
+3,R2-D2,Ignoring Protocol,SOR,236,Standard,Special,False,0.02 €,0.06 €
+3,2-1B Surgical Droid,,SOR,59,Standard,Common,False,0.02 €,0.06 €
+5,Rebel Pathfinder,,SOR,239,Standard,Common,False,0.02 €,0.10 €
+3,C-3PO,Protocol Droid,SOR,238,Standard,Special,False,0.02 €,0.06 €
+4,Battlefield Marine,,SOR,95,Standard,Common,False,0.02 €,0.08 €
+6,Fleet Lieutenant,,SOR,240,Standard,Common,False,0.02 €,0.12 €
+4,Cloud City Wing Guard,,SOR,63,Standard,Common,False,0.02 €,0.08 €
+2,Yoda,Old Master,SOR,45,Standard,Uncommon,False,0.02 €,0.04 €
+4,Wilderness Fighter,,SOR,64,Standard,Common,False,0.02 €,0.08 €
+2,Baze Malbus,Temple Guardian,SOR,65,Standard,Uncommon,False,0.02 €,0.04 €
+6,Consular Security Force,,SOR,46,Standard,Common,False,0.02 €,0.12 €
+2,General Dodonna,Massassi Group Commander,SOR,242,Standard,Uncommon,False,0.02 €,0.04 €
+3,Snowspeeder,,SOR,244,Standard,Common,False,0.02 €,0.06 €
+3,Vigilant Honor Guards,,SOR,48,Standard,Common,False,0.02 €,0.06 €
+1,Obi-Wan Kenobi,Following Fate,SOR,49,Standard,Rare,False,0.02 €,0.02 €
+2,Rogue Squadron Skirmisher,,SOR,101,Standard,Uncommon,False,0.02 €,0.04 €
+5,Repair,,SOR,74,Standard,Common,False,0.02 €,0.10 €
+2,Prepare for Takeoff,,SOR,125,Standard,Uncommon,False,0.02 €,0.04 €
+1,Make an Opening,,SOR,341,Hyperspace,Common,False,0.02 €,0.02 €
+4,Make an Opening,,SOR,76,Standard,Common,False,0.02 €,0.08 €
+4,Resupply,,SOR,126,Standard,Common,False,0.02 €,0.08 €
+3,Resilient,,SOR,69,Standard,Common,False,0.02 €,0.06 €
+3,Luke's Lightsaber,,SOR,53,Standard,Special,False,0.02 €,0.06 €
+1,Jedi Lightsaber,,SOR,54,Standard,Rare,False,0.06 €,0.06 €
+4,TIE Advanced,,SOR,231,Standard,Uncommon,False,0.02 €,0.08 €
+1,Darth Vader,Dark Lord of the Sith,SOR,10,Standard,Special,False,0.60 €,0.60 €
+6,First Legion Snowtrooper,,SOR,130,Standard,Common,False,0.02 €,0.12 €
+3,Gamorrean Guards,,SOR,211,Standard,Common,False,0.02 €,0.06 €
+2,Pirated Starfighter,,SOR,209,Standard,Uncommon,False,0.02 €,0.04 €
+4,Cantina Braggart,,SOR,157,Standard,Common,False,0.02 €,0.08 €
+4,Force Choke,,SOR,139,Standard,Uncommon,False,0.02 €,0.08 €
+3,Vader's Lightsaber,,SOR,136,Standard,Special,False,0.02 €,0.06 €
+4,Confiscate,,SOR,251,Standard,Common,False,0.02 €,0.08 €
+3,Admiral Ozzel,Overconfident,SOR,129,Standard,Uncommon,False,0.02 €,0.06 €
+4,AT-ST,,SOR,232,Standard,Common,False,0.02 €,0.08 €
+4,Outer Rim Headhunter,,SOR,208,Standard,Common,False,0.02 €,0.08 €
+4,Infiltrator's Skill,,SOR,166,Standard,Common,False,0.02 €,0.08 €
+1,Emperor Palpatine,Master of the Dark Side,SOR,135,Standard,Rare,False,0.02 €,0.02 €
+3,Maximum Firepower,,SOR,234,Standard,Common,False,0.02 €,0.06 €
+3,Corellian Freighter,,SOR,250,Standard,Common,False,0.02 €,0.06 €
+1,Snapshot Reflexes,,SOR,477,Hyperspace,Common,False,0.02 €,0.02 €
+2,Forced Surrender,,SOR,175,Standard,Uncommon,False,0.02 €,0.04 €
+3,ISB Agent,,SOR,176,Standard,Common,False,0.02 €,0.06 €
+2,General Veers,Blizzard Force Commander,SOR,230,Standard,Uncommon,False,0.02 €,0.04 €
+5,Viper Probe Droid,,SOR,228,Standard,Common,False,0.02 €,0.10 €
+3,Sabine Wren,Galvanized Revolutionary,SOR,14,Standard,Common,False,0.02 €,0.06 €
+1,Command Center,,SOR,289,Hyperspace,Common,False,0.02 €,0.02 €
+4,Bounty Hunter Crew,,SOR,183,Standard,Common,False,0.02 €,0.08 €
+4,Restock,,SOR,252,Standard,Common,False,0.02 €,0.08 €
+1,Vanguard Ace,,SOR,191,Standard Foil,Uncommon,True,0.02 €,0.02 €
+2,Capital City,,SOR,20,Standard,Common,False,0.02 €,0.04 €
+2,Occupier Siege Tank,,SOR,165,Standard,Common,False,0.02 €,0.04 €
+3,Partisan Insurgent,,SOR,159,Standard,Common,False,0.02 €,0.06 €
+3,Tactical Advantage,,SOR,124,Standard,Common,False,0.02 €,0.06 €
+3,Guardian of the Whills,,SOR,61,Standard,Common,False,0.02 €,0.06 €
+2,Underworld Thug,,SOR,247,Standard,Common,False,0.02 €,0.04 €
+2,Crafty Smuggler,,SOR,207,Standard,Common,False,0.02 €,0.04 €
+1,Rebel Assault,,SOR,103,Standard,Uncommon,False,0.02 €,0.02 €
+1,Strafing Gunship,,SOR,212,Standard,Rare,False,0.02 €,0.02 €
+1,The Emperor's Legion,,SOR,91,Standard Foil,Rare,True,0.09 €,0.09 €
+1,Grand Moff Tarkin,Oversector Governor,SOR,274,Hyperspace,Common,False,0.02 €,0.02 €
+1,Kestro City,,SOR,293,Hyperspace,Common,False,0.02 €,0.02 €
+2,Guerilla Attack Pod,,SOR,148,Standard,Common,False,0.02 €,0.04 €
+2,Homestead Militia,,SOR,113,Standard,Common,False,0.02 €,0.04 €
+3,Mission Briefing,,SOR,171,Standard,Common,False,0.02 €,0.06 €
+2,Echo Base Defender,,SOR,98,Standard,Common,False,0.02 €,0.04 €
+2,Frontier AT-RT,,SOR,249,Standard,Common,False,0.02 €,0.04 €
+2,Seventh Fleet Defender,,SOR,180,Standard,Common,False,0.02 €,0.04 €
+1,Takedown,,SOR,77,Standard,Uncommon,False,0.02 €,0.02 €
+1,No Good to Me Dead,,SOR,186,Standard,Uncommon,False,0.02 €,0.02 €
+1,Obi-Wan Kenobi,Following Fate,SOR,315,Hyperspace,Rare,False,3.00 €,3.00 €
+1,Smoke and Cinders,,SOR,174,Standard,Rare,False,0.02 €,0.02 €
+1,Snowspeeder,,SOR,244,Standard Foil,Common,True,0.02 €,0.02 €
+1,Han Solo,Audacious Smuggler,SOR,17,Standard,Rare,False,0.02 €,0.02 €
+4,Snapshot Reflexes,,SOR,215,Standard,Common,False,0.02 €,0.08 €
+6,Snowtrooper Lieutenant,,SOR,227,Standard,Common,False,0.02 €,0.12 €
+2,Distant Patroller,,SOR,60,Standard,Uncommon,False,0.02 €,0.04 €
+1,Bossk,Deadly Stalker,SOR,182,Standard,Uncommon,False,0.02 €,0.02 €
+1,Hardpoint Heavy Blaster,,SOR,121,Standard,Uncommon,False,0.02 €,0.02 €
+1,Vigilance,,SOR,58,Standard,Legendary,False,3.00 €,3.00 €
+1,Sabine Wren,Galvanized Revolutionary,SOR,280,Hyperspace,Common,False,0.02 €,0.02 €
+3,Dagobah Swamp,,SOR,21,Standard,Common,False,0.02 €,0.06 €
+3,Vanguard Infantry,,SOR,108,Standard,Common,False,0.02 €,0.06 €
+3,Wampa,,SOR,164,Standard,Common,False,0.02 €,0.06 €
+1,Keep Fighting,,SOR,432,Hyperspace,Common,False,0.02 €,0.02 €
+4,Mining Guild TIE Fighter,,SOR,206,Standard,Common,False,0.02 €,0.08 €
+3,Lothal Insurgent,,SOR,190,Standard,Common,False,0.02 €,0.06 €
+1,Rallying Cry,,SOR,154,Standard,Uncommon,False,0.02 €,0.02 €
+1,The Force Is With Me,,SOR,55,Standard,Uncommon,False,0.02 €,0.02 €
+1,Blizzard Assault AT-AT,,SOR,352,Hyperspace,Uncommon,False,0.04 €,0.04 €
+1,Agent Kallus,Seeking the Rebels,SOR,115,Standard,Rare,False,0.02 €,0.02 €
+1,Vanguard Infantry,,SOR,108,Standard Foil,Common,True,0.02 €,0.02 €
+3,Rugged Survivors,,SOR,67,Standard,Common,False,0.02 €,0.06 €
+3,Precision Fire,,SOR,168,Standard,Common,False,0.02 €,0.06 €
+3,Academy Defense Walker,,SOR,37,Standard,Common,False,0.02 €,0.06 €
+2,Disabling Fang Fighter,,SOR,162,Standard,Common,False,0.02 €,0.04 €
+2,Syndicate Lackeys,,SOR,213,Standard,Common,False,0.02 €,0.04 €
+2,Jawa Scavenger,,SOR,205,Standard,Common,False,0.02 €,0.04 €
+2,97th Legion,Keeping the Peace on Sullust,SOR,118,Standard,Uncommon,False,0.02 €,0.04 €
+1,Star Wing Scout,,SOR,163,Standard,Uncommon,False,0.02 €,0.02 €
+1,Kanan Jarrus,Revealed Jedi,SOR,47,Standard,Uncommon,False,0.02 €,0.02 €
+1,Spark of Rebellion,,SOR,200,Standard,Rare,False,0.08 €,0.08 €
+1,Baze Malbus,Temple Guardian,SOR,65,Standard Foil,Uncommon,True,0.02 €,0.02 €
+2,Director Krennic,Aspiring to Authority,SOR,1,Standard,Common,False,0.02 €,0.04 €
+3,Echo Base,,SOR,24,Standard,Common,False,0.02 €,0.06 €
+2,Medal Ceremony,,SOR,245,Standard,Common,False,0.02 €,0.04 €
+2,Seasoned Shoretrooper,,SOR,81,Standard,Common,False,0.02 €,0.04 €
+1,Disarm,,SOR,216,Standard,Common,False,0.02 €,0.02 €
+2,Volunteer Soldier,,SOR,248,Standard,Common,False,0.02 €,0.04 €
+1,Smuggling Compartment,,SOR,214,Standard,Uncommon,False,0.02 €,0.02 €
+1,Sabine Wren,Explosives Artist,SOR,142,Standard,Uncommon,False,0.02 €,0.02 €
+1,Wolffe,Suspicious Veteran,SOR,160,Standard,Rare,False,0.02 €,0.02 €
+1,No Good to Me Dead,,SOR,449,Hyperspace Foil,Uncommon,True,1.50 €,1.50 €
+2,Jyn Erso,Resisting Oppression,SOR,18,Standard,Common,False,0.02 €,0.04 €
+4,Catacombs of Cadera,,SOR,26,Standard,Common,False,0.02 €,0.08 €
+3,SpecForce Soldier,,SOR,140,Standard,Common,False,0.02 €,0.06 €
+2,Steadfast Battalion,,SOR,116,Standard,Common,False,0.02 €,0.04 €
+2,Cargo Juggernaut,,SOR,68,Standard,Common,False,0.02 €,0.04 €
+2,Keep Fighting,,SOR,169,Standard,Common,False,0.02 €,0.04 €
+2,Escort Skiff,,SOR,114,Standard,Common,False,0.02 €,0.04 €
+2,Outmaneuver,,SOR,221,Standard,Uncommon,False,0.02 €,0.04 €
+2,Fighters for Freedom,,SOR,143,Standard,Uncommon,False,0.02 €,0.04 €
+1,Del Meeko,Providing Overwatch,SOR,34,Standard,Rare,False,0.02 €,0.02 €
+1,Takedown,,SOR,77,Standard Foil,Uncommon,True,0.05 €,0.05 €
+2,Jedha Agitator,,SOR,158,Standard,Common,False,0.02 €,0.04 €
+2,Alliance Dispatcher,,SOR,93,Standard,Common,False,0.02 €,0.04 €
+2,Devotion,,SOR,70,Standard,Uncommon,False,0.02 €,0.04 €
+2,Bamboozle,,SOR,199,Standard,Uncommon,False,0.02 €,0.04 €
+2,Reinforcement Walker,,SOR,119,Standard,Uncommon,False,0.02 €,0.04 €
+1,Sneak Attack,,SOR,219,Standard,Rare,False,0.02 €,0.02 €
+1,Boba Fett,Disintegrator,SOR,179,Standard Foil,Legendary,True,3.80 €,3.80 €
+1,Iden Versio,Inferno Squad Commander,SOR,2,Standard,Rare,False,0.02 €,0.02 €
+2,Kestro City,,SOR,27,Standard,Common,False,0.02 €,0.04 €
+2,Academy Training,,SOR,120,Standard,Common,False,0.02 €,0.04 €
+2,Scout Bike Pursuer,,SOR,32,Standard,Common,False,0.02 €,0.04 €
+2,Ardent Sympathizer,,SOR,161,Standard,Common,False,0.02 €,0.04 €
+2,Regional Sympathizers,,SOR,243,Standard,Common,False,0.02 €,0.04 €
+3,Patrolling V-Wing,,SOR,111,Standard,Common,False,0.02 €,0.06 €
+2,Moment of Peace,,SOR,73,Standard,Common,False,0.02 €,0.04 €
+2,Power Failure,,SOR,170,Standard,Uncommon,False,0.02 €,0.04 €
+2,AT-AT Suppressor,,SOR,39,Standard,Uncommon,False,0.02 €,0.04 €
+1,You're My Only Hope,,SOR,246,Standard,Rare,False,0.02 €,0.02 €
+1,Make an Opening,,SOR,76,Standard Foil,Common,True,0.02 €,0.02 €
+2,Leia Organa,Alliance General,SOR,9,Standard,Common,False,0.02 €,0.04 €
+1,Repair,,SOR,339,Hyperspace,Common,False,0.02 €,0.02 €
+1,Entrenched,,SOR,72,Standard,Uncommon,False,0.02 €,0.02 €
+1,Ezra Bridger,Resourceful Troublemaker,SOR,192,Standard,Uncommon,False,0.02 €,0.02 €
+1,Colonel Yularen,ISB Director,SOR,109,Standard,Uncommon,False,0.02 €,0.02 €
+1,Jedha City,,SOR,28,Standard,Rare,False,0.02 €,0.02 €
+1,Precision Fire,,SOR,168,Standard Foil,Common,True,0.02 €,0.02 €
+1,Chirrut Îmwe,One With The Force,SOR,4,Standard,Rare,False,0.02 €,0.02 €
+1,"Benthic ""Two Tubes""",Partisan Lieutenant,SOR,156,Standard,Uncommon,False,0.02 €,0.02 €
+1,Inferno Four,Unforgetting,SOR,31,Standard,Uncommon,False,0.02 €,0.02 €
+2,Rukh,Thrawn's Assassin,SOR,85,Standard,Rare,False,0.02 €,0.04 €
+1,Jawa Scavenger,,SOR,205,Standard Foil,Common,True,0.02 €,0.02 €
+1,Emperor Palpatine,Galactic Ruler,SOR,6,Standard,Rare,False,0.02 €,0.02 €
+1,Cantina Bouncer,,SOR,202,Standard,Uncommon,False,0.02 €,0.02 €
+1,Wampa,,SOR,164,Standard Foil,Common,True,0.02 €,0.02 €
+1,Administrator's Tower,,SOR,295,Hyperspace,Common,False,0.02 €,0.02 €
+1,Frontier AT-RT,,SOR,507,Hyperspace,Common,False,0.02 €,0.02 €
+1,Emperor Palpatine,Master of the Dark Side,SOR,399,Hyperspace,Rare,False,1.90 €,1.90 €
+1,I Had No Choice,,SOR,187,Standard,Rare,False,0.02 €,0.02 €
+1,Blizzard Assault AT-AT,,SOR,88,Standard Foil,Uncommon,True,0.02 €,0.02 €
+1,Mining Guild TIE Fighter,,SOR,468,Hyperspace,Common,False,0.02 €,0.02 €
+1,Greedo,Slow on the Draw,SOR,204,Standard,Uncommon,False,0.02 €,0.02 €
+2,Bright Hope,The Last Transport,SOR,99,Standard,Uncommon,False,0.02 €,0.04 €
+1,Distant Patroller,,SOR,325,Hyperspace,Uncommon,False,0.05 €,0.05 €
+1,Darth Vader,Commanding the First Legion,SOR,87,Standard,Legendary,False,6.00 €,6.00 €
+1,Recruit,,SOR,123,Standard Foil,Common,True,0.02 €,0.02 €
+2,Chewbacca,Walking Carpet,SOR,3,Standard,Common,False,0.02 €,0.04 €
+1,Swoop Racer,,SOR,210,Standard,Common,False,0.02 €,0.02 €
+1,Fifth Brother,Fear Hunter,SOR,131,Standard,Uncommon,False,0.02 €,0.02 €
+1,Security Complex,,SOR,19,Standard,Rare,False,0.02 €,0.02 €
+1,Zeb Orrelios,Headstrong Warrior,SOR,146,Standard Foil,Uncommon,True,0.02 €,0.02 €
+1,Boba Fett,Collecting the Bounty,SOR,281,Hyperspace,Common,False,0.02 €,0.02 €
+1,Echo Base Defender,,SOR,362,Hyperspace,Common,False,0.02 €,0.02 €
+1,Attack Pattern Delta,,SOR,106,Standard,Uncommon,False,0.02 €,0.02 €
+1,Force Throw,,SOR,167,Standard,Uncommon,False,0.02 €,0.02 €
+2,Seventh Sister,Implacable Inquisitor,SOR,133,Standard,Rare,False,0.02 €,0.04 €
+1,Medal Ceremony,,SOR,245,Standard Foil,Common,True,0.02 €,0.02 €
+1,Han Solo,Audacious Smuggler,SOR,283,Hyperspace,Rare,False,0.20 €,0.20 €
+1,General Tagge,Concerned Commander,SOR,80,Standard,Uncommon,False,0.02 €,0.02 €
+1,Zeb Orrelios,Headstrong Warrior,SOR,146,Standard,Uncommon,False,0.02 €,0.02 €
+1,Protector,,SOR,57,Standard,Uncommon,False,0.02 €,0.02 €
+1,Heroic Sacrifice,,SOR,150,Standard,Rare,False,0.02 €,0.02 €
+1,Bail Organa,Rebel Councilor,SOR,94,Standard Foil,Rare,True,0.07 €,0.07 €
+1,U-Wing Reinforcement,,SOR,104,Standard,Rare,False,0.05 €,0.05 €
+1,Snapshot Reflexes,,SOR,215,Standard Foil,Common,True,0.02 €,0.02 €
+1,Wedge Antilles,Star of the Rebellion,SOR,100,Standard,Rare,False,0.02 €,0.02 €
+1,Scout Bike Pursuer,,SOR,32,Standard Foil,Common,True,0.02 €,0.02 €
+5,Vanquish,,SOR,78,Standard,Common,False,0.02 €,0.10 €
+1,Power of the Dark Side,,SOR,41,Standard,Uncommon,False,0.02 €,0.02 €
+1,Bib Fortuna,Jabba's Majordomo,SOR,177,Standard,Uncommon,False,0.02 €,0.02 €
+1,Home One,Alliance Flagship,SOR,102,Standard,Legendary,False,2.80 €,2.80 €
+1,Command,,SOR,371,Hyperspace Foil,Legendary,True,9.50 €,9.50 €
+1,Imperial Interceptor,,SOR,396,Hyperspace,Common,False,0.02 €,0.02 €
+1,Mon Mothma,Voice Of The Rebellion,SOR,96,Standard,Uncommon,False,0.02 €,0.02 €
+1,The Ghost,Spectre Home Base,SOR,50,Standard,Uncommon,False,0.02 €,0.02 €
+1,Electrostaff,,SOR,71,Standard,Rare,False,0.02 €,0.02 €
+1,Tarkintown,,SOR,25,Standard Foil,Rare,True,0.09 €,0.09 €
+1,Karabast,,SOR,414,Hyperspace,Uncommon,False,0.02 €,0.02 €
+1,Mace Windu,Party Crasher,SOR,149,Standard,Legendary,False,0.50 €,0.50 €
+1,Kanan Jarrus,Revealed Jedi,SOR,47,Standard Foil,Uncommon,True,0.04 €,0.04 €
+1,Cartel Spacer,,SOR,178,Standard,Uncommon,False,0.02 €,0.02 €
+1,Gladiator Star Destroyer,,SOR,86,Standard Foil,Common,True,0.02 €,0.02 €
+1,Repair,,SOR,74,Standard Foil,Common,True,0.02 €,0.02 €
+1,Homestead Militia,,SOR,377,Hyperspace,Common,False,0.02 €,0.02 €
+1,Regional Governor,,SOR,62,Standard,Rare,False,0.02 €,0.02 €
+1,Restored ARC-170,,SOR,44,Standard Foil,Common,True,0.02 €,0.02 €
+1,Chewbacca,Walking Carpet,SOR,271,Hyperspace,Common,False,0.02 €,0.02 €
+1,Karabast,,SOR,151,Standard,Uncommon,False,0.02 €,0.02 €
+1,Open Fire,,SOR,172,Standard Foil,Common,True,0.02 €,0.02 €
+1,Luke Skywalker,I Can Save Him,ASH,269,Hyperspace,Special,False,0.10 €,0.10 €
+1,Emperor Palpatine,According to My Design,ASH,279,Hyperspace,Special,False,0.10 €,0.10 €
+1,Greef Karga,Gracious Magistrate,ASH,17,Standard,Common,False,0.02 €,0.02 €
+1,Ancient Henge,,ASH,23,Standard,Common,False,0.02 €,0.02 €
+1,Children of the Watch,,ASH,111,Standard,Common,False,0.02 €,0.02 €
+1,Trexler Armored Marauder,,ASH,82,Standard,Common,False,0.02 €,0.02 €
+1,Warrior's Legacy,,ASH,134,Standard,Common,False,0.02 €,0.02 €
+1,Palace Chef Droid,,ASH,73,Standard,Common,False,0.02 €,0.02 €
+1,Attendant Navigator,,ASH,238,Standard,Common,False,0.02 €,0.02 €
+1,Noti Nomad,,ASH,333,Hyperspace,Common,False,0.03 €,0.03 €
+2,Full of Surprises,,ASH,232,Standard,Common,False,0.02 €,0.04 €
+2,Desert Sharpshooter,,ASH,170,Standard,Common,False,0.02 €,0.04 €
+1,Flanking TIE Interceptor,,ASH,215,Standard,Common,False,0.02 €,0.02 €
+1,Intimidation,,ASH,687,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Mayor's Majordomo,No Problem Groveling,ASH,217,Standard,Uncommon,False,0.05 €,0.05 €
+2,Mandalorian Flagship,Captured from the Empire,ASH,113,Standard,Uncommon,False,0.02 €,0.04 €
+1,Sabine's Lightsaber,Not Alone,ASH,378,Hyperspace,Rare,False,1.95 €,1.95 €
+1,Sabine's Lightsaber,Not Alone,ASH,114,Standard,Rare,False,1.00 €,1.00 €
+1,Grogu,Charming Companion,ASH,282,Hyperspace,Rare,False,0.15 €,0.15 €
+1,Diplomatic Pageantry,,ASH,495,Hyperspace,Common,False,0.03 €,0.03 €
+1,Intimidation,,ASH,449,Hyperspace,Common,False,0.03 €,0.03 €
+2,N5 Sentry Droid,,ASH,516,Hyperspace,Common,False,0.03 €,0.06 €
+1,Turning the Tide,,ASH,402,Hyperspace,Common,False,0.02 €,0.02 €
+2,Galvanized Leap,,ASH,452,Hyperspace,Common,False,0.03 €,0.06 €
+1,Grav Charge,,ASH,349,Hyperspace,Uncommon,False,0.35 €,0.35 €
+2,Far Far Away,,ASH,500,Hyperspace,Uncommon,False,0.19 €,0.38 €
+1,Treacherous Minefield,,ASH,450,Hyperspace,Rare,False,2.50 €,2.50 €
+1,Grand Admiral Thrawn,Orchestrating His Return,ASH,835,Foil Prestige,Rare,True,17.95 €,17.95 €
+1,Jod Na Nawood,Keeping Secrets,ASH,721,Hyperspace Foil,Rare,True,12.00 €,12.00 €
+1,Morgan Elsbeth,Life Abandoned,ASH,552,Hyperspace Foil,Uncommon,True,0.39 €,0.39 €
+1,Forest Patroller,,ASH,598,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,LEP Ratcatcher,,ASH,761,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,TIE Striker,,ASH,643,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Fang Fighter Squadron,,ASH,632,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Ahsoka Tano,Trust in the Force,ASH,9,Standard,Common,False,0.02 €,0.02 €
+1,Emperor's Throne Room,,ASH,21,Standard,Common,False,0.02 €,0.02 €
+1,Consortium StarViper,,ASH,122,Standard,Common,False,0.02 €,0.02 €
+1,Durasteel Plating,,ASH,86,Standard,Common,False,0.02 €,0.02 €
+1,Pathfinder Sergeant,,ASH,106,Standard,Common,False,0.02 €,0.02 €
+1,Battered Haulcraft,,ASH,71,Standard,Common,False,0.02 €,0.02 €
+1,The Way of the Mand'alor,,ASH,263,Standard,Common,False,0.02 €,0.02 €
+2,Flarestar Attack Shuttle,,ASH,167,Standard,Common,False,0.02 €,0.04 €
+1,Diplomatic Pageantry,,ASH,231,Standard,Common,False,0.02 €,0.02 €
+2,Praetorian Elite,,ASH,145,Standard,Common,False,0.02 €,0.04 €
+1,Tatooine Sand Beast,,ASH,727,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Captain Pellaeon,Plotting from the Shadows,ASH,93,Standard,Uncommon,False,0.05 €,0.05 €
+1,Outcast,Mercenary Starship,ASH,41,Standard,Uncommon,False,0.03 €,0.03 €
+1,Bokken Saber,,ASH,180,Standard,Uncommon,False,0.03 €,0.03 €
+1,Marrok,Mysterious Warrior,ASH,30,Standard,Rare,False,4.39 €,4.39 €
+1,Baylan Skoll,Power Beyond Dream,ASH,3,Standard,Common,False,0.02 €,0.02 €
+1,Emperor's Observatory,,ASH,289,Hyperspace,Common,False,0.02 €,0.02 €
+1,Imperial Defector,,ASH,250,Standard,Common,False,0.02 €,0.02 €
+1,Stronger Together,,ASH,140,Standard,Common,False,0.02 €,0.02 €
+1,Foundling Rescue,,ASH,92,Standard,Common,False,0.02 €,0.02 €
+1,AT-ST Raider,,ASH,98,Standard,Common,False,0.02 €,0.02 €
+1,Tatooine Sand Beast,,ASH,489,Hyperspace,Common,False,0.02 €,0.02 €
+2,Amnesty Officer,,ASH,214,Standard,Common,False,0.02 €,0.04 €
+1,Mark My Words,,ASH,181,Standard,Common,False,0.02 €,0.02 €
+1,Rebel Infiltrators,,ASH,256,Standard,Common,False,0.02 €,0.02 €
+2,Heroic Purrgil,,ASH,207,Standard,Common,False,0.02 €,0.04 €
+1,Peridea Bandit,,ASH,692,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Trask Walker,,ASH,133,Standard,Uncommon,False,0.05 €,0.05 €
+1,The Conflict Within,,ASH,88,Standard,Uncommon,False,0.02 €,0.02 €
+2,Qi'ra,Master of Teräs Käsi,ASH,226,Standard,Uncommon,False,0.05 €,0.10 €
+1,The Twins,We Don't Want War,ASH,127,Standard,Rare,False,0.20 €,0.20 €
+1,Cad Bane,Still Faster than You,ASH,11,Standard,Common,False,0.02 €,0.02 €
+2,Freetown,,ASH,26,Standard,Common,False,0.02 €,0.04 €
+1,Covert Believers,,ASH,80,Standard,Common,False,0.02 €,0.02 €
+1,Mouse Droid,,ASH,237,Standard,Common,False,0.02 €,0.02 €
+1,Display of Strength,,ASH,136,Standard,Common,False,0.02 €,0.02 €
+1,Imperial Armored Commando,,ASH,48,Standard,Common,False,0.02 €,0.02 €
+1,Shydopp Pirate Skiff,,ASH,173,Standard,Common,False,0.02 €,0.02 €
+2,Heightened Awareness,,ASH,227,Standard,Common,False,0.02 €,0.04 €
+2,Imposing Scout Walker,,ASH,176,Standard,Common,False,0.02 €,0.04 €
+1,Faith in the Empire,,ASH,262,Standard,Common,False,0.02 €,0.02 €
+1,Rebel Infiltrators,,ASH,758,Hyperspace Foil,Common,True,0.02 €,0.02 €
+2,The Armorer,Secrecy is Our Survival,ASH,64,Standard,Uncommon,False,0.05 €,0.10 €
+1,Greef Karga,Introductions are in Order,ASH,119,Standard,Uncommon,False,0.05 €,0.05 €
+1,The Cyborg Mech,Mysterious Threat,ASH,147,Standard,Uncommon,False,0.05 €,0.05 €
+1,The Great Mothers,With Strange Magicks,ASH,101,Standard,Rare,False,0.75 €,0.75 €
+1,The Armorer,Steel Shapes Us,ASH,1,Standard,Rare,False,0.05 €,0.05 €
+3,"Nevarro City, Restored",,ASH,20,Standard,Common,False,0.02 €,0.06 €
+1,Outland Protector,,ASH,117,Standard,Common,False,0.02 €,0.02 €
+1,Strike Team Vanguard,,ASH,61,Standard,Common,False,0.02 €,0.02 €
+1,Death Trooper Squad,,ASH,242,Standard,Common,False,0.02 €,0.02 €
+1,Forest Patroller,,ASH,96,Standard,Common,False,0.02 €,0.02 €
+1,Survivors' Langskib,,ASH,390,Hyperspace,Common,False,0.03 €,0.03 €
+2,Tatooine Sand Beast,,ASH,225,Standard,Common,False,0.02 €,0.04 €
+1,Inspired Recruit,,ASH,152,Standard,Common,False,0.02 €,0.02 €
+1,Mandalorian Scout,,ASH,216,Standard,Common,False,0.02 €,0.02 €
+1,Follow Me,,ASH,184,Standard,Common,False,0.02 €,0.02 €
+1,Kachirho Militia,,ASH,662,Hyperspace Foil,Uncommon,True,0.10 €,0.10 €
+1,Shin Hati's Fiend Fighter,Compact and Agile,ASH,191,Standard,Uncommon,False,0.02 €,0.02 €
+1,Domesticated Loth-Cat,,ASH,68,Standard,Uncommon,False,0.02 €,0.02 €
+1,DDC Defender,,ASH,210,Standard,Uncommon,False,0.05 €,0.05 €
+1,Elzar Mann,Haunted by a Vision,ASH,224,Standard,Legendary,False,2.96 €,2.96 €
+1,Greef Karga,Gracious Magistrate,ASH,281,Hyperspace,Common,False,0.02 €,0.02 €
+1,Fortress of the Great Mothers,,ASH,19,Standard,Common,False,0.02 €,0.02 €
+1,B-Wing Rearguard,,ASH,78,Standard,Common,False,0.02 €,0.02 €
+1,Turning the Tide,,ASH,138,Standard,Common,False,0.02 €,0.02 €
+1,Buy Time,,ASH,91,Standard,Common,False,0.02 €,0.02 €
+1,Durasteel Plating,,ASH,350,Hyperspace,Common,False,0.03 €,0.03 €
+1,Inspiring Veteran,,ASH,469,Hyperspace,Common,False,0.03 €,0.03 €
+2,Mos Espa Watermonger,,ASH,260,Standard,Common,False,0.02 €,0.04 €
+1,Inspiring Veteran,,ASH,205,Standard,Common,False,0.02 €,0.02 €
+2,Pegasus Tri-Wing,,ASH,171,Standard,Common,False,0.02 €,0.04 €
+2,Grassroots Resistance,,ASH,258,Standard,Common,False,0.02 €,0.04 €
+1,B-Wing Rearguard,,ASH,580,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Snub Fighter Squadron,,ASH,194,Standard,Uncommon,False,0.05 €,0.05 €
+1,Justifier,Relentless,ASH,146,Standard,Uncommon,False,0.05 €,0.05 €
+1,Greef Karga,Introductions are in Order,ASH,383,Hyperspace,Uncommon,False,0.70 €,0.70 €
+1,Fateful Goodbye,,ASH,211,Standard,Rare,False,0.30 €,0.30 €
+1,Grand Admiral Sloane,Holding the Empire Together,ASH,271,Hyperspace,Rare,False,0.45 €,0.45 €
+1,Imperial Loyalist,,ASH,239,Standard,Common,False,0.02 €,0.02 €
+1,Dinosaur Turtle,,ASH,131,Standard,Common,False,0.02 €,0.02 €
+1,Pit Droid Team,,ASH,75,Standard,Common,False,0.02 €,0.02 €
+2,Warrior of Clan Kryze,,ASH,120,Standard,Common,False,0.02 €,0.04 €
+1,Tempest Lieutenant,,ASH,407,Hyperspace,Common,False,0.03 €,0.03 €
+1,Remnant Trooper Corps,,ASH,746,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Tatooine Repulsor Train,,ASH,35,Standard,Uncommon,False,0.02 €,0.02 €
+1,Home One,Heart of the Fleet,ASH,65,Standard,Uncommon,False,0.02 €,0.02 €
+1,Blade Three,Bane of the Devastator,ASH,468,Hyperspace,Uncommon,False,0.34 €,0.34 €
+1,At Attin Safety Droid,,ASH,70,Standard,Rare,False,0.79 €,0.79 €
+1,The Mandalorian,We Can't Keep Running,ASH,14,Standard,Rare,False,0.10 €,0.10 €
+2,Perseverance,,ASH,89,Standard,Common,False,0.02 €,0.04 €
+2,Zealous Soldier,,ASH,251,Standard,Common,False,0.02 €,0.04 €
+1,Defenders of the Forest,,ASH,129,Standard,Common,False,0.02 €,0.02 €
+1,Cybernetic Enhancements,,ASH,87,Standard,Common,False,0.02 €,0.02 €
+1,Dinosaur Turtle,,ASH,395,Hyperspace,Common,False,0.03 €,0.03 €
+1,Emperor's Messenger,,ASH,691,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Moff Gideon,Remnant Commander,ASH,97,Standard,Uncommon,False,0.05 €,0.05 €
+1,Scorpenek Annihilator Droid,,ASH,29,Standard,Uncommon,False,0.02 €,0.02 €
+1,Bo-Katan Kryze,For All of Mandalore,ASH,105,Standard,Rare,False,0.74 €,0.74 €
+1,Ezra Bridger,It's Now or Never,ASH,13,Standard,Common,False,0.02 €,0.02 €
+1,Fortress of the Great Mothers,,ASH,283,Hyperspace,Common,False,0.02 €,0.02 €
+1,Clan Wren Loyalist,,ASH,107,Standard,Common,False,0.02 €,0.02 €
+2,Reanimated Night Trooper,,ASH,45,Standard,Common,False,0.02 €,0.04 €
+1,Covert Veteran,,ASH,249,Standard,Common,False,0.02 €,0.02 €
+2,Remnant Interceptor,,ASH,95,Standard,Common,False,0.02 €,0.04 €
+1,Attendant Navigator,,ASH,502,Hyperspace,Common,False,0.03 €,0.03 €
+1,Galvanized Leap,,ASH,188,Standard,Common,False,0.02 €,0.02 €
+1,Keep Them Talking,,ASH,233,Standard,Common,False,0.02 €,0.02 €
+1,Survivors' Langskib,,ASH,628,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Axe Woves,Undaunted,ASH,169,Standard,Uncommon,False,0.05 €,0.05 €
+1,Rash Action,,ASH,162,Standard,Uncommon,False,0.03 €,0.03 €
+1,Gorian Shard's Corsair,Pirate Warship,ASH,196,Standard,Legendary,False,2.99 €,2.99 €
+1,Vane,Quarrelsome Pirate,ASH,12,Standard,Rare,False,0.02 €,0.02 €
+1,Kryze Castle,,ASH,22,Standard,Common,False,0.02 €,0.02 €
+1,Fang Fighter Squadron,,ASH,130,Standard,Common,False,0.02 €,0.02 €
+1,Duchess's Protector,,ASH,58,Standard,Common,False,0.02 €,0.02 €
+1,Remnant Trooper Corps,,ASH,244,Standard,Common,False,0.02 €,0.02 €
+1,Remnant Interceptor,,ASH,359,Hyperspace,Common,False,0.03 €,0.03 €
+1,Alamite Hunter,,ASH,164,Standard,Common,False,0.02 €,0.02 €
+1,Unsanctioned Patrol,,ASH,222,Standard,Common,False,0.02 €,0.02 €
+1,StarFortress Heavy Bomber,,ASH,174,Standard,Common,False,0.02 €,0.02 €
+1,A New Order,,ASH,264,Standard,Common,False,0.02 €,0.02 €
+1,Diplomatic Pageantry,,ASH,733,Hyperspace Foil,Common,True,0.02 €,0.02 €
+1,Grav Charge,,ASH,85,Standard,Uncommon,False,0.02 €,0.02 €
+1,Gozanti Assault Carrier,,ASH,99,Standard,Uncommon,False,0.02 €,0.02 €
+1,Operation Cinder,,ASH,151,Standard,Rare,False,0.45 €,0.45 €
+1,Ezra Bridger,It's Now or Never,ASH,277,Hyperspace,Common,False,0.02 €,0.02 €
+1,Foundling Rescue,,ASH,356,Hyperspace,Common,False,0.02 €,0.02 €
+1,Ferry Droid,,ASH,218,Standard,Common,False,0.02 €,0.02 €
+1,Honorable Nite Owl,,ASH,154,Standard,Common,False,0.02 €,0.02 €
+1,Han Solo,It'll Work,ASH,660,Hyperspace Foil,Special,True,4.00 €,4.00 €
+1,Mos Eisley Modifier,,ASH,74,Standard,Uncommon,False,0.03 €,0.03 €
+1,Barriss Offee,Redeeming Herself,ASH,44,Standard,Uncommon,False,0.08 €,0.08 €
+1,Lang,Arrogant Mercenary,ASH,123,Standard,Rare,False,0.15 €,0.15 €

@@ -1,6 +1,6 @@
 # SWU Collection
 
-SWU Collection is a private, mobile-first collection manager for Star Wars Unlimited cards. The site is static and runs on GitHub Pages. Your collection stays in your browser and can be backed up as a file; it is never uploaded to this public repository.
+SWU Collection is a mobile-first collection manager for Star Wars Unlimited cards. The site is static and runs on GitHub Pages. Per-device edits stay in your browser and can be backed up as a file. Optionally, a baseline collection can be published with the site (`data/collection.txt`) so every device — including a new phone — opens already populated; this repository's owner has opted into that. If you fork this project and would rather keep your collection private, delete `data/collection.txt` and the app falls back to a manual import.
 
 The included card database currently contains the sets listed in [`data/sets.json`](data/sets.json). A weekly GitHub Action refreshes it from the community [SWU-DB API](https://api.swu-db.com).
 
@@ -106,7 +106,7 @@ The import summary lists every unknown `SET NUMBER`. Sync card data and try agai
 
 ### The collection disappeared on a new phone or after clearing Safari data
 
-Collections live only in each browser. Open **Import / Export** and import your latest TXT or CSV backup. GitHub Pages does not store a copy.
+Per-device edits live only in that browser. If a baseline collection is published with the site, a brand-new device seeds from it automatically; otherwise, open **Import / Export** and either tap **Load published collection** or import your latest TXT or CSV backup.
 
 ## Decks (Phase 2)
 
@@ -144,6 +144,8 @@ The refresh script validates and reapplies `data/card-overrides.json` after down
 
 ## Privacy and data source
 
-Never add personal collection exports to Git. The two provided master collection filenames are already ignored, and generated exports should be kept outside the repository. The committed `data/cards.json` contains public card information only.
+Publishing your collection is opt-in. The raw HoloScan master exports (`Master_Collection*`) and ad-hoc backups remain git-ignored. This repository's owner has chosen to publish a baseline collection at `data/collection.txt` — card names, counts, printings, and imported price estimates — so it syncs to every device; it contains no personal information beyond which cards are owned. To keep a collection fully private, do not commit `data/collection.txt`; without it the app simply starts empty and relies on manual import. The committed `data/cards.json` contains public card information only.
+
+To update the published collection, replace `data/collection.txt` with a fresh full-TXT export (the app's **Import / Export → Download full TXT**, or your HoloScan master export) and commit it.
 
 SWU-DB is a community data source. This project is not affiliated with Lucasfilm, Disney, Fantasy Flight Games, or SWU-DB.
