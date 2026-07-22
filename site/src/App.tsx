@@ -11,6 +11,20 @@ import { Modal } from "./Modal";
 type View = "collection" | "decks" | "travel" | "stats" | "transfer" | "settings";
 const STORAGE_KEY = "swu-collection-v1";
 const MODIFIED_KEY = "swu-collection-modified-v1";
+// Hash of the published baseline (data/collection.txt) this device is in sync
+// with. Set when the collection is seeded from — or replaced by — the published
+// copy, cleared on any local edit. While set, the device follows baseline updates.
+const BASELINE_KEY = "swu-collection-baseline-v1";
+
+/** Small sync string hash (FNV-1a) — change detection only, not security. */
+function hashText(text: string): string {
+  let hash = 0x811c9dc5;
+  for (let i = 0; i < text.length; i++) {
+    hash ^= text.charCodeAt(i);
+    hash = Math.imul(hash, 0x01000193);
+  }
+  return (hash >>> 0).toString(16);
+}
 
 function readCollection(): CollectionEntry[] {
   try {
@@ -46,8 +60,8 @@ function App() {
 
   // On a device that has never stored a collection, seed it from the published
   // baseline (data/collection.txt) so a new phone or browser opens populated.
-  // A device that already has data — or was deliberately cleared to "[]" — is
-  // left untouched; the Import / Export tab can reload the published copy.
+  // A device that was deliberately cleared to "[]" is left untouched; the
+  // Import / Export tab can reload the published copy.
   useEffect(() => {
     if (!database || localStorage.getItem(STORAGE_KEY) !== null) return;
     let cancelled = false;
@@ -56,18 +70,51 @@ function App() {
       .then((text) => {
         if (cancelled || !text) return;
         const result = parseCollectionFile(text, database);
-        if (result.entries.length) save(result.entries);
+        if (result.entries.length) saveBaseline(result.entries, hashText(text));
       })
       .catch(() => undefined);
     return () => { cancelled = true; };
   }, [database]);
 
-  const save = (next: CollectionEntry[]) => {
+  // A device that mirrors the published baseline (seeded from it, or replaced
+  // with it, and not edited locally since) follows baseline updates
+  // automatically, so a republished collection reaches existing devices.
+  useEffect(() => {
+    if (!database) return;
+    const syncedHash = localStorage.getItem(BASELINE_KEY);
+    if (localStorage.getItem(STORAGE_KEY) === null || !syncedHash) return;
+    let cancelled = false;
+    fetch(`${import.meta.env.BASE_URL}collection.txt`)
+      .then((response) => (response.ok ? response.text() : null))
+      .then((text) => {
+        if (cancelled || !text) return;
+        const hash = hashText(text);
+        if (hash === syncedHash) return;
+        const result = parseCollectionFile(text, database);
+        if (result.entries.length) saveBaseline(result.entries, hash);
+      })
+      .catch(() => undefined);
+    return () => { cancelled = true; };
+  }, [database]);
+
+  const persist = (next: CollectionEntry[]) => {
     const now = new Date().toISOString();
     setEntries(next);
     setLastModified(now);
     localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
     localStorage.setItem(MODIFIED_KEY, now);
+  };
+
+  // A local edit: the device no longer mirrors the published baseline.
+  const save = (next: CollectionEntry[]) => {
+    persist(next);
+    localStorage.removeItem(BASELINE_KEY);
+  };
+
+  // A load of the published baseline itself: remember which copy we mirror.
+  const saveBaseline = (next: CollectionEntry[], hash: string) => {
+    persist(next);
+    localStorage.setItem(BASELINE_KEY, hash);
   };
 
   const selected = selectedKey && database ? database.cards[selectedKey] : null;
@@ -88,7 +135,7 @@ function App() {
         {view === "decks" && <DecksView database={database} entries={entries} onSelectCard={setSelectedKey} />}
         {view === "travel" && <TravelView database={database} entries={entries} onSelectCard={setSelectedKey} />}
         {view === "stats" && <StatsView database={database} entries={entries} />}
-        {view === "transfer" && <TransferView database={database} entries={entries} onImport={(incoming, mode) => save(mergeCollections(entries, incoming, mode))} />}
+        {view === "transfer" && <TransferView database={database} entries={entries} onImport={(incoming, mode, baselineHash) => { const merged = mergeCollections(entries, incoming, mode); if (mode === "replace" && baselineHash) saveBaseline(merged, baselineHash); else save(merged); }} />}
         {view === "settings" && <SettingsView database={database} entries={entries} lastModified={lastModified} onClear={() => save([])} />}
       </div>
       <nav className="bottom-nav"><Navigation view={view} onChange={setView} /></nav>
@@ -189,26 +236,29 @@ function AddCardSheet({ database, entries, onClose, onAdd }: { database: CardDat
   return <Modal title="Add card" onClose={onClose}>{!selected ? <><label className="field-label" htmlFor="add-search">Search the full card database</label><div className="search-wrap"><span>⌕</span><input id="add-search" autoFocus type="search" placeholder="Card name, set, or number" value={query} onChange={(e) => setQuery(e.target.value)} /></div><div className="search-results">{query.length < 2 && <p>Type at least two characters.</p>}{matches.map((card) => <button key={card.key} onClick={() => { setSelected(card); setVariant(card.defaultVariant); }}><img src={card.images.front} alt="" /><span><strong>{card.name}</strong><small>{card.subtitle || "No subtitle"}</small><em>{card.set} {card.number} · {card.defaultVariant}</em></span></button>)}</div></> : <div className="add-selection"><button className="back-link" onClick={() => setSelected(null)}>← Search again</button><div className="selected-card"><img src={cardImage(selected, variant)} alt={selected.name} onError={(event) => { event.currentTarget.src = selected.images.front; }} /><div><h2>{selected.name}</h2><p>{selected.subtitle}</p><label>Printing<select value={variant} onChange={(e) => setVariant(e.target.value)}>{Object.keys(selected.printings).map((item) => <option key={item}>{item}</option>)}</select></label><label>Count<input type="number" min="1" inputMode="numeric" value={count} onChange={(e) => setCount(e.target.value)} /></label><button className="primary wide" disabled={!validCount} onClick={() => validCount && onAdd(selected, variant, parsedCount)}>{entries.some((entry) => cardKey(entry) === selected.key && entry.variant === variant) ? "Update count" : "Add to collection"}</button></div></div></div>}</Modal>;
 }
 
-function TransferView({ database, entries, onImport }: { database: CardDatabase; entries: CollectionEntry[]; onImport: (entries: CollectionEntry[], mode: "replace" | "merge") => void }) {
+function TransferView({ database, entries, onImport }: { database: CardDatabase; entries: CollectionEntry[]; onImport: (entries: CollectionEntry[], mode: "replace" | "merge", baselineHash?: string) => void }) {
   const fileRef = useRef<HTMLInputElement>(null);
   const [pending, setPending] = useState<ImportResult | null>(null);
+  const [pendingHash, setPendingHash] = useState<string | undefined>(undefined);
   const [summary, setSummary] = useState<ImportResult | null>(null);
   const [error, setError] = useState("");
   const readFile = async (file?: File) => {
     if (!file) return;
-    try { setError(""); setPending(parseCollectionFile(await file.text(), database)); } catch (err) { setError(err instanceof Error ? err.message : "Could not read this file."); }
+    try { setError(""); setPendingHash(undefined); setPending(parseCollectionFile(await file.text(), database)); } catch (err) { setError(err instanceof Error ? err.message : "Could not read this file."); }
     if (fileRef.current) fileRef.current.value = "";
   };
-  const commit = (mode: "replace" | "merge") => { if (!pending) return; onImport(pending.entries, mode); setSummary(pending); setPending(null); };
+  const commit = (mode: "replace" | "merge") => { if (!pending) return; onImport(pending.entries, mode, pendingHash); setSummary(pending); setPending(null); setPendingHash(undefined); };
   const loadPublished = async () => {
     try {
       setError("");
       const response = await fetch(`${import.meta.env.BASE_URL}collection.txt`);
       if (!response.ok) throw new Error("No published collection is available for this site yet.");
-      setPending(parseCollectionFile(await response.text(), database));
+      const text = await response.text();
+      setPendingHash(hashText(text));
+      setPending(parseCollectionFile(text, database));
     } catch (err) { setError(err instanceof Error ? err.message : "Could not load the published collection."); }
   };
-  return <main><div className="page-heading"><div><p className="eyebrow">Portable by design</p><h1>Import / Export</h1><p>Your files stay on this device.</p></div></div><div className="panel-grid"><section className="panel"><div className="panel-icon">⇧</div><h2>Import collection</h2><p>Choose a HoloDeck / HoloScan TXT or a SWUDB CSV file, or reload the collection published with this site. You’ll review it before anything changes.</p><input ref={fileRef} hidden type="file" accept=".txt,.csv,text/plain,text/csv" onChange={(e) => readFile(e.target.files?.[0])} /><button className="primary wide" onClick={() => fileRef.current?.click()}>Choose file</button><button className="wide" onClick={loadPublished}>Load published collection</button>{error && <p className="error-message">{error}</p>}</section><section className="panel"><div className="panel-icon">⇩</div><h2>Export a backup</h2><p>Keep a copy somewhere safe before clearing browser data or changing phones.</p><button className="wide" disabled={!entries.length} onClick={() => downloadText("swu-collection-swudb.csv", exportSwudb(entries), "text/csv;charset=utf-8")}>Download SWUDB CSV</button><button className="wide" disabled={!entries.length} onClick={() => downloadText("swu-collection-full.txt", exportFull(entries, database))}>Download full TXT</button></section></div>{summary && <ImportSummary result={summary} onClose={() => setSummary(null)} />}{pending && <Modal title="How should this import be applied?" onClose={() => setPending(null)}><ImportPreview result={pending} /><div className="dialog-actions"><button onClick={() => commit("replace")}>Replace collection</button><button className="primary" onClick={() => commit("merge")}>Merge and add counts</button></div></Modal>}</main>;
+  return <main><div className="page-heading"><div><p className="eyebrow">Portable by design</p><h1>Import / Export</h1><p>Your files stay on this device.</p></div></div><div className="panel-grid"><section className="panel"><div className="panel-icon">⇧</div><h2>Import collection</h2><p>Choose a HoloDeck / HoloScan TXT or a SWUDB CSV file, or reload the collection published with this site. You’ll review it before anything changes.</p><input ref={fileRef} hidden type="file" accept=".txt,.csv,text/plain,text/csv" onChange={(e) => readFile(e.target.files?.[0])} /><button className="primary wide" onClick={() => fileRef.current?.click()}>Choose file</button><button className="wide" onClick={loadPublished}>Load published collection</button>{error && <p className="error-message">{error}</p>}</section><section className="panel"><div className="panel-icon">⇩</div><h2>Export a backup</h2><p>Keep a copy somewhere safe before clearing browser data or changing phones.</p><button className="wide" disabled={!entries.length} onClick={() => downloadText("swu-collection-swudb.csv", exportSwudb(entries), "text/csv;charset=utf-8")}>Download SWUDB CSV</button><button className="wide" disabled={!entries.length} onClick={() => downloadText("swu-collection-full.txt", exportFull(entries, database))}>Download full TXT</button></section></div>{summary && <ImportSummary result={summary} onClose={() => setSummary(null)} />}{pending && <Modal title="How should this import be applied?" onClose={() => { setPending(null); setPendingHash(undefined); }}><ImportPreview result={pending} /><div className="dialog-actions"><button onClick={() => commit("replace")}>Replace collection</button><button className="primary" onClick={() => commit("merge")}>Merge and add counts</button></div></Modal>}</main>;
 }
 
 function ImportPreview({ result }: { result: ImportResult }) {
@@ -232,7 +282,7 @@ function SettingsView({ database, entries, lastModified, onClear }: { database: 
   const repo = import.meta.env.VITE_GITHUB_REPOSITORY || (location.hostname.endsWith(".github.io") ? `${location.hostname.split(".")[0]}/${location.pathname.split("/").filter(Boolean)[0]}` : "");
   const syncUrl = repo ? `https://github.com/${repo}/actions/workflows/refresh-cards.yml` : "";
   const clear = () => { if (confirm(`Clear all ${totalCount(entries)} cards from this device? This cannot be undone unless you exported a backup.`)) onClear(); };
-  return <main><div className="page-heading"><div><p className="eyebrow">Device and data</p><h1>Settings</h1><p>Collection data never leaves your browser.</p></div></div><div className="settings-list"><section><div><h2>Card database</h2><p>Generated {new Date(database.generatedAt).toLocaleString()} · {database.cardCount} printing records</p></div>{syncUrl ? <a className="button primary" href={syncUrl} target="_blank" rel="noreferrer">Sync card data ↗</a> : <button disabled>Sync available after deploy</button>}<p className="setting-help">This opens GitHub. Sign in, choose “Run workflow”, and wait for the Action to finish. The updated database loads on your next visit.</p></section><section><div><h2>Collection</h2><p>Last modified {lastModified ? new Date(lastModified).toLocaleString() : "never"}</p></div><button className="danger" disabled={!entries.length} onClick={clear}>Clear collection</button></section><section><h2>About / how it works</h2><p>SWU Collection is an offline-first library. Your working collection is saved in this browser’s local storage. A baseline copy is also published with this site, so a new device opens already populated; per-device edits then stay local until you export them. Export a backup before clearing browser data or changing devices.</p><p>Card data comes from the community SWU-DB API through a GitHub Action. The app never calls that API directly.</p></section><section className="coming-soon"><span>◇</span><div><h2>Decks</h2><p>Thirty researched, collection-valid decks live in the Decks tab, including one for every owned Ashes of the Empire leader plus aggressive alternate builds for several of them. Deck data ships with the site and is validated against the card database at build time — the app never calls an AI service.</p></div></section></div></main>;
+  return <main><div className="page-heading"><div><p className="eyebrow">Device and data</p><h1>Settings</h1><p>Collection data never leaves your browser.</p></div></div><div className="settings-list"><section><div><h2>Card database</h2><p>Generated {new Date(database.generatedAt).toLocaleString()} · {database.cardCount} printing records</p></div>{syncUrl ? <a className="button primary" href={syncUrl} target="_blank" rel="noreferrer">Sync card data ↗</a> : <button disabled>Sync available after deploy</button>}<p className="setting-help">This opens GitHub. Sign in, choose “Run workflow”, and wait for the Action to finish. The updated database loads on your next visit.</p></section><section><div><h2>Collection</h2><p>Last modified {lastModified ? new Date(lastModified).toLocaleString() : "never"}</p></div><button className="danger" disabled={!entries.length} onClick={clear}>Clear collection</button></section><section><h2>About / how it works</h2><p>SWU Collection is an offline-first library. Your working collection is saved in this browser’s local storage. A baseline copy is also published with this site, so a new device opens already populated; a device that only mirrors the published copy follows its updates automatically, while any local edit opts that device out and its changes stay local until you export them. Export a backup before clearing browser data or changing devices.</p><p>Card data comes from the community SWU-DB API through a GitHub Action. The app never calls that API directly.</p></section><section className="coming-soon"><span>◇</span><div><h2>Decks</h2><p>Thirty researched, collection-valid decks live in the Decks tab, including one for every owned Ashes of the Empire leader plus aggressive alternate builds for several of them. Deck data ships with the site and is validated against the card database at build time — the app never calls an AI service.</p></div></section></div></main>;
 }
 
 export default App;
