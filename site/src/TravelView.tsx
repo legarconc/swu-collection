@@ -40,7 +40,7 @@ export function TravelView({ database, entries, onSelectCard }: {
         ? <p><strong>✓ All {roster.length} decks build at once.</strong> {check.physicalCards} physical cards allocated ({check.mainCards} main-deck + {roster.length} leaders + {roster.length} bases), and no card, leader, or base is used more than you own.</p>
         : <>
             <p><strong>⚠ {check.conflicts.length} card{check.conflicts.length === 1 ? "" : "s"} over-allocated.</strong> Your current collection no longer covers every copy — these decks can't all be built at once until the counts are restored:</p>
-            <ul>{check.conflicts.map((c) => <li key={c.identityKey}>{c.name}: uses {c.used}, owns {c.owned}</li>)}</ul>
+            <ul>{check.conflicts.map((c) => <li key={`${c.identityKey}-${c.variant || "id"}`}>{c.name}{c.variant ? ` (${c.variant})` : ""}: uses {c.used}, owns {c.owned}</li>)}</ul>
           </>}
     </section>
 

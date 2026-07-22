@@ -66,9 +66,11 @@ const aspectPenalty = (cardAspects, icons) => {
 let failures = 0;
 const fail = (name, message) => { failures++; console.error(`  !! ${name}: ${message}`); };
 
-// Roster-wide usage of every identity (cards + leaders + bases).
+// Roster-wide usage of every identity and every specific printing.
 const rosterUse = new Map();
 const addUse = (id, n) => rosterUse.set(id, (rosterUse.get(id) || 0) + n);
+const rosterPrint = new Map();
+const addPrint = (key, variant, n) => rosterPrint.set(`${key}|${variant}`, (rosterPrint.get(`${key}|${variant}`) || 0) + n);
 
 for (const deck of travel.roster) {
   console.log(`- ${deck.name}`);
@@ -78,6 +80,8 @@ for (const deck of travel.roster) {
   if (!base || base.type !== "Base") fail(deck.name, `base ${deck.base.id} missing or not a Base`);
   addUse(deck.leader.id, 1);
   addUse(deck.base.id, 1);
+  addPrint(deck.leader.printing, deck.leader.variant, 1);
+  addPrint(deck.base.printing, deck.base.variant, 1);
   const icons = leader && base ? [...leader.aspects, ...base.aspects] : [];
   for (const [kind, selection] of [["leader", deck.leader], ["base", deck.base]]) {
     const record = db.cards[selection.printing];
@@ -89,11 +93,14 @@ for (const deck of travel.roster) {
   }
 
   let total = 0;
+  const titleCounts = new Map(); // copy limit is per card title (name + subtitle), across reprints
   for (const entry of deck.cards) {
     const card = db.cards[entry.id];
     if (!card) { fail(deck.name, `unknown card ${entry.id}`); continue; }
     total += entry.count;
     addUse(entry.id, entry.count);
+    const title = `${card.name}|${card.subtitle}`;
+    titleCounts.set(title, (titleCounts.get(title) || 0) + entry.count);
     if (entry.count > 3) fail(deck.name, `${card.name}: ${entry.count} copies exceeds the limit of 3`);
     const printed = entry.printings.reduce((sum, p) => sum + p.count, 0);
     if (printed !== entry.count) fail(deck.name, `${card.name}: printings cover ${printed}/${entry.count}`);
@@ -101,26 +108,36 @@ for (const deck of travel.roster) {
       const record = db.cards[printing.key];
       if (!record || record.identityKey !== card.identityKey) fail(deck.name, `${card.name}: printing key ${printing.key} mismatch`);
       else if (!record.printings[printing.variant]) fail(deck.name, `${card.name}: variant ${printing.variant} not at ${printing.key}`);
+      addPrint(printing.key, printing.variant, printing.count);
     }
     if (aspectPenalty(card.aspects, icons) > 0) fail(deck.name, `${card.name}: aspect penalty violates the zero-penalty policy`);
     // SWUDB export id resolves
     const [set, number] = entry.id.split("-");
     if (!db.cards[`${set}-${Number(number)}`]) fail(deck.name, `SWUDB id ${set}_${number} does not round-trip`);
   }
+  for (const [title, count] of titleCounts) {
+    if (count > 3) fail(deck.name, `${title.split("|")[0]}: ${count} copies across reprints exceeds the limit of 3`);
+  }
   if (total !== 50) fail(deck.name, `main deck has ${total} cards, not 50`);
 }
 
-// Distinct leaders and bases (a physical leader/base can only be in one box).
+// A physical leader can only be in one box; owning several bases lets boxes share
+// a base identity, so leaders must be distinct but bases only need enough copies.
 const leaderIds = travel.roster.map((d) => d.leader.id);
-const baseIds = travel.roster.map((d) => d.base.id);
 if (new Set(leaderIds).size !== leaderIds.length) { failures++; console.error("!! Two decks share a leader"); }
-if (new Set(baseIds).size !== baseIds.length) { failures++; console.error("!! Two decks share a base"); }
 
-// The whole roster must be simultaneously buildable from owned copies.
+// The whole roster must be simultaneously buildable from owned copies — both at
+// the card-identity level and for every specific printing (so two boxes never
+// claim the same single foil or hyperspace copy).
 if (ownedByIdentity) {
   for (const [id, used] of rosterUse) {
     const owned = ownedByIdentity.get(id) || 0;
     if (used > owned) { failures++; console.error(`!! Roster over-allocates ${db.cards[id]?.name || id}: uses ${used}, owns ${owned}`); }
+  }
+  for (const [key, used] of rosterPrint) {
+    const [recordKey, variant] = key.split("|");
+    const owned = ownedByPrinting.get(key) || 0;
+    if (used > owned) { failures++; console.error(`!! Roster over-allocates ${db.cards[recordKey]?.name || recordKey} (${variant}): uses ${used}, owns ${owned}`); }
   }
 }
 

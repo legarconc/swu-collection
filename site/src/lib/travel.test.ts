@@ -25,6 +25,7 @@ describe("travel deck roster", () => {
       expect(leader?.type, deck.name).toBe("Leader");
       expect(base?.type, deck.name).toBe("Base");
       const icons = [...leader.aspects, ...base.aspects];
+      const titleCounts = new Map<string, number>();
       for (const card of deck.cards) {
         const record = db.cards[card.id];
         expect(record, `${deck.name}: ${card.id}`).toBeTruthy();
@@ -32,15 +33,18 @@ describe("travel deck roster", () => {
         expect(aspectPenalty(record.aspects, icons), `${deck.name}: ${record.name}`).toBe(0);
         const printed = card.printings.reduce((sum, p) => sum + p.count, 0);
         expect(printed, `${deck.name}: ${record.name}`).toBe(card.count);
+        const title = `${record.name}|${record.subtitle}`;
+        titleCounts.set(title, (titleCounts.get(title) || 0) + card.count);
+      }
+      for (const [title, count] of titleCounts) {
+        expect(count, `${deck.name}: ${title}`).toBeLessThanOrEqual(3);
       }
     }
   });
 
-  it("uses a distinct leader and base per deck", () => {
+  it("uses a distinct leader per deck (bases may repeat within owned copies)", () => {
     const leaders = travel.roster.map((deck) => deck.leader.id);
-    const bases = travel.roster.map((deck) => deck.base.id);
     expect(new Set(leaders).size).toBe(leaders.length);
-    expect(new Set(bases).size).toBe(bases.length);
   });
 
   it("is simultaneously buildable from the published collection", () => {

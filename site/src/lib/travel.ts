@@ -28,6 +28,8 @@ export interface RosterConflict {
   name: string;
   used: number;
   owned: number;
+  /** Set when the conflict is a specific printing (e.g. a single owned foil) rather than the card as a whole. */
+  variant?: string;
 }
 
 export interface RosterCheck {
@@ -57,22 +59,46 @@ export function ownedByIdentity(entries: CollectionEntry[], database: CardDataba
  */
 export function rosterCheck(roster: TravelDeck[], entries: CollectionEntry[], database: CardDatabase): RosterCheck {
   const owned = ownedByIdentity(entries, database);
+  const ownedPrinting = new Map<string, number>();
+  for (const entry of entries) {
+    const card = database.cards[`${entry.set}-${entry.number}`];
+    if (!card) continue;
+    const key = `${card.key}|${entry.variant}`;
+    ownedPrinting.set(key, (ownedPrinting.get(key) || 0) + entry.count);
+  }
+
   const used = new Map<string, number>();
+  const usedPrinting = new Map<string, number>();
   const add = (id: string, count: number) => used.set(id, (used.get(id) || 0) + count);
+  const addPrinting = (key: string, variant: string, count: number) => {
+    const k = `${key}|${variant}`;
+    usedPrinting.set(k, (usedPrinting.get(k) || 0) + count);
+  };
   let mainCards = 0;
   for (const deck of roster) {
     add(deck.leader.id, 1);
+    addPrinting(deck.leader.printing, deck.leader.variant, 1);
     add(deck.base.id, 1);
+    addPrinting(deck.base.printing, deck.base.variant, 1);
     for (const card of deck.cards) {
       add(card.id, card.count);
       mainCards += card.count;
+      for (const printing of card.printings) addPrinting(printing.key, printing.variant, printing.count);
     }
   }
+
   const conflicts: RosterConflict[] = [];
   for (const [identityKey, count] of used) {
     const have = owned.get(identityKey) || 0;
     if (count > have) {
       conflicts.push({ identityKey, name: database.cards[identityKey]?.name || identityKey, used: count, owned: have });
+    }
+  }
+  for (const [key, count] of usedPrinting) {
+    const have = ownedPrinting.get(key) || 0;
+    if (count > have) {
+      const [recordKey, variant] = key.split("|");
+      conflicts.push({ identityKey: recordKey, name: database.cards[recordKey]?.name || recordKey, used: count, owned: have, variant });
     }
   }
   conflicts.sort((a, b) => b.used - b.owned - (a.used - a.owned));
