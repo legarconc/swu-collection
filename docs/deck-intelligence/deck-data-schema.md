@@ -42,13 +42,16 @@ Every guide supplies:
 - owned collection adjustments;
 - future acquisitions that are never included in the deck or export.
 
-Names in opening priorities and combinations must refer to cards actually present in the main deck, leader, or base.
+Names in combinations must refer to cards actually present in the main deck,
+leader, or base; the release validator accepts either the canonical card name
+or its full `Name — Subtitle` display form. Opening priorities may combine those
+names with concise matchup instructions.
 
 ## Validation contract
 
 Before release:
 
-- exactly 15 decks for the current phase, or update the portfolio expectation deliberately;
+- `expectedDeckCount` is a positive integer and equals the number of published decks, so a deliberate portfolio expansion updates the contract without hard-coded validator changes;
 - exactly 50 main-deck cards per deck;
 - no identity above three copies;
 - leader and base resolve to the correct card types;
@@ -80,4 +83,3 @@ SWUDB identifies gameplay cards, not owned cosmetic variants, in this export. Th
 When clipboard access succeeds, the user can paste this JSON into SWUDB's JSON import. When it is unavailable, the same button downloads the identical JSON payload.
 
 Reference: [Limitless documentation showing SWUDB's exported JSON structure](https://docs.limitlesstcg.com/player/decklists#star-wars-unlimited).
-

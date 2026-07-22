@@ -1,6 +1,6 @@
 # Ashes of the Empire — Deck Intelligence set guide
 
-Initial set guide compiled 22 July 2026. General construction rules and reusable
+Set guide and owned-leader portfolio compiled 22 July 2026. General construction rules and reusable
 best practices live in [`../general-strategy.md`](../general-strategy.md). This
 guide records public game knowledge only; owned quantities and private prices
 remain in the ignored collection exports.
@@ -129,6 +129,42 @@ release:
   Grand Admiral Thrawn, LOF Rey, and SEC Padmé Amidala. Validate those shells
   against the full owned pool when cross-set decks are researched.
 
+## Owned-leader portfolio
+
+The published portfolio now includes one list for every owned ASH leader. These
+are collection-constrained recommendations, not copied tournament lists. The
+aspect choice reflects the leader text, the exact owned pool, early community
+testing, and the need for a functional 50-card curve.
+
+| Leader | Published deck | Added base aspect | Plan |
+| --- | --- | --- | --- |
+| The Armorer | Forge of the Rising Sun | Aggression | Upgrade tempo; play upgrades from resources and preserve two carriers rather than one all-in unit. |
+| Baylan Skoll | Last Apprentice Standing | Aggression | Removal-backed Force midrange; maintain a lone threat in an arena to activate the +2/+2 bonus. |
+| Luke Skywalker | Twin Suns Resurgence | Command | Healing midrange; survive repeated attacks and finish with durable Rebel space threats. |
+| Grand Admiral Sloane | Iron Discipline Doctrine | Vigilance | Imperial combat control; Sentinel stabilizes while Overwhelm converts later attacks. |
+| Ahsoka Tano | Fulcrum Strike Web | Aggression | Support combat; preserve differently sized units and make the smaller attacker trade up. |
+| Cad Bane | Dead Man's Sightline | Vigilance | Cad Blue attrition; combine the repeatable ping with combat and threshold removal. |
+| Vane | Corsair Fuse Lit | Command | Experimental upgrade sacrifice/burn with a mixed-arena pirate and Imperial shell. |
+| Ezra Bridger | Lothal Fast Talk | Cunning | Initiative tempo; land three-power base attacks and move Advantage to the next attacker. |
+| The Mandalorian | Beskar Initiative | Command | Mandalorian midrange; choose initiative moments that turn the paid leader draw into sustained value. |
+| Emperor Palpatine | Imperial Advantage Engine | Command | Go-wide Advantage; exhaust the least valuable body to enhance the attack that matters. |
+| Greef Karga | Nevarro Profit Loop | Command | Unit-dense Advantage midrange; every newly played or created unit enters combat-ready. |
+| Grogu | Small Foundling, Big Trouble | Vigilance | Defensive control; reach the deployed leader and make close defender math favor the home side. |
+
+The most evidence-backed early shell is **Cad Bane + Vigilance**: Cad had the
+largest recommendation sample among these owned leaders in SWU-Rec's early ASH
+aggregation, and contemporaneous testing repeatedly identified Cad Blue as a
+deck to prepare for. Luke, Greef, The Mandalorian, Ahsoka, and Palpatine also
+entered the portfolio with stronger initial confidence. Vane and Grogu remain
+explicitly experimental because their owned shells are more synergy- and
+timing-dependent. This ordering is provisional so soon after release and is a
+starting point for playtesting, not a settled metagame claim.
+
+The deck file selects exact physical printings, favoring owned Hyperspace and
+foil copies. In particular, the Vane list can use the owned Prestige Foil Grand
+Admiral Thrawn because its Command base covers Thrawn's aspect. Cosmetic choice
+never changes gameplay identity or bypasses the three-copy limit.
+
 ## Research and validation notes
 
 - Do not label an ASH deck “best” from prerelease impressions alone. Separate
@@ -151,6 +187,14 @@ release:
 4. [From the Ashes](https://starwarsunlimited.com/articles/from-the-ashes) — upgrade density, traits, Shield density, and cross-set design targets.
 5. [Icons 2027 First Look](https://starwarsunlimited.com/articles/unlimited-icons) — announced March 2028 rotation grouping.
 
+## Early community research
+
+6. [SWU-Rec ASH recommendations](https://www.swu-rec.ca/) — aggregated early deck-list inclusions by leader; used only to identify commonly paired cards that also exist in the owned pool.
+7. [ASH leaders ranked](https://sw-unlimited-db.com/community/ash-leaders-ranked-which-ashes-of-the-empire-leader-should-you-build-around/) — day-one leader archetype hypotheses; explicitly treated as pre-tournament opinion.
+8. [ASH prerelease survival guide](https://swu.report/2026/07/06/all-things-ash-sealed-your-ashes-of-the-empire-prerelease-survival-guide/) — prerelease observations on Greef, Palpatine, Sloane, Ahsoka, and Baylan; used as mechanical context rather than constructed results.
+
 Confidence: release and product facts verified 22 July 2026 from official
-Fantasy Flight Games material. Archetype seeds are deliberately provisional and
-must be revised after testing and stable post-release results.
+Fantasy Flight Games material. The 12 leader shells passed deterministic rules,
+ownership, printing, and export validation; their relative gameplay ratings are
+still provisional and must be revised after real games and stable post-release
+results.

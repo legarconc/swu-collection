@@ -45,7 +45,8 @@ if (collectionPath) {
     const set = fields[idx.set]?.trim().toUpperCase();
     const number = Number(fields[idx.number]);
     const count = Number(fields[idx.count]);
-    const variant = (fields[idx.variant] || "Standard").trim();
+    const scannedVariant = (fields[idx.variant] || "Standard").trim();
+    const variant = scannedVariant === "Foil Prestige" ? "Prestige Foil" : scannedVariant;
     const card = db.cards[`${set}-${number}`];
     if (!card || !Number.isInteger(count)) continue;
     ownedByIdentity.set(card.identityKey, (ownedByIdentity.get(card.identityKey) || 0) + count);
@@ -141,6 +142,16 @@ for (const deck of deckFile.decks) {
     if (!ownedByIdentity.get(deck.leader.id)) fail(deck, "leader not owned");
     if (!ownedByIdentity.get(deck.base.id)) fail(deck, "base not owned");
   }
+  const guideCards = [leader, base, ...deck.cards.map((entry) => db.cards[entry.id])].filter(Boolean);
+  const guideNames = new Set(guideCards.flatMap((card) => [
+    card.name,
+    card.subtitle ? `${card.name} — ${card.subtitle}` : card.name,
+  ]));
+  for (const combo of deck.guide.combos) {
+    for (const name of combo.cards) {
+      if (!guideNames.has(name)) fail(deck, `combo references ${name}, which is not in the deck`);
+    }
+  }
   // SWUDB export ids resolve back to the same identities
   for (const entry of deck.cards) {
     const [set, number] = entry.id.split("-");
@@ -149,7 +160,11 @@ for (const deck of deckFile.decks) {
   }
 }
 
-if (deckFile.decks.length !== 15) { failures++; console.error(`!! Expected 15 decks, found ${deckFile.decks.length}`); }
+if (!Number.isInteger(deckFile.expectedDeckCount) || deckFile.expectedDeckCount < 1) {
+  failures++; console.error("!! expectedDeckCount must be a positive integer");
+} else if (deckFile.decks.length !== deckFile.expectedDeckCount) {
+  failures++; console.error(`!! Expected ${deckFile.expectedDeckCount} decks, found ${deckFile.decks.length}`);
+}
 const prestige = deckFile.decks.filter((deck) => deck.special === "prestige");
 const showcase = deckFile.decks.filter((deck) => deck.special === "showcase");
 if (prestige.length !== 1) { failures++; console.error("!! Exactly one prestige deck required"); }

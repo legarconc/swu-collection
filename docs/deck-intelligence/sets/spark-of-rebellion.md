@@ -1,7 +1,8 @@
 # Spark of Rebellion — Deck Intelligence set guide
 
-Set-specific notes behind the first 15 recommendations in `site/src/data/decks.json`.
-Compiled 11 July 2026. General rules and reusable best practices live in
+Set-specific notes behind the original 15 recommendations in `site/src/data/decks.json`.
+Compiled 11 July 2026 and reviewed against the expanded collection on 22 July
+2026. General rules and reusable best practices live in
 [`../general-strategy.md`](../general-strategy.md). No private collection data
 appears in this file or in the deck data; the decks themselves are intentionally
 published as part of the site.
@@ -46,7 +47,7 @@ Eternal update, no card in this pool is suspended.
   (C15/U35/Sp50/R70/L100) + 25% collector value. Rarity is calculated directly
   from the 50 cards. Collector value is calculated from each selected printing's
   dated public card-database price, log-normalized against the most valuable
-  deck in the 15-deck portfolio; no price is entered by hand or fetched at runtime.
+  deck in the current portfolio; no price is entered by hand or fetched at runtime.
 - **Showcase** = 55% deck quality + 30% cosmetic density (non-Standard cards
   of 50) + 15% cosmetic variety (of 3 variant kinds).
 - Gameplay ratings are the only expert-judgment input and are grounded in the
@@ -63,6 +64,21 @@ Eternal update, no card in this pool is suspended.
   utilities with unit tests, plus live validation displayed in the UI.
 - SWUDB export uses the community JSON deck format (`{leader, base, deck:
   [{id: "SOR_045", count: n}], sideboard: []}`).
+
+## July 2026 collection revision
+
+The later SOR boosters did not justify replacing every established list. Two
+newly available double-aspect legendaries did materially improve existing plans:
+
+- **Inferno Redline** moved from Aggression to a mono-Vigilance Iden control
+  shell and now uses both owned copies of *Vigilance* as its reset and recovery
+  turn.
+- **The Senate's Long Game** moved from Cunning to Command and now uses the
+  newly owned *Command* alongside Imperial ramp and recursion.
+
+All other original recommendations remain unchanged because the additions did
+not create a clearer improvement within their leader, aspect, curve, and
+ownership constraints.
 
 ## Sources
 

@@ -16,7 +16,7 @@ This directory is the durable research layer behind the site's deterministic dec
 2. Public card metadata comes from generated `data/cards.json`; confirmed upstream name/subtitle corrections live in `data/card-overrides.json` and are reapplied by every refresh.
 3. General recommendations come from the strategy guide and cited historical sources.
 4. Owned quantities and variants come only from ignored local collection exports or on-device collection data.
-5. Published recommendations live in `site/src/data/decks.json`.
+5. Published recommendations live in `site/src/data/decks.json`; its `expectedDeckCount` is the explicit portfolio-size contract.
 6. `scripts/validate-decks.mjs` is the release gate for deck structure, card references, aspects, printings, ownership when locally available, and derived special-deck rankings.
 
 Rules and recommendations must remain visibly distinct. A minimum deck size or copy limit is a rule; a 70% unit target or twelve early plays is a tunable heuristic.
@@ -37,6 +37,11 @@ Rules and recommendations must remain visibly distinct. A minimum deck size or c
 7. Run `npm test` and `npm run build` inside `site/`.
 8. Goldfish opening hands, then test against at least one aggro, midrange, and control reference deck.
 9. Record meaningful strategic conclusions in the relevant set guide; do not record private collection rows.
+
+The first cross-set expansion established a useful repeatable policy: add one
+deck for every newly owned leader, then revisit older decks only when newly
+owned cards materially improve their plan. A new booster does not require
+churning every list merely to show a more recent date.
 
 If a scan disagrees with public metadata, verify the printed card before changing the private collection. A wrong set code or collector number belongs in the collection export; a confirmed API spelling or subtitle error belongs in `data/card-overrides.json`. Overrides use canonical gameplay identity keys and therefore apply to Standard, Hyperspace, and foil printings together.
 

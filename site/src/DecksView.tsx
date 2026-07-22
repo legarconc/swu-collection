@@ -25,6 +25,7 @@ export function DecksView({ database, entries, onSelectCard }: {
   onSelectCard: (key: string) => void;
 }) {
   const [archetype, setArchetype] = useState("");
+  const [leaderSet, setLeaderSet] = useState("");
   const [leaderFilter, setLeaderFilter] = useState("");
   const [aspect, setAspect] = useState("");
   const [special, setSpecial] = useState("");
@@ -41,7 +42,8 @@ export function DecksView({ database, entries, onSelectCard }: {
   const colorAspects = ["Vigilance", "Command", "Aggression", "Cunning"];
 
   const filtered = decks.filter((deck) =>
-    (!archetype || deck.archetype === archetype)
+    (!leaderSet || deck.leader.id.startsWith(`${leaderSet}-`))
+    && (!archetype || deck.archetype === archetype)
     && (!leaderFilter || cardName(database, deck.leader.id) === leaderFilter)
     && (!aspect || deck.aspects.includes(aspect))
     && (!special
@@ -59,6 +61,11 @@ export function DecksView({ database, entries, onSelectCard }: {
     </div>
     <p className="format-note">{decksData.formatLabel}. <span title={decksData.notes}>Not Premier-legal since the March 2026 rotation — great for Eternal and kitchen-table play.</span></p>
     <div className="filters" aria-label="Deck filters">
+      <select aria-label="Leader set" value={leaderSet} onChange={(e) => setLeaderSet(e.target.value)}>
+        <option value="">All leader sets</option>
+        <option value="SOR">Spark of Rebellion</option>
+        <option value="ASH">Ashes of the Empire</option>
+      </select>
       <select aria-label="Archetype" value={archetype} onChange={(e) => setArchetype(e.target.value)}>
         <option value="">All archetypes</option>{archetypes.map((x) => <option key={x}>{x}</option>)}
       </select>

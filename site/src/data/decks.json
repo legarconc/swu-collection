@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-07-11",
-  "formatLabel": "Premier-style construction (exactly 50) · Spark of Rebellion card pool · Eternal/casual legal",
+  "generatedAt": "2026-07-22",
+  "expectedDeckCount": 27,
+  "formatLabel": "Premier-style construction (exactly 50) · owned SOR + ASH card pool · Eternal/casual legal",
   "premierLegal": false,
-  "notes": "SOR rotated out of Premier with the March 2026 release of A Lawless Time; these decks follow Premier deck-building rules and are legal in Eternal and casual play. Collector scores are calculated from the dated public card-database price snapshot, never fetched at runtime.",
+  "notes": "Every list uses only exact owned cards and printings, with zero aspect penalties. ASH is current, but SOR has rotated from Premier; because many lists mix both sets, this portfolio is presented for Eternal and casual play. Collector scores use the dated public card-database snapshot and are never fetched at runtime.",
   "decks": [
     {
       "id": "phoenix-ignition",
@@ -1067,31 +1068,42 @@
       "name": "Inferno Redline",
       "special": null,
       "archetype": "Control",
-      "secondary": "Attrition",
+      "secondary": "Mono-Vigilance attrition",
       "powerBand": "Strong",
-      "difficulty": "Advanced",
+      "difficulty": "Intermediate",
       "leader": {
         "id": "SOR-2",
         "printing": "SOR-2",
         "variant": "Standard"
       },
       "base": {
-        "id": "SOR-27",
-        "printing": "SOR-27",
+        "id": "SOR-19",
+        "printing": "SOR-19",
         "variant": "Standard"
       },
       "aspects": [
         "Vigilance",
         "Villainy",
-        "Aggression"
+        "Vigilance"
       ],
       "cards": [
         {
-          "id": "SOR-128",
+          "id": "SOR-59",
           "count": 3,
           "printings": [
             {
-              "key": "SOR-128",
+              "key": "SOR-59",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-225",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-225",
               "variant": "Standard",
               "count": 3
             }
@@ -1103,35 +1115,46 @@
           "printings": [
             {
               "key": "SOR-32",
-              "variant": "Standard",
-              "count": 2
+              "variant": "Standard Foil",
+              "count": 1
             },
             {
               "key": "SOR-32",
-              "variant": "Standard Foil",
-              "count": 1
+              "variant": "Standard",
+              "count": 2
             }
           ]
         },
         {
-          "id": "SOR-130",
+          "id": "SOR-228",
           "count": 3,
           "printings": [
             {
-              "key": "SOR-130",
+              "key": "SOR-228",
               "variant": "Standard",
               "count": 3
             }
           ]
         },
         {
-          "id": "SOR-129",
-          "count": 2,
+          "id": "SOR-226",
+          "count": 3,
           "printings": [
             {
-              "key": "SOR-129",
+              "key": "SOR-226",
               "variant": "Standard",
-              "count": 2
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-61",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-61",
+              "variant": "Standard",
+              "count": 3
             }
           ]
         },
@@ -1169,13 +1192,13 @@
           ]
         },
         {
-          "id": "SOR-131",
-          "count": 1,
+          "id": "SOR-63",
+          "count": 3,
           "printings": [
             {
-              "key": "SOR-131",
+              "key": "SOR-63",
               "variant": "Standard",
-              "count": 1
+              "count": 3
             }
           ]
         },
@@ -1185,101 +1208,35 @@
           "printings": [
             {
               "key": "SOR-66",
-              "variant": "Standard",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "id": "SOR-132",
-          "count": 3,
-          "printings": [
-            {
-              "key": "SOR-132",
-              "variant": "Standard",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "id": "SOR-133",
-          "count": 1,
-          "printings": [
-            {
-              "key": "SOR-133",
-              "variant": "Standard",
+              "variant": "Standard Foil",
               "count": 1
+            },
+            {
+              "key": "SOR-66",
+              "variant": "Standard",
+              "count": 2
             }
           ]
         },
         {
           "id": "SOR-37",
-          "count": 2,
+          "count": 3,
           "printings": [
             {
               "key": "SOR-37",
               "variant": "Standard",
-              "count": 2
+              "count": 3
             }
           ]
         },
         {
           "id": "SOR-39",
-          "count": 1,
+          "count": 2,
           "printings": [
             {
               "key": "SOR-39",
               "variant": "Standard",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "id": "SOR-165",
-          "count": 2,
-          "printings": [
-            {
-              "key": "SOR-165",
-              "variant": "Standard",
               "count": 2
-            }
-          ]
-        },
-        {
-          "id": "SOR-135",
-          "count": 2,
-          "printings": [
-            {
-              "key": "SOR-135",
-              "variant": "Standard",
-              "count": 1
-            },
-            {
-              "key": "SOR-399",
-              "variant": "Hyperspace",
-              "count": 1
-            }
-          ]
-        },
-        {
-          "id": "SOR-139",
-          "count": 3,
-          "printings": [
-            {
-              "key": "SOR-139",
-              "variant": "Standard",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "id": "SOR-172",
-          "count": 3,
-          "printings": [
-            {
-              "key": "SOR-172",
-              "variant": "Standard",
-              "count": 3
             }
           ]
         },
@@ -1288,9 +1245,19 @@
           "count": 3,
           "printings": [
             {
+              "key": "SOR-341",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-76",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
               "key": "SOR-76",
               "variant": "Standard",
-              "count": 3
+              "count": 1
             }
           ]
         },
@@ -1300,12 +1267,12 @@
           "printings": [
             {
               "key": "SOR-77",
-              "variant": "Standard",
+              "variant": "Standard Foil",
               "count": 1
             },
             {
               "key": "SOR-77",
-              "variant": "Standard Foil",
+              "variant": "Standard",
               "count": 1
             }
           ]
@@ -1344,85 +1311,79 @@
           ]
         },
         {
-          "id": "SOR-174",
-          "count": 1,
+          "id": "SOR-58",
+          "count": 2,
           "printings": [
             {
-              "key": "SOR-174",
+              "key": "SOR-58",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-58",
               "variant": "Standard",
               "count": 1
             }
           ]
+        },
+        {
+          "id": "SOR-69",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-69",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
         }
       ],
-      "identity": "This deck wins by defeating every unit the opponent commits, healing the damage race away through Iden, and turning the corner with Palpatine once the opponent's hand is empty.",
-      "spacePolicy": "Answer, don't contest: 6 space bodies plus cross-arena removal (Open Fire, Vanquish, Takedown, Force Choke) handle space threats on your terms.",
+      "identity": "Iden heals the base while a dense Vigilance package trades repeatedly; the two newly owned copies of Vigilance are now the deck's reset button.",
+      "spacePolicy": "Imperial ships establish early space presence while ground Sentinels buy time for Vigilance.",
       "guide": {
-        "winCondition": "Attrition: trade removal for units at profit, gain 1 base HP per enemy death via Iden's leader action, then win with Emperor Palpatine's 6-damage sweep into a stabilized board.",
-        "earlyGame": "Rounds 1-2: Death Star Stormtrooper and Scout Bike Pursuer trade early; Death Trooper's When Played kills a 2-HP unit (put his self-damage on Scout Bike Pursuer to turn on its Grit). Use Iden's action every round an enemy unit died — it is 10+ healing across a game.",
-        "midGame": "Rounds 3-5: Make an Opening shrinks a unit into Takedown range and heals; Force Choke kills a 5-HP problem (the card they draw matters less than the body). Deploy Iden at 6 — Shielded, and she heals on every enemy death while the removal suite fires.",
-        "lateGame": "Round 6+: Emperor Palpatine — Master of the Dark Side spreads 6 damage on arrival and Overwhelms; AT-AT Suppressor exhausts their whole ground arena for a free swing turn. Smoke and Cinders empties their reloaded hand in true control mirrors.",
+        "winCondition": "Trade, heal with Iden, reset a developed arena with Vigilance, then finish behind large Imperial units.",
+        "earlyGame": "Contest the opponent's first arena and plan a defeat that triggers Iden's heal.",
+        "midGame": "Use removal sparingly so Vigilance can produce a decisive multi-mode swing.",
+        "lateGame": "Deploy Iden after stabilizing and let repeated healing put the race out of reach.",
         "openingPriorities": [
-          "Death Star Stormtrooper",
-          "Scout Bike Pursuer",
-          "Death Trooper",
-          "Force Choke",
-          "Make an Opening"
+          "Keep a cost-2 unit and one removal event.",
+          "Against aggro, Guardian of the Whills is a priority."
         ],
         "mulligan": [
-          "Keep: one early body plus two pieces of interaction.",
-          "Keep: Death Trooper plus any 1-2 cost unit.",
-          "Send back: hands with both Palpatines or multiple 5+ cost cards.",
-          "Against aggro: prioritize First Legion Snowtrooper and cheap bodies over expensive removal."
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
         ],
         "combos": [
           {
             "cards": [
-              "Make an Opening",
-              "Takedown"
+              "Iden Versio",
+              "Vigilance"
             ],
-            "note": "-2/-2 pulls a 7-HP unit into Takedown's 5-HP kill range, and the heal advances the attrition plan."
+            "note": "The reset plus leader healing reverses both board and base pressure."
           },
           {
             "cards": [
-              "Death Trooper",
-              "First Legion Snowtrooper"
+              "Vigilance",
+              "Vanquish"
             ],
-            "note": "Death Trooper damages their unit; the Snowtrooper gets +2/+0 and Overwhelm attacking anything damaged."
-          },
-          {
-            "cards": [
-              "Fifth Brother — Fear Hunter",
-              "Iden Versio — Infero Squad Commander"
-            ],
-            "note": "His self-ping stacks Raid while every kill he finishes feeds Iden's healing."
-          },
-          {
-            "cards": [
-              "AT-AT Suppressor",
-              "Emperor Palpatine — Master of the Dark Side"
-            ],
-            "note": "Exhaust their ground arena, then deploy Palpatine and split 6 damage without retaliation."
+            "note": "The two answers cover both a developed arena and an individual large threat."
           }
         ],
         "resourcePriorities": [
-          "Resource one Palpatine early if both are drawn",
-          "Search Your Feelings fetches the missing piece — never resource it",
-          "Excess Vanquish copies are resources against aggro"
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
         ],
         "weaknesses": [
-          "No Avenger or Superlaser Blast: the classic hard-control endgame is approximated by Palpatine and card-quality wins.",
-          "Vehicle-heavy boards blank Force Choke (non-Vehicle only).",
-          "Slow starts lose to disciplined aggro; mulligan aggressively for early interaction."
+          "Cunning tempo can delay expensive stabilizers.",
+          "Passive hands without a cost-2 unit fall behind."
         ],
         "adjustments": [
-          "Power of the Dark Side is a second Vanquish in unique-heavy metas (owned x1, already included — swap Occupier Siege Tank for a 3rd Cell Block Guard variant of the plan).",
-          "Academy Defense Walker can become AT-ST x2 (owned) if Sentinel matters less than Overwhelm reach."
+          "Against control, resource early removal.",
+          "Against aggro, keep every cheap unit and heal trigger."
         ],
         "acquisitions": [
-          "Avenger (SOR) — the forced-sacrifice capital ship every Vigilance control deck wants.",
-          "Superlaser Blast (SOR) — the true board reset.",
-          "Ruthless Raider (SOR) — early Villainy tempo with reach."
+          "Additional Avenger",
+          "Additional Regional Governor"
         ]
       },
       "scores": {
@@ -1800,7 +1761,7 @@
       "name": "The Senate's Long Game",
       "special": null,
       "archetype": "Control",
-      "secondary": "Sacrifice / ramp",
+      "secondary": "Command ramp",
       "powerBand": "Strong",
       "difficulty": "Advanced",
       "leader": {
@@ -1809,22 +1770,38 @@
         "variant": "Standard"
       },
       "base": {
-        "id": "SOR-29",
-        "printing": "SOR-29",
-        "variant": "Standard"
+        "id": "SOR-23",
+        "printing": "SOR-289",
+        "variant": "Hyperspace"
       },
       "aspects": [
         "Command",
         "Villainy",
-        "Cunning"
+        "Command"
       ],
       "cards": [
         {
-          "id": "SOR-83",
+          "id": "SOR-108",
           "count": 3,
           "printings": [
             {
-              "key": "SOR-83",
+              "key": "SOR-108",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-225",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-225",
               "variant": "Standard",
               "count": 3
             }
@@ -1842,46 +1819,13 @@
           ]
         },
         {
-          "id": "SOR-176",
-          "count": 3,
-          "printings": [
-            {
-              "key": "SOR-176",
-              "variant": "Standard",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "id": "SOR-205",
-          "count": 2,
-          "printings": [
-            {
-              "key": "SOR-205",
-              "variant": "Standard",
-              "count": 2
-            }
-          ]
-        },
-        {
           "id": "SOR-227",
-          "count": 2,
+          "count": 3,
           "printings": [
             {
               "key": "SOR-227",
               "variant": "Standard",
-              "count": 2
-            }
-          ]
-        },
-        {
-          "id": "SOR-79",
-          "count": 2,
-          "printings": [
-            {
-              "key": "SOR-79",
-              "variant": "Standard",
-              "count": 2
+              "count": 3
             }
           ]
         },
@@ -1897,11 +1841,22 @@
           ]
         },
         {
-          "id": "SOR-229",
+          "id": "SOR-79",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-79",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-83",
           "count": 3,
           "printings": [
             {
-              "key": "SOR-229",
+              "key": "SOR-83",
               "variant": "Standard",
               "count": 3
             }
@@ -1919,35 +1874,46 @@
           ]
         },
         {
-          "id": "SOR-180",
+          "id": "SOR-230",
           "count": 2,
           "printings": [
             {
-              "key": "SOR-180",
+              "key": "SOR-230",
               "variant": "Standard",
               "count": 2
             }
           ]
         },
         {
-          "id": "SOR-211",
-          "count": 2,
-          "printings": [
-            {
-              "key": "SOR-211",
-              "variant": "Standard",
-              "count": 2
-            }
-          ]
-        },
-        {
-          "id": "SOR-183",
+          "id": "SOR-84",
           "count": 3,
           "printings": [
             {
-              "key": "SOR-183",
+              "key": "SOR-84",
               "variant": "Standard",
               "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-231",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-231",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-85",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-85",
+              "variant": "Standard",
+              "count": 2
             }
           ]
         },
@@ -1957,39 +1923,11 @@
           "printings": [
             {
               "key": "SOR-86",
-              "variant": "Standard",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "id": "SOR-232",
-          "count": 3,
-          "printings": [
+              "variant": "Standard Foil",
+              "count": 1
+            },
             {
-              "key": "SOR-232",
-              "variant": "Standard",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "id": "SOR-88",
-          "count": 2,
-          "printings": [
-            {
-              "key": "SOR-88",
-              "variant": "Standard",
-              "count": 2
-            }
-          ]
-        },
-        {
-          "id": "SOR-89",
-          "count": 2,
-          "printings": [
-            {
-              "key": "SOR-89",
+              "key": "SOR-86",
               "variant": "Standard",
               "count": 2
             }
@@ -2007,40 +1945,40 @@
           ]
         },
         {
-          "id": "SOR-222",
-          "count": 3,
-          "printings": [
-            {
-              "key": "SOR-222",
-              "variant": "Standard",
-              "count": 3
-            }
-          ]
-        },
-        {
-          "id": "SOR-186",
+          "id": "SOR-88",
           "count": 2,
           "printings": [
             {
-              "key": "SOR-186",
-              "variant": "Standard",
+              "key": "SOR-352",
+              "variant": "Hyperspace",
               "count": 1
             },
             {
-              "key": "SOR-449",
-              "variant": "Hyperspace Foil",
+              "key": "SOR-88",
+              "variant": "Standard Foil",
               "count": 1
             }
           ]
         },
         {
-          "id": "SOR-187",
+          "id": "SOR-89",
           "count": 1,
           "printings": [
             {
-              "key": "SOR-187",
+              "key": "SOR-89",
               "variant": "Standard",
               "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-126",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-126",
+              "variant": "Standard",
+              "count": 3
             }
           ]
         },
@@ -2057,87 +1995,89 @@
         },
         {
           "id": "SOR-92",
-          "count": 1,
+          "count": 2,
           "printings": [
             {
               "key": "SOR-92",
               "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-107",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-371",
+              "variant": "Hyperspace Foil",
               "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-234",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-234",
+              "variant": "Standard",
+              "count": 3
             }
           ]
         }
       ],
-      "identity": "This deck wins by feeding cheap Imperial bodies to Palpatine's engine — every sacrifice is a damage ping plus a card — until eight resources deploy the Emperor to steal the game.",
-      "spacePolicy": "Contest with 13 space units led by triple Gladiator Star Destroyer; space is where this deck's mid-game actually lives.",
+      "identity": "Palpatine now uses Command rather than Cunning, incorporating the newly owned Command legendary into a cleaner Imperial ramp shell.",
+      "spacePolicy": "Cheap TIEs protect space while Superlaser Technician and Command accelerate the ground-heavy endgame.",
       "guide": {
-        "winCondition": "Out-value everything: sacrifice fodder becomes removal and cards, ramp reaches eight resources, then deployed Palpatine takes their best damaged unit and the board follows.",
-        "earlyGame": "Rounds 1-2: ISB Agent, Viper Probe Droid and Jawa Scavenger hold ground. Superlaser Technician is the perfect card: body now, resource when it dies — including to your own leader action.",
-        "midGame": "Rounds 3-5: Palpatine's action (pay 1, exhaust, defeat a friendly unit → 1 damage + draw) should target units that already traded or Motti (his When Defeated readies a Villainy unit for a surprise extra attack). Bounty Hunter Crew ambushes and returns your best event.",
-        "lateGame": "Round 6+: deploy Palpatine at 8 — When Deployed he takes control of a damaged non-leader unit, and his On Attack repeats the sacrifice engine. Relentless protects the turn: their first event does nothing. The Emperor's Legion rebuys everything a sweep or a trade-heavy round lost.",
+        "winCondition": "Ramp ahead, spend expendable Imperial units for value, then bury the opponent under Palpatine and capital ships.",
+        "earlyGame": "Play a cheap Imperial unit or Superlaser Technician; avoid spending removal on replaceable bodies.",
+        "midGame": "Use Command to recover a unit while accelerating the resource plan.",
+        "lateGame": "Deploy Palpatine or a capital ship and convert the resource lead into repeated two-for-one turns.",
         "openingPriorities": [
-          "Superlaser Technician",
-          "ISB Agent",
-          "Viper Probe Droid",
-          "Admiral Motti — Brazen and Scornful",
-          "Gladiator Star Destroyer"
+          "Keep Superlaser Technician, Resupply, or a complete unit curve.",
+          "Command is a keep only with early development."
         ],
         "mulligan": [
-          "Keep: two cheap bodies plus ramp or a 3-cost play.",
-          "Keep: Technician + Motti — the engine pieces double as curve.",
-          "Send back: payoff-only hands (Relentless/Vader/AT-STs with nothing under 4).",
-          "Against aggro: keep Cell Block Guard and Gamorrean Guards over engine pieces."
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
         ],
         "combos": [
           {
             "cards": [
-              "Emperor Palpatine — Galactic Ruler",
+              "Emperor Palpatine",
               "Superlaser Technician"
             ],
-            "note": "Sacrificing the Technician gives a ping, a card, AND a ready resource — the whole deck in one action."
+            "note": "The Technician is an ideal expendable unit and advances the expensive endgame."
           },
           {
             "cards": [
-              "Emperor Palpatine — Galactic Ruler",
-              "Admiral Motti — Brazen and Scornful"
+              "Command",
+              "Darth Vader"
             ],
-            "note": "Sacrifice Motti after he blocked: ping + draw + ready your best Villainy attacker for a second swing."
-          },
-          {
-            "cards": [
-              "Admiral Piett — Captain of the Executor",
-              "Gladiator Star Destroyer"
-            ],
-            "note": "Piett gives your 6+ cost units Ambush; a Gladiator that attacks immediately while granting Sentinel is a two-for-one."
-          },
-          {
-            "cards": [
-              "The Emperor's Legion",
-              "Emperor Palpatine — Galactic Ruler"
-            ],
-            "note": "Units you sacrificed this phase come back to hand — the engine literally refuels itself."
+            "note": "The event bridges resources and recovers a high-impact Imperial threat."
           }
         ],
         "resourcePriorities": [
-          "Resource one Relentless if both are drawn",
-          "Never resource The Emperor's Legion",
-          "Extra 6-cost bodies are resources until round 4"
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
         ],
         "weaknesses": [
-          "Fast aggro punishes a deck that spends round 3-4 on setup; the Sentinel package is the only speed bump.",
-          "Payoff-heavy draws (three 6+ drops) lose on their own.",
-          "Stolen units return if Palpatine leaves play — do not over-invest in what you borrowed."
+          "Fast Heroism aggro can punish ramp turns.",
+          "Expensive hands can fail to affect the first two turns."
         ],
         "adjustments": [
-          "Bib Fortuna (owned x1) discounts I Had No Choice and Waylay in grindier games.",
-          "AT-AT Suppressor (owned x2) over AT-ST if ground stalls dominate your meta."
+          "Against aggro, resource capital ships and trade early.",
+          "Against control, preserve Command for recursion value."
         ],
         "acquisitions": [
-          "Force Lightning (SOR) — flexible removal that scales with Palpatine's late game.",
-          "Superlaser Blast (SOR) — the reset button for the games this deck falls behind in."
+          "Additional Command",
+          "Additional Darth Vader",
+          "Additional Devastator"
         ]
       },
       "scores": {
-        "gameplay": 70
+        "gameplay": 78
       }
     },
     {
@@ -3193,7 +3133,7 @@
           },
           {
             "cards": [
-              "C-3P0 — Protocol Droid",
+              "C-3PO — Protocol Droid",
               "R2-D2 — Ignoring Protocol"
             ],
             "note": "R2 peeks and can bottom the top card; 3PO then names the cost he saw for a free draw."
@@ -3571,7 +3511,7 @@
     {
       "id": "hope-in-hyperspace",
       "name": "Hope in Hyperspace",
-      "special": "showcase",
+      "special": null,
       "archetype": "Midrange",
       "secondary": "Shields & value",
       "powerBand": "Strong",
@@ -5245,6 +5185,5000 @@
       },
       "scores": {
         "gameplay": 52
+      }
+    },
+    {
+      "id": "forge-of-the-rising-sun",
+      "name": "Forge of the Rising Sun",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Upgrade tempo",
+      "powerBand": "Competitive casual",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "ASH-1",
+        "printing": "ASH-1",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "ASH-23",
+        "printing": "ASH-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Vigilance",
+        "Command",
+        "Aggression"
+      ],
+      "cards": [
+        {
+          "id": "SOR-108",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-164",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-164",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-111",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-111",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-120",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-120",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-119",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-383",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-119",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-167",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-167",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-112",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-112",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-169",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-169",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-171",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-171",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-126",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-628",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-390",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-115",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-379",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-115",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-130",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-632",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-130",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-129",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-129",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-131",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-395",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-131",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-133",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-133",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-180",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-180",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-181",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-181",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-263",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-263",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-134",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-134",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-121",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-121",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-120",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-120",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-166",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-166",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-85",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-349",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-85",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-86",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-350",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-86",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-184",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-184",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-136",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-136",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-140",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-140",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-185",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-687",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Build one difficult-to-answer attacker, recycle upgrades through The Armorer, and keep enough bodies in both arenas to avoid all-in exposure.",
+      "spacePolicy": "Eight space units plus flexible upgrades keep enemy space pressure honest while the ground unit carries the forge.",
+      "guide": {
+        "winCondition": "Stack efficient upgrades on a protected unit, turn each attack into extra value, then close with a large Overwhelm or Sentinel threat.",
+        "earlyGame": "Develop a cheap unit before committing an upgrade; use The Armorer only when replacing the resource will not break the next turn.",
+        "midGame": "Move the fight toward your upgraded attacker and force unfavorable trades with combat tricks.",
+        "lateGame": "Finish through Trask Walker, Dinosaur Turtle, or a tall upgraded unit.",
+        "openingPriorities": [
+          "Keep Bokken Saber or Durasteel Plating beside a cost-2 unit.",
+          "Prefer a hand with both ground and space access."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Bokken Saber",
+              "The Armorer"
+            ],
+            "note": "Play the upgrade from resources, replace it, and keep developing without losing a resource."
+          },
+          {
+            "cards": [
+              "Warrior of Clan Kryze",
+              "The Way of the Mand'alor"
+            ],
+            "note": "A resilient Mandalorian body makes the conditional upgrade easier to preserve."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Hard removal can punish a single tall unit.",
+          "Too many upgrades without bodies creates non-functional hands."
+        ],
+        "adjustments": [
+          "Against removal, spread upgrades across two units.",
+          "Against aggro, resource the slowest upgrade and contest immediately."
+        ],
+        "acquisitions": [
+          "The Darksaber",
+          "Reforge",
+          "Koska Reeves"
+        ]
+      },
+      "scores": {
+        "gameplay": 69
+      }
+    },
+    {
+      "id": "last-apprentice-standing",
+      "name": "Last Apprentice Standing",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Isolated-threat Force",
+      "powerBand": "Competitive casual",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "ASH-3",
+        "printing": "ASH-3",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "ASH-23",
+        "printing": "ASH-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Vigilance",
+        "Villainy",
+        "Aggression"
+      ],
+      "cards": [
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-141",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-643",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-164",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-164",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-32",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-32",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-32",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-143",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-407",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-239",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-239",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-238",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-502",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-238",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-33",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-33",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-170",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-170",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-30",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-30",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-131",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-131",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-145",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-145",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-242",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-242",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-133",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-133",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-146",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-146",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-244",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-746",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-244",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-147",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-147",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-176",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-176",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-135",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-399",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-135",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-139",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-139",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-341",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-76",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-77",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-77",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-77",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-180",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-180",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-181",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-181",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-262",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-262",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Baylan turns a lone arena threat into an oversized attacker; removal and Force units make that controlled isolation practical.",
+      "spacePolicy": "A compact space package prevents free damage while most pressure stays in ground where Baylan's Sentinel matters most.",
+      "guide": {
+        "winCondition": "Trade down to one premium unit in an arena, apply Baylan's +2/+2, and force the opponent through a Sentinel wall after deployment.",
+        "earlyGame": "Contest one arena cleanly instead of flooding both sides with fragile bodies.",
+        "midGame": "Use removal to preserve the lone-unit condition and attack for favorable trades.",
+        "lateGame": "Deploy Baylan behind a cleared arena and chain large Force and Imperial threats.",
+        "openingPriorities": [
+          "Keep a cost-2 unit and one interaction spell.",
+          "Imperial Loyalist plus a cost-3 play is an ideal curve."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Baylan Skoll",
+              "Praetorian Elite"
+            ],
+            "note": "A lone Elite becomes an awkwardly large target before Baylan deploys."
+          },
+          {
+            "cards": [
+              "Open Fire",
+              "Force Choke"
+            ],
+            "note": "Layer targeted removal to restore Baylan's isolated-unit bonus."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Token swarms can make the isolated-unit plan inefficient.",
+          "Space-heavy decks can stretch the removal package."
+        ],
+        "adjustments": [
+          "Against swarms, trade early rather than saving removal.",
+          "Against space, hold a space unit instead of resourcing it."
+        ],
+        "acquisitions": [
+          "Shin Hati",
+          "Ninth Sister",
+          "Chimaera"
+        ]
+      },
+      "scores": {
+        "gameplay": 68
+      }
+    },
+    {
+      "id": "twin-suns-resurgence",
+      "name": "Twin Suns Resurgence",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Healing value",
+      "powerBand": "Strongest available",
+      "difficulty": "Beginner",
+      "leader": {
+        "id": "ASH-5",
+        "printing": "ASH-269",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "ASH-22",
+        "printing": "ASH-22",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Vigilance",
+        "Heroism",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-93",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-93",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-236",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-236",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-44",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-44",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-44",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-105",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-105",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-106",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-106",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-251",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-251",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-252",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-516",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-127",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-127",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-46",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-46",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-78",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-580",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-78",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-49",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-315",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-49",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-64",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-64",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-65",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-65",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-133",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-133",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-114",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-378",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-114",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-53",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-53",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-54",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-54",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-134",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-134",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-89",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-89",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-92",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-356",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-92",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-258",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-258",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-77",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-77",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-78",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-78",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Luke converts every attack into durability, letting efficient Heroism units win repeated combats before capital ships finish the game.",
+      "spacePolicy": "A balanced Rebel space suite makes Luke's healing relevant in either arena and supports a Home One finish.",
+      "guide": {
+        "winCondition": "Take favorable attacks that survive because of Luke's healing, accumulate board advantage, then close with Home One or Heroic Purrgil.",
+        "earlyGame": "Curve a Rebel unit into a second threat and heal whichever attack preserves the most future damage.",
+        "midGame": "Use Perseverance and resilient units to keep a wider board than the opponent.",
+        "lateGame": "Deploy Luke for an immediate heal, then overwhelm exhausted defenses with the surviving board.",
+        "openingPriorities": [
+          "Keep Alliance X-Wing, Yoda, or Battlefield Marine.",
+          "Perseverance is a keep only with two early units."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Luke Skywalker",
+              "Perseverance"
+            ],
+            "note": "Repeated healing makes a key unit survive multiple combats."
+          },
+          {
+            "cards": [
+              "Home One",
+              "Alliance X-Wing"
+            ],
+            "note": "The capital ship converts an established Rebel space plan into a final push."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Direct defeat effects bypass healing.",
+          "Very fast aggro can pressure the base before Luke deploys."
+        ],
+        "adjustments": [
+          "Against hard removal, diversify threats.",
+          "Against aggro, prioritize board trades over base damage."
+        ],
+        "acquisitions": [
+          "Luke's Jedi Lightsaber",
+          "Leia Organa",
+          "Anakin Skywalker"
+        ]
+      },
+      "scores": {
+        "gameplay": 81
+      }
+    },
+    {
+      "id": "iron-discipline-doctrine",
+      "name": "Iron Discipline Doctrine",
+      "special": null,
+      "archetype": "Control",
+      "secondary": "Imperial combat control",
+      "powerBand": "Competitive casual",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "ASH-7",
+        "printing": "ASH-271",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "ASH-19",
+        "printing": "ASH-283",
+        "variant": "Hyperspace"
+      },
+      "aspects": [
+        "Command",
+        "Villainy",
+        "Vigilance"
+      ],
+      "cards": [
+        {
+          "id": "SOR-108",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-225",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-225",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-237",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-237",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-227",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-227",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-226",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-226",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "ASH-359",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-95",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-239",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-239",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-83",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-83",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-230",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-230",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-96",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-598",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-96",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-84",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-84",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-231",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-231",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-99",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-99",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-86",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-86",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-86",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-101",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-101",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-87",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-87",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-97",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-97",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-126",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-126",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-92",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-92",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-91",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-91",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-77",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-77",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-77",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-138",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-402",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-138",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-134",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-134",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Sloane makes every body defensive and threatening: Sentinel stabilizes the base while Overwhelm converts trades into pressure.",
+      "spacePolicy": "The Imperial package is deliberately split between arenas so Sloane's global keywords constrain every attack lane.",
+      "guide": {
+        "winCondition": "Stabilize behind Sentinel bodies, grind value through combat, then deploy Sloane to make the whole board close at once.",
+        "earlyGame": "Play an Imperial body in the arena the opponent is developing and avoid unnecessary base races.",
+        "midGame": "Sequence removal before combat so Overwhelm damage reaches the base.",
+        "lateGame": "Deploy Sloane with multiple survivors and turn defense into a two-arena counterattack.",
+        "openingPriorities": [
+          "Keep Vanguard Infantry, TIE/ln Fighter, or a cost-2 Sentinel candidate.",
+          "Keep Takedown against a known midrange opponent."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Grand Admiral Sloane",
+              "Outland Protector"
+            ],
+            "note": "Cheap bodies become both shields and Overwhelm attackers."
+          },
+          {
+            "cards": [
+              "Takedown",
+              "Superlaser Technician"
+            ],
+            "note": "Removal buys the time needed to reach Sloane's deployed board."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Non-combat removal ignores Sentinel.",
+          "A sparse board reduces the value of Sloane's global text."
+        ],
+        "adjustments": [
+          "Against control, deploy threats one at a time.",
+          "Against aggro, prioritize the arena with the largest immediate damage."
+        ],
+        "acquisitions": [
+          "Gallius Rax",
+          "Additional Moff Gideon",
+          "Chimaera"
+        ]
+      },
+      "scores": {
+        "gameplay": 71
+      }
+    },
+    {
+      "id": "fulcrum-strike-web",
+      "name": "Fulcrum Strike Web",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Support combat",
+      "powerBand": "Strong",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "ASH-9",
+        "printing": "ASH-9",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "ASH-23",
+        "printing": "ASH-23",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Command",
+        "Heroism",
+        "Aggression"
+      ],
+      "cards": [
+        {
+          "id": "SOR-93",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-93",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-152",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-152",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-105",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-105",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-106",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-106",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-120",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-120",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-154",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-154",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-167",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-167",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-240",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-240",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-107",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-107",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-171",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-171",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-252",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-516",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-126",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-628",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-390",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-158",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-660",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-129",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-129",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-130",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-632",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-130",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-111",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-111",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-113",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-113",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-114",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-378",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-114",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-263",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-263",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-134",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-134",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-181",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-181",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-184",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-184",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-136",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-136",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-140",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-140",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-162",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-162",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-188",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-452",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-258",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-258",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Ahsoka lets the smaller unit punch above its cost, turning a broad Heroism board into efficient trades and sudden base damage.",
+      "spacePolicy": "Rebel space units carry Support bonuses safely while Mandalorians control the ground.",
+      "guide": {
+        "winCondition": "Maintain two differently sized units, use Ahsoka's buff and Support to win combat, then pivot the surviving board into base pressure.",
+        "earlyGame": "Develop two bodies before spending cards on tricks; a small unit is an asset because it activates Ahsoka.",
+        "midGame": "Attack in the order that preserves the power gap and maximizes Support.",
+        "lateGame": "Deploy Ahsoka to stack Support with her leader ability and force a decisive combat turn.",
+        "openingPriorities": [
+          "Keep Battlefield Marine or Clan Wren Rescuer.",
+          "Prefer a hand with a cheap unit and a durable follow-up."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Ahsoka Tano",
+              "Sabine's Lightsaber"
+            ],
+            "note": "The buffed smaller attacker becomes a legitimate removal tool."
+          },
+          {
+            "cards": [
+              "Bo-Katan Kryze",
+              "Stronger Together"
+            ],
+            "note": "Build a board first, then convert width into favorable combat."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Sweep effects punish overextension.",
+          "Equal-power boards can temporarily blank the leader ability."
+        ],
+        "adjustments": [
+          "Against control, keep one unit in reserve.",
+          "Against aggro, use the buff for trades instead of base racing."
+        ],
+        "acquisitions": [
+          "The Darksaber",
+          "Additional Bo-Katan Kryze",
+          "Koska Reeves"
+        ]
+      },
+      "scores": {
+        "gameplay": 76
+      }
+    },
+    {
+      "id": "dead-mans-sightline",
+      "name": "Dead Man's Sightline",
+      "special": "showcase",
+      "archetype": "Control",
+      "secondary": "Ping attrition",
+      "powerBand": "Strongest available",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "ASH-11",
+        "printing": "ASH-11",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "ASH-20",
+        "printing": "ASH-20",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Villainy",
+        "Vigilance"
+      ],
+      "cards": [
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-141",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-643",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-32",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-32",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-32",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-143",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-407",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-33",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-33",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-30",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-30",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-170",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-170",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-131",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-131",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-145",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-145",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-48",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-48",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-132",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-396",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-132",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-242",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-242",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-146",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-146",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-133",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-133",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-244",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-746",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-244",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-147",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-147",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-176",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-176",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-135",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-399",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-139",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-139",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-341",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-76",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-77",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-77",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-77",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-78",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-78",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-151",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-151",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-186",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-450",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Cad's repeatable one-damage ping finishes wounded units and changes every combat calculation; Vigilance supplies the durable control shell.",
+      "spacePolicy": "TIE and capital-ship bodies ensure the control plan cannot be bypassed through space.",
+      "guide": {
+        "winCondition": "Chip opposing units into Cad range, trade efficiently, and let Overwhelm plus a stabilized board end the game.",
+        "earlyGame": "Play a body, then use Cad's ping only when it completes a defeat or creates a winning attack.",
+        "midGame": "Combine combat damage, Takedown, and the leader ping to gain card-neutral removals.",
+        "lateGame": "Deploy Cad, clear a defender with his attack trigger, and push Overwhelm damage through.",
+        "openingPriorities": [
+          "Keep a cost-2 unit plus Takedown.",
+          "Against swarm decks, keep Force Choke."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Cad Bane",
+              "Takedown"
+            ],
+            "note": "The ping brings larger units into Takedown range."
+          },
+          {
+            "cards": [
+              "Praetorian Elite",
+              "Force Choke"
+            ],
+            "note": "A sturdy body plus cheap removal helps Cad control combat."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Shield-heavy units can absorb pings.",
+          "Incorrect ping timing wastes the leader's main source of value."
+        ],
+        "adjustments": [
+          "Against shields, attack them off before using Cad.",
+          "Against control, hold removal for deployed leaders."
+        ],
+        "acquisitions": [
+          "Ninth Sister",
+          "Additional Cyborg Mech",
+          "Additional Praetorian Elite"
+        ]
+      },
+      "scores": {
+        "gameplay": 83
+      }
+    },
+    {
+      "id": "corsair-fuse-lit",
+      "name": "Corsair Fuse Lit",
+      "special": null,
+      "archetype": "Aggro",
+      "secondary": "Upgrade sacrifice burn",
+      "powerBand": "Experimental",
+      "difficulty": "Advanced",
+      "leader": {
+        "id": "ASH-12",
+        "printing": "ASH-12",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "ASH-21",
+        "printing": "ASH-21",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Villainy",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-141",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-643",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-237",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-237",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-164",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-164",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-167",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-167",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-238",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-502",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-238",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-143",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-407",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-171",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-171",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-112",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-112",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-145",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-145",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-173",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-173",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-146",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-146",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-126",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-628",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-390",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-130",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-632",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-130",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-147",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-147",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-176",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-176",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-33",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-835",
+              "variant": "Prestige Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-135",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-399",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-225",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-225",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-180",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-180",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-181",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-181",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-262",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-262",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-263",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-263",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-134",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-134",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-166",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-166",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-120",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-120",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-184",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-184",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-185",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-687",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-449",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-188",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-452",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-140",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-140",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Vane treats upgrades as delayed direct damage, forcing the opponent to respect both enhanced units and a final burn sequence.",
+      "spacePolicy": "A broad pirate and Imperial space package creates safe carriers for disposable upgrades.",
+      "guide": {
+        "winCondition": "Attack with upgraded units, then cash in spent or endangered upgrades through Vane to finish the enemy base.",
+        "earlyGame": "Establish a cheap carrier before attaching an upgrade; avoid sacrificing an upgrade that can still win a combat.",
+        "midGame": "Pressure in both arenas and count the base damage available from Vane plus events.",
+        "lateGame": "Deploy Vane, sacrifice an upgrade during the decisive attack, and finish with burn or a capital ship.",
+        "openingPriorities": [
+          "Keep Bokken Saber with a cost-2 unit.",
+          "Flarestar Attack Shuttle is a priority keep when the early curve is already present."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Vane",
+              "Bokken Saber"
+            ],
+            "note": "Use the Saber in combat, then turn it into two base damage when it is no longer safe."
+          },
+          {
+            "cards": [
+              "Grand Admiral Thrawn",
+              "Flarestar Attack Shuttle"
+            ],
+            "note": "The high-end pair rewards the Command splash with a strong finish."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Sacrificing upgrades too early lowers total pressure.",
+          "The deck has fewer defensive tools than the control shells."
+        ],
+        "adjustments": [
+          "Against aggro, use upgrades to win trades rather than burn.",
+          "Against control, spread carriers across arenas."
+        ],
+        "acquisitions": [
+          "Whistling Birds",
+          "Additional Bokken Saber",
+          "Additional Flarestar Shuttle"
+        ]
+      },
+      "scores": {
+        "gameplay": 65
+      }
+    },
+    {
+      "id": "lothal-fast-talk",
+      "name": "Lothal Fast Talk",
+      "special": null,
+      "archetype": "Aggro",
+      "secondary": "Initiative tempo",
+      "powerBand": "Competitive casual",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "ASH-13",
+        "printing": "ASH-277",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "ASH-26",
+        "printing": "ASH-26",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Heroism",
+        "Cunning"
+      ],
+      "cards": [
+        {
+          "id": "SOR-140",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-140",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-152",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-152",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-239",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-239",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-190",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-190",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-167",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-167",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-154",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-154",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-251",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-251",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-194",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-194",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-240",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-240",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-171",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-171",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-204",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-468",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-205",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-469",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-205",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-158",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-660",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-222",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-222",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-195",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-195",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-160",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-662",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-207",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-207",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-224",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-224",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-198",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-198",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-184",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-184",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-162",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-162",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-220",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-220",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-217",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-217",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-231",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-733",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-495",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-236",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-500",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-227",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-227",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-180",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-180",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Ezra rewards clean three-damage base attacks by adding Advantage elsewhere, creating a tempo snowball across both arenas.",
+      "spacePolicy": "Cheap ships are central, not incidental: they provide the unblocked three-damage hit that turns on Ezra.",
+      "guide": {
+        "winCondition": "Land repeated three-plus base attacks, place Advantage where it wins the next action, and keep initiative pressure until a finisher lands.",
+        "earlyGame": "Develop in the less-contested arena and plan the attack order around Ezra's trigger.",
+        "midGame": "Use Cunning tricks to open a base lane, then move Advantage to the unit that attacks next.",
+        "lateGame": "Deploy Ezra for Saboteur and force through the last damage behind tempo events.",
+        "openingPriorities": [
+          "Keep a cost-2 attacker with three power or a cheap space unit.",
+          "Rash Action is best kept only with a clear early curve."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Ezra Bridger",
+              "Surprise Strike"
+            ],
+            "note": "The power boost reliably crosses the three-damage threshold and creates Advantage."
+          },
+          {
+            "cards": [
+              "Han Solo",
+              "Rash Action"
+            ],
+            "note": "A high-impact attacker plus initiative-focused tempo sustains pressure after the opening hand."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Sentinel can shut off the base-damage trigger.",
+          "Small attackers lose value if initiative is surrendered."
+        ],
+        "adjustments": [
+          "Against Sentinel, save bounce and combat tricks for the blocking turn.",
+          "Against control, avoid deploying every threat at once."
+        ],
+        "acquisitions": [
+          "Additional Unsanctioned Patrol",
+          "Additional Han Solo",
+          "Additional Rash Action"
+        ]
+      },
+      "scores": {
+        "gameplay": 68
+      }
+    },
+    {
+      "id": "beskar-initiative",
+      "name": "Beskar Initiative",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Mandalorian initiative",
+      "powerBand": "Strong",
+      "difficulty": "Intermediate",
+      "leader": {
+        "id": "ASH-14",
+        "printing": "ASH-14",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "ASH-22",
+        "printing": "ASH-22",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Aggression",
+        "Heroism",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-140",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-140",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-152",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-152",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-105",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-105",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-106",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-106",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-120",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-120",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-154",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-154",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-167",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-167",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-249",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-249",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-251",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-251",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-107",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-107",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-169",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-169",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-126",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-628",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-390",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-158",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-660",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-130",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-632",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-130",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-160",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-662",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-111",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-111",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-176",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-176",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-113",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-113",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-149",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-149",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-263",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-263",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-114",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-378",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-114",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-181",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-181",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-162",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-162",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-184",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-184",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-185",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-687",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-449",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-140",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-140",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-188",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-452",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Mandalorian bodies and Support attacks preserve initiative, turning the leader's paid draw into a steady source of cards.",
+      "spacePolicy": "Fang fighters and the Mandalorian Flagship ensure the tribal plan applies pressure above the ground fight.",
+      "guide": {
+        "winCondition": "Take initiative on carefully chosen turns, pay for extra cards, then use Support to turn a wide Mandalorian board into decisive attacks.",
+        "earlyGame": "Curve out and take initiative when the extra draw is worth more than one additional low-impact action.",
+        "midGame": "Build a mixed-arena board and use Mandalorian synergies to keep units alive.",
+        "lateGame": "Deploy the leader for Support and convert stored card advantage into a final two-arena push.",
+        "openingPriorities": [
+          "Keep a cost-2 Mandalorian and a cost-3 follow-up.",
+          "Keep Intimidation against shield or upgrade strategies."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "The Mandalorian",
+              "Mandalorian Flagship"
+            ],
+            "note": "Support makes the Flagship attack above rate while both cards reinforce the tribal plan."
+          },
+          {
+            "cards": [
+              "Axe Woves",
+              "Stronger Together"
+            ],
+            "note": "Wide Mandalorian boards turn the event into a large combat swing."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Taking initiative too early can leave damage on the table.",
+          "Board clears punish the wide plan."
+        ],
+        "adjustments": [
+          "Against control, stagger the high-value Mandalorians.",
+          "Against aggro, spend every action needed to stabilize before taking initiative."
+        ],
+        "acquisitions": [
+          "The Darksaber",
+          "Additional Axe Woves",
+          "Additional Mandalorian Flagship"
+        ]
+      },
+      "scores": {
+        "gameplay": 77
+      }
+    },
+    {
+      "id": "imperial-advantage-engine",
+      "name": "Imperial Advantage Engine",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Go-wide Advantage",
+      "powerBand": "Strong",
+      "difficulty": "Advanced",
+      "leader": {
+        "id": "ASH-15",
+        "printing": "ASH-279",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "ASH-21",
+        "printing": "ASH-21",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Cunning",
+        "Villainy",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "ASH-189",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-691",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-237",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-237",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-176",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-176",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-225",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-225",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-191",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-191",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-215",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-215",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-238",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-502",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-238",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-227",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-227",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-226",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-226",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-239",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-239",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-218",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-218",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-83",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-83",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-230",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-230",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-219",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-721",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-194",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-194",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-84",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-84",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-231",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-231",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-99",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-99",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-196",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-196",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-101",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-101",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-87",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-87",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-179",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-179",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-231",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-733",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-495",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-236",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-500",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-92",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-92",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-227",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-227",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "identity": "Palpatine turns a wide board into repeatable Advantage, rewarding cheap units, careful exhaustion, and precise attack ordering.",
+      "spacePolicy": "Cheap Imperial ships expand the board without congesting ground and provide safe Advantage recipients.",
+      "guide": {
+        "winCondition": "Build multiple units, exhaust the least useful one to grant Advantage to the key attacker, and snowball the extra combat stats.",
+        "earlyGame": "Play bodies before utility events; Palpatine is weakest when only one unit survives.",
+        "midGame": "Choose the exhausted unit and Advantage recipient before the first attack to preserve the best sequence.",
+        "lateGame": "Deploy Palpatine, create a large Advantage stack, and let surviving Imperials finish both arenas.",
+        "openingPriorities": [
+          "Keep two cheap units, ideally split across arenas.",
+          "Diplomatic Pageantry is a keep only when the hand already develops the board."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Emperor Palpatine",
+              "Shin Hati's Fiend Fighter"
+            ],
+            "note": "A cheap body can be exhausted to empower a much larger attacker."
+          },
+          {
+            "cards": [
+              "The Great Mothers",
+              "Diplomatic Pageantry"
+            ],
+            "note": "The board-building package increases the number of units counted by Palpatine."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Sweep effects remove the resource Palpatine needs: board width.",
+          "Exhausting the wrong unit can sacrifice an important attack."
+        ],
+        "adjustments": [
+          "Against control, maintain three threats without emptying the hand.",
+          "Against aggro, use Advantage to win trades before racing."
+        ],
+        "acquisitions": [
+          "Moff Jerjerrod",
+          "Executor",
+          "Darth Vader"
+        ]
+      },
+      "scores": {
+        "gameplay": 75
+      }
+    },
+    {
+      "id": "nevarro-profit-loop",
+      "name": "Nevarro Profit Loop",
+      "special": null,
+      "archetype": "Midrange",
+      "secondary": "Advantage tokens",
+      "powerBand": "Strong",
+      "difficulty": "Beginner",
+      "leader": {
+        "id": "ASH-17",
+        "printing": "ASH-281",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "ASH-22",
+        "printing": "ASH-22",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Cunning",
+        "Heroism",
+        "Command"
+      ],
+      "cards": [
+        {
+          "id": "SOR-93",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-93",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-206",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-468",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "SOR-206",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-189",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-189",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-106",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-106",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-120",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-120",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-214",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-214",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-215",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-215",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-216",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-216",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-249",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-249",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-251",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-251",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-194",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-194",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-204",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-468",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-205",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-469",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-205",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-218",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-218",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-219",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-721",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-252",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-516",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-222",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-222",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-126",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-628",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-390",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-207",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-207",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-111",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-111",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-107",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-107",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-231",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-733",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            },
+            {
+              "key": "ASH-495",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-232",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-232",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-236",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-500",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-140",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-140",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "identity": "Greef makes every played or created unit arrive with Advantage, so a unit-dense list turns ordinary development into immediate combat quality.",
+      "spacePolicy": "A high ship count makes Greef's universal unit trigger matter in both arenas and protects against one-dimensional boards.",
+      "guide": {
+        "winCondition": "Play units every turn, spend their Advantage in favorable attacks, and use the resulting board lead to close with large Heroism threats.",
+        "earlyGame": "Curve units rather than holding them for perfect value; each one already receives Greef's bonus.",
+        "midGame": "Attack with the unit whose Advantage will prevent the most return damage.",
+        "lateGame": "Deploy Greef and continue producing enhanced units until Heroic Purrgil ends the game.",
+        "openingPriorities": [
+          "Keep two units costing 2–3.",
+          "A mixed-arena opening is better than a hand of redundant ground units."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Greef Karga",
+              "Unsanctioned Patrol"
+            ],
+            "note": "Fresh units immediately receive the combat boost they need to contest the board."
+          },
+          {
+            "cards": [
+              "Heroic Purrgil",
+              "Far Far Away"
+            ],
+            "note": "The top end supplies both a hard-to-ignore threat and flexible late-game tempo."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "Unit-light draws waste the leader ability.",
+          "Hard control can answer one enhanced unit at a time."
+        ],
+        "adjustments": [
+          "Against control, sequence medium threats before the Purrgil.",
+          "Against aggro, spend Advantage on trades rather than base damage."
+        ],
+        "acquisitions": [
+          "Additional Unsanctioned Patrol",
+          "Additional Heroic Purrgil",
+          "Additional token generators"
+        ]
+      },
+      "scores": {
+        "gameplay": 78
+      }
+    },
+    {
+      "id": "small-foundling-big-trouble",
+      "name": "Small Foundling, Big Trouble",
+      "special": null,
+      "archetype": "Control",
+      "secondary": "Defensive combat math",
+      "powerBand": "Experimental",
+      "difficulty": "Advanced",
+      "leader": {
+        "id": "ASH-18",
+        "printing": "ASH-282",
+        "variant": "Hyperspace"
+      },
+      "base": {
+        "id": "ASH-20",
+        "printing": "ASH-20",
+        "variant": "Standard"
+      },
+      "aspects": [
+        "Cunning",
+        "Heroism",
+        "Vigilance"
+      ],
+      "cards": [
+        {
+          "id": "SOR-236",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-236",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-189",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-189",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-44",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-44",
+              "variant": "Standard Foil",
+              "count": 1
+            },
+            {
+              "key": "SOR-44",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-239",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-239",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-190",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-190",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-214",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-214",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-251",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-251",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-252",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-516",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-194",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-194",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-204",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-468",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-205",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-469",
+              "variant": "Hyperspace",
+              "count": 1
+            },
+            {
+              "key": "ASH-205",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-219",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-721",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-46",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-46",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-222",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-222",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-207",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-207",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-224",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-224",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-217",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-217",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-220",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-220",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-236",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-500",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-211",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-211",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-210",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-210",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-227",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-227",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "identity": "Grogu's deployed combat modifier turns close fights in either direction; the deck survives until that subtle math becomes a control engine.",
+      "spacePolicy": "Droids, smugglers, and Heroic Purrgil create a real space endgame while the ground side protects the base.",
+      "guide": {
+        "winCondition": "Defend efficiently, use Vigilance tricks to extend the game, then deploy Grogu and make every defender trade above rate.",
+        "earlyGame": "Prioritize durable units and avoid base racing; the deck is built to reach the deployed leader.",
+        "midGame": "Use bounce and defensive events only when they preserve a unit or deny a major attack.",
+        "lateGame": "Deploy Grogu, force combats into modified defenders, and win with Purrgil or a surviving wide board.",
+        "openingPriorities": [
+          "Keep R2-D2, Leia Organa, or a cost-2 space unit.",
+          "Keep Fateful Goodbye against a known tall-unit deck."
+        ],
+        "mulligan": [
+          "Keep at least two playable units costing 2–3; ship hands that start at cost 4.",
+          "Keep a key synergy card only when the hand already has an early unit."
+        ],
+        "combos": [
+          {
+            "cards": [
+              "Grogu",
+              "Fateful Goodbye"
+            ],
+            "note": "Tempo removal buys the turn needed for Grogu's defensive combat modifier to take over."
+          },
+          {
+            "cards": [
+              "R2-D2",
+              "Leia Organa"
+            ],
+            "note": "The low-cost Heroism pair provides early board presence and value."
+          }
+        ],
+        "resourcePriorities": [
+          "Resource expensive finishers and duplicate situational events early.",
+          "Protect one copy of the card that unlocks the leader's central synergy."
+        ],
+        "weaknesses": [
+          "The leader side supplies no early action.",
+          "Direct base damage can bypass the defensive combat plan."
+        ],
+        "adjustments": [
+          "Against burn, pressure earlier with space units.",
+          "Against midrange, reserve interaction for the largest attacker."
+        ],
+        "acquisitions": [
+          "Additional Jod Na Nawood",
+          "Additional Elzar Mann",
+          "Razor Crest"
+        ]
+      },
+      "scores": {
+        "gameplay": 64
       }
     }
   ]

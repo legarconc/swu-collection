@@ -65,6 +65,7 @@ export interface Deck {
 
 export interface DeckFile {
   generatedAt: string;
+  expectedDeckCount: number;
   formatLabel: string;
   premierLegal: boolean;
   notes: string;

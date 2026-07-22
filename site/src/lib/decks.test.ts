@@ -186,8 +186,10 @@ describe("shipped deck portfolio", () => {
     readFileSync(path.resolve(__dirname, "../../../data/cards.json"), "utf8"),
   );
 
-  it("contains exactly 15 decks with one prestige and one showcase", () => {
-    expect(deckFile.decks).toHaveLength(15);
+  it("contains the declared deck portfolio with one prestige and one showcase", () => {
+    expect(deckFile.expectedDeckCount).toBe(27);
+    expect(deckFile.decks).toHaveLength(deckFile.expectedDeckCount);
+    expect(deckFile.decks.filter((deck) => deck.leader.id.startsWith("ASH-"))).toHaveLength(12);
     expect(deckFile.decks.filter((deck) => deck.special === "prestige")).toHaveLength(1);
     expect(deckFile.decks.filter((deck) => deck.special === "showcase")).toHaveLength(1);
     expect(deckFile.premierLegal).toBe(false);
