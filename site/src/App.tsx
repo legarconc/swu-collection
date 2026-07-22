@@ -5,9 +5,10 @@ import { mergeCollections, setEntryCount } from "./lib/collection";
 import { downloadText } from "./lib/download";
 import { exportFull, exportSwudb, parseCollectionFile, type ImportResult } from "./lib/formats";
 import { DecksView } from "./DecksView";
+import { TravelView } from "./TravelView";
 import { Modal } from "./Modal";
 
-type View = "collection" | "decks" | "stats" | "transfer" | "settings";
+type View = "collection" | "decks" | "travel" | "stats" | "transfer" | "settings";
 const STORAGE_KEY = "swu-collection-v1";
 const MODIFIED_KEY = "swu-collection-modified-v1";
 
@@ -85,6 +86,7 @@ function App() {
         <header className="topbar"><Brand /><span className="collection-total">{cardsLabel(totalCount(entries))}</span></header>
         {view === "collection" && <CollectionView database={database} entries={entries} onSelect={setSelectedKey} onAdd={() => setAdding(true)} />}
         {view === "decks" && <DecksView database={database} entries={entries} onSelectCard={setSelectedKey} />}
+        {view === "travel" && <TravelView database={database} entries={entries} onSelectCard={setSelectedKey} />}
         {view === "stats" && <StatsView database={database} entries={entries} />}
         {view === "transfer" && <TransferView database={database} entries={entries} onImport={(incoming, mode) => save(mergeCollections(entries, incoming, mode))} />}
         {view === "settings" && <SettingsView database={database} entries={entries} lastModified={lastModified} onClear={() => save([])} />}
@@ -104,6 +106,7 @@ function Navigation({ view, onChange }: { view: View; onChange: (view: View) => 
   const tabs: Array<{ id?: View; icon: string; label: string; disabled?: boolean }> = [
     { id: "collection", icon: "▦", label: "Collection" },
     { id: "decks", icon: "◇", label: "Decks" },
+    { id: "travel", icon: "◪", label: "Travel" },
     { id: "stats", icon: "⌁", label: "Stats" },
     { id: "transfer", icon: "⇅", label: "Import / Export" },
     { id: "settings", icon: "⚙", label: "Settings" },

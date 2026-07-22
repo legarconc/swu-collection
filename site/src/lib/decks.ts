@@ -143,7 +143,7 @@ export interface DeckStats {
 
 const CURVE_BUCKETS = ["0-1", "2", "3", "4", "5", "6", "7+"];
 
-export function deckStats(deck: Deck, database: CardDatabase): DeckStats {
+export function deckStats(deck: Pick<Deck, "cards">, database: CardDatabase): DeckStats {
   const curve = Object.fromEntries(CURVE_BUCKETS.map((b) => [b, 0]));
   const types: Record<string, number> = {};
   const arenas: Record<string, number> = { Ground: 0, Space: 0 };
@@ -169,7 +169,7 @@ const swudbId = (identityKey: string) => {
 };
 
 /** SWUDB-compatible deck JSON (import format used by swudb.com and tournament tools). */
-export function swudbDeckJson(deck: Deck): string {
+export function swudbDeckJson(deck: Pick<Deck, "cards" | "leader" | "base">): string {
   return JSON.stringify(
     {
       leader: { id: swudbId(deck.leader.id), count: 1 },
@@ -191,7 +191,7 @@ export interface CollectionCoverage {
   missing: Array<{ card: CardRecord; short: number; variant: string; kind: "main" | "leader" | "base" }>;
 }
 
-export function collectionCoverage(deck: Deck, entries: CollectionEntry[], database: CardDatabase): CollectionCoverage {
+export function collectionCoverage(deck: Pick<Deck, "cards" | "leader" | "base">, entries: CollectionEntry[], database: CardDatabase): CollectionCoverage {
   const ownedByPrinting = new Map<string, number>();
   for (const entry of entries) {
     const card = database.cards[`${entry.set}-${entry.number}`];

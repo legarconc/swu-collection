@@ -34,6 +34,8 @@ jobs:
         working-directory: site
       - name: Validate deck recommendations
         run: node scripts/validate-decks.mjs
+      - name: Validate travel deck roster
+        run: node scripts/validate-travel.mjs
       - name: Build for this repository path
         run: npm run build
         working-directory: site

@@ -118,6 +118,12 @@ Reusable game knowledge, update instructions, scoring rules, and set-specific re
 
 Spark of Rebellion rotated out of Premier in March 2026. Since the ASH recommendations deliberately use the full owned SOR + ASH pool, the portfolio is labeled Premier-style / Eternal-legal rather than Premier-legal.
 
+## Travel Decks
+
+The **Travel Decks** tab holds a curated roster of five decks meant to be sleeved into five physical deck boxes at once. Unlike the main Decks tab — where every deck is independently valid but they overlap on shared staples — the travel roster is a **disjoint allocation**: every physical card, leader, and base is assigned to at most one deck, never exceeding the owned quantity. Build all five simultaneously and no copy is double-used.
+
+The five are chosen for power and variety (distinct factions and play styles), which also naturally reduces card contention. The tab shows a live "all five build at once" check against the current collection, each 50-card list with cost curve and owned coverage, and a SWUDB export per box. Roster data lives in `site/src/data/travel-decks.json`; `scripts/validate-travel.mjs` and `site/src/lib/travel.test.ts` enforce that each deck is a legal 50 with zero aspect penalties, that leaders and bases are distinct, and that the whole roster fits inside the owned collection.
+
 ## Local development
 
 Node.js 22 or newer is recommended.

@@ -147,6 +147,12 @@ details ul, .import-summary ul { max-height: 180px; overflow: auto; padding-left
 .settings-list { display: grid; gap: .8rem; }.settings-list section > div:first-child { margin-right: 1rem; }.settings-list h2 { font-size: 1.05rem; margin-bottom: .25rem; }.settings-list p { margin-bottom: .8rem; }.settings-list section > div p { margin-bottom: 0; font-size: .85rem; }.setting-help { font-size: .78rem; margin: .8rem 0 0 !important; }.coming-soon { display: flex; align-items: center; gap: 1rem; opacity: .72; }.coming-soon > span { width: 46px; height: 46px; display: grid; place-items: center; border-radius: 13px; background: var(--surface-2); font-size: 1.3rem; }.coming-soon p { margin-bottom: 0; }
 
 .format-note { font-size: .82rem; margin: -0.6rem 0 .4rem; }
+.roster-check { border: 1px solid var(--line); border-left-width: 5px; border-radius: 13px; background: var(--surface); padding: .85rem 1rem; margin: 0 0 1.1rem; }
+.roster-check p { color: var(--text); margin: 0; font-size: .86rem; }
+.roster-check strong { font-weight: 800; }
+.roster-check.ok { border-left-color: #2f7a48; }
+.roster-check.bad { border-left-color: #b62c25; }
+.roster-check ul { margin: .5rem 0 0; padding-left: 1.1rem; font-size: .82rem; color: var(--muted); }
 .deck-grid { display: grid; gap: .9rem; }
 .deck-tile { min-height: auto; padding: .9rem; border-radius: 17px; display: flex; gap: .95rem; align-items: flex-start; text-align: left; }
 .deck-art { position: relative; flex: 0 0 88px; }

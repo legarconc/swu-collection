@@ -1,0 +1,1887 @@
+{
+  "generatedAt": "2026-07-22",
+  "note": "Five decks chosen for power and variety that share zero physical cards, leaders, or bases — build all five at once from your collection, one per deck box.",
+  "roster": [
+    {
+      "id": "travel-sith-onslaught",
+      "name": "Sith Onslaught",
+      "archetype": "Imperial aggro",
+      "identity": "Darth Vader fronts a relentless Aggression/Villainy beatdown: cheap Imperial bodies, burn removal, and Overwhelm finishers race the base down fast.",
+      "aspects": [
+        "Aggression",
+        "Villainy",
+        "Aggression"
+      ],
+      "leader": {
+        "id": "SOR-10",
+        "printing": "SOR-10",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-27",
+        "printing": "SOR-27",
+        "variant": "Standard"
+      },
+      "cards": [
+        {
+          "id": "SOR-168",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-168",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-139",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-139",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-171",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-171",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-172",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-172",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-154",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-154",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-164",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-164",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-156",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-156",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-128",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-128",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-141",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-643",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-129",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-129",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-238",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-238",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "ASH-502",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-130",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-130",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-143",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-407",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-169",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-169",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-170",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-170",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-131",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-131",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-242",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-242",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-249",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-249",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-145",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-145",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-173",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-173",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-164",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-164",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-146",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-146",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-165",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-165",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-133",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-133",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-232",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-232",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-176",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-176",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-147",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-147",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-135",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-135",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-399",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-180",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-180",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel-alliance-command",
+      "name": "Alliance Command",
+      "archetype": "Rebel go-wide",
+      "identity": "Leia turns a broad Command/Heroism Rebel board into coordinated attacks, backed by capital-ship pressure in the late game.",
+      "aspects": [
+        "Command",
+        "Heroism",
+        "Command"
+      ],
+      "leader": {
+        "id": "SOR-9",
+        "printing": "SOR-9",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-24",
+        "printing": "SOR-24",
+        "variant": "Standard"
+      },
+      "cards": [
+        {
+          "id": "SOR-103",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-103",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-123",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-123",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-106",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-106",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-126",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-126",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-138",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-138",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "ASH-402",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-107",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-371",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-258",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-258",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-140",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-140",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-93",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-93",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-94",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-94",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-117",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-117",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-236",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-236",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-108",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-95",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-95",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-105",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-105",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-238",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-238",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-109",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-109",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-119",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-119",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-106",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-106",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-120",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-120",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-98",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-98",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-362",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-123",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-123",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-99",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-99",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-114",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-114",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-126",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-390",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-130",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-130",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-256",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-256",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-116",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-116",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-100",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-100",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-131",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-131",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-101",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-101",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-102",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-102",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-119",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-119",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-134",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-134",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel-bounty-syndicate",
+      "name": "Bounty Syndicate",
+      "archetype": "Underworld midrange",
+      "identity": "Boba Fett anchors a Cunning/Villainy underworld shell that trades efficiently, denies value, and closes with premium bounty hunters.",
+      "aspects": [
+        "Cunning",
+        "Villainy",
+        "Cunning"
+      ],
+      "leader": {
+        "id": "SOR-15",
+        "printing": "SOR-15",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-29",
+        "printing": "SOR-29",
+        "variant": "Standard"
+      },
+      "cards": [
+        {
+          "id": "ASH-236",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-500",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-233",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-233",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-222",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-222",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-234",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-234",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-187",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-187",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-189",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-691",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-204",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-204",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-176",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-176",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-205",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-205",
+              "variant": "Standard",
+              "count": 2
+            },
+            {
+              "key": "SOR-205",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-206",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-206",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-214",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-214",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-178",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-178",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-216",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-216",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-217",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-217",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-190",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-692",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-209",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-209",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-191",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-191",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-228",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-228",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-179",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-179",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-219",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-721",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-210",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-210",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-249",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-249",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-211",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-211",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-222",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-222",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-182",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-182",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-244",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-244",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "ASH-746",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-213",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-213",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-232",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-232",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-226",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-226",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel-guardians-of-the-whills",
+      "name": "Guardians of the Whills",
+      "archetype": "Force vigilance",
+      "identity": "Chirrut Îmwe leads a resilient Vigilance/Heroism Force board that grinds combats with upgrades, big bodies, and healing.",
+      "aspects": [
+        "Vigilance",
+        "Heroism",
+        "Vigilance"
+      ],
+      "leader": {
+        "id": "SOR-4",
+        "printing": "SOR-4",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-20",
+        "printing": "SOR-20",
+        "variant": "Standard"
+      },
+      "cards": [
+        {
+          "id": "ASH-264",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-264",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-73",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-73",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-89",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-89",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-76",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-246",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-246",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-78",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-78",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-259",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-761",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-236",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-236",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-237",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-237",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-238",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-238",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-249",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-249",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-250",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-250",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-44",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-44",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-251",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-251",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-252",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-516",
+              "variant": "Hyperspace",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-75",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-75",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-45",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-45",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-46",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-46",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-242",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-242",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-47",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-47",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-47",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-61",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-61",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-256",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-256",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-48",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-48",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-49",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-49",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-64",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-64",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-65",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-65",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-85",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-85",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-57",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-57",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-69",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-69",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-54",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-54",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "travel-the-forge",
+      "name": "The Forge",
+      "archetype": "Upgrade tempo",
+      "identity": "The Armorer recycles upgrades onto durable Vigilance/Command bodies, converting a steady stream of value into tempo.",
+      "aspects": [
+        "Vigilance",
+        "Command",
+        "Command"
+      ],
+      "leader": {
+        "id": "ASH-1",
+        "printing": "ASH-1",
+        "variant": "Standard"
+      },
+      "base": {
+        "id": "SOR-23",
+        "printing": "SOR-23",
+        "variant": "Standard"
+      },
+      "cards": [
+        {
+          "id": "ASH-91",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-91",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-76",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-76",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "SOR-126",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-126",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-92",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-92",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "ASH-356",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-77",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-77",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "SOR-77",
+              "variant": "Standard Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-78",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-78",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-59",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-59",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-68",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-68",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-69",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-333",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-108",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-108",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-70",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-70",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-71",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-71",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-119",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-119",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-61",
+          "count": 3,
+          "printings": [
+            {
+              "key": "SOR-61",
+              "variant": "Standard",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "id": "ASH-260",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-260",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "SOR-62",
+          "count": 1,
+          "printings": [
+            {
+              "key": "SOR-62",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-247",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-247",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-120",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-120",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-113",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-113",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-78",
+          "count": 2,
+          "printings": [
+            {
+              "key": "ASH-78",
+              "variant": "Standard",
+              "count": 1
+            },
+            {
+              "key": "ASH-580",
+              "variant": "Hyperspace Foil",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-126",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-390",
+              "variant": "Hyperspace",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-127",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-127",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-80",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-80",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-129",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-129",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-130",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-130",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-131",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-131",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-29",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-29",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-82",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-82",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "SOR-118",
+          "count": 2,
+          "printings": [
+            {
+              "key": "SOR-118",
+              "variant": "Standard",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "id": "ASH-133",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-133",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-85",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-85",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-87",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-87",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "id": "ASH-88",
+          "count": 1,
+          "printings": [
+            {
+              "key": "ASH-88",
+              "variant": "Standard",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
