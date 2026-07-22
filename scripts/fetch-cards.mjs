@@ -41,6 +41,19 @@ const publicVariant = (value) => {
   return value || "Standard";
 };
 
+// Most cards carry their ability in FrontText. A few (e.g. Grogu, whose only
+// ability is his conditional deploy plus his deployed-unit side) have an empty
+// FrontText, so fall back to the Epic Action and deployed-side text instead of
+// showing nothing.
+const cardText = (row) => {
+  const front = (row.FrontText || "").trim();
+  if (front) return row.FrontText;
+  return [row.EpicAction, row.BackText]
+    .map((value) => (value || "").trim())
+    .filter(Boolean)
+    .join("\n\n");
+};
+
 const rows = [];
 for (const set of sets) {
   const payload = await fetchSet(set);
@@ -94,7 +107,7 @@ for (const row of rows) {
       hp: asNumber(row.HP),
       traits: row.Traits || [],
       rarity: row.Rarity || "",
-      text: row.FrontText || "",
+      text: cardText(row),
       arena: row.Arenas || [],
       images: { front: row.FrontArt || "", back: row.BackArt || null },
       defaultVariant: variant,
