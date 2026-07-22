@@ -165,6 +165,20 @@ foil copies. In particular, the Vane list can use the owned Prestige Foil Grand
 Admiral Thrawn because its Command base covers Thrawn's aspect. Cosmetic choice
 never changes gameplay identity or bypasses the three-copy limit.
 
+## Alternate builds
+
+Three aggressive alternates ship alongside the owned-leader lists, giving a
+second, faster line for the strongest leaders. Each keeps the zero-penalty,
+owned-only constraints and is a deliberate contrast to its primary build, not a
+strict upgrade. All are text- and curve-driven and pass the same validators;
+they are starting points for playtesting, not settled metagame claims.
+
+| Leader | Primary list (base aspect) | Alternate list | Added base aspect | Contrast |
+| --- | --- | --- | --- | --- |
+| Emperor Palpatine | Imperial Advantage Engine (Command) | According to Plan | Aggression | Removal-backed go-wide burn instead of the grindy Command value engine — the same Advantage payoff, applied faster. |
+| Cad Bane | Dead Man's Sightline (Vigilance) | Quickdraw Contract | Aggression | Full Aggression/Villainy beatdown that uses the ping to finish combats, instead of the Vigilance control shell. |
+| Luke Skywalker | Twin Suns Resurgence (Command) | Red Five Offensive | Aggression | Proactive wide Rebel tempo where the leader heal sustains repeated attacks, instead of defensive healing value. |
+
 ## Research and validation notes
 
 - Do not label an ASH deck “best” from prerelease impressions alone. Separate
@@ -175,6 +189,10 @@ never changes gameplay identity or bypasses the three-copy limit.
 - Keep identity and printing separate. For example, the prerelease Hyperspace
   leader and its Standard printing are the same gameplay identity for copy and
   deck purposes.
+- Grogu's leader card carries no `FrontText`; his ability lives entirely in the
+  Epic Action (conditional deploy) and the deployed unit side (`BackText`). The
+  fetch script now falls back to those fields when `FrontText` is empty, so
+  double-sided leaders display their real ability text instead of a blank.
 - Before adding ASH decks to the published portfolio, run the exact ownership,
   aspect, 50-card, copy-limit, printing, and SWUDB round-trip validators already
   required by the deck data schema.

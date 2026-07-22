@@ -187,9 +187,9 @@ describe("shipped deck portfolio", () => {
   );
 
   it("contains the declared deck portfolio with one prestige and one showcase", () => {
-    expect(deckFile.expectedDeckCount).toBe(27);
+    expect(deckFile.expectedDeckCount).toBe(30);
     expect(deckFile.decks).toHaveLength(deckFile.expectedDeckCount);
-    expect(deckFile.decks.filter((deck) => deck.leader.id.startsWith("ASH-"))).toHaveLength(12);
+    expect(deckFile.decks.filter((deck) => deck.leader.id.startsWith("ASH-"))).toHaveLength(15);
     expect(deckFile.decks.filter((deck) => deck.special === "prestige")).toHaveLength(1);
     expect(deckFile.decks.filter((deck) => deck.special === "showcase")).toHaveLength(1);
     expect(deckFile.premierLegal).toBe(false);
