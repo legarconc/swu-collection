@@ -4,7 +4,7 @@ import type { DeckCard } from "./decks";
 /**
  * A travel deck is a full 50-card deck plus leader and base, chosen so that the
  * whole roster shares no physical card, leader, or base — every copy is used at
- * most as many times as it is owned across all five decks at once.
+ * most as many times as it is owned across the complete roster.
  */
 export interface TravelDeck {
   id: string;
@@ -33,7 +33,7 @@ export interface RosterConflict {
 }
 
 export interface RosterCheck {
-  /** Total main-deck cards across the roster (5 × 50 when complete). */
+  /** Total main-deck cards across the roster (roster size × 50 when complete). */
   mainCards: number;
   /** Main-deck cards + one leader and one base per deck. */
   physicalCards: number;

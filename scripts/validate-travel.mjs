@@ -1,7 +1,7 @@
 // Validates site/src/data/travel-decks.json: each deck is a legal 50-card build
 // (zero aspect penalties, real owned printings, distinct leaders/bases), and the
 // whole roster is simultaneously buildable — no card, leader, or base identity is
-// used more times than it is owned across all five decks at once. Ownership is
+// used more times than it is owned across all six decks at once. Ownership is
 // checked against the private collection export when present (skipped in CI).
 import { readFile } from "node:fs/promises";
 import { existsSync } from "node:fs";

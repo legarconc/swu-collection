@@ -1,12 +1,13 @@
-// Rebuilds site/src/data/travel-decks.json as a set-pure roster: the three SOR
-// decks keep only SOR cards and the two ASH decks keep only ASH cards. Off-set
-// backfills left over from the earlier fair-split allocator are replaced with
-// owned on-set substitutes (see ADDITIONS), then every main-deck entry is
+// Rebuilds site/src/data/travel-decks.json as a disjoint roster: the first three
+// decks keep only SOR cards, the next two keep only ASH cards, and the sixth may
+// use the remaining cards from either set. Off-set backfills left over from the
+// earlier fair-split allocator are replaced with owned on-set substitutes (see
+// ADDITIONS), then every main-deck entry is
 // re-allocated physical printings fanciest-first (Prestige Foil > Prestige >
 // Hyperspace Foil > Hyperspace > Standard Foil > Standard), leaders and bases
 // keep their current printings, and the result is checked for legality
-// (50 cards, zero aspect penalty, three-copy title limit, ownership at both the
-// identity and printing level) before the file is written.
+// (50 cards, zero aspect penalties, three-copy title limit, ownership at both
+// the identity and printing level) before the file is written.
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -15,13 +16,15 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const db = JSON.parse(await readFile(path.join(root, "data", "cards.json"), "utf8"));
 const travel = JSON.parse(await readFile(path.join(root, "site", "src", "data", "travel-decks.json"), "utf8"));
 
-// Each travel deck may only contain cards from its leader's set.
-const SET_PREFIX = {
-  "travel-phoenix-ignition": "SOR",
-  "travel-bounty-compound-interest": "SOR",
-  "travel-two-fronts-one-rebellion": "SOR",
-  "travel-dead-mans-sightline": "ASH",
-  "travel-twin-suns-resurgence": "ASH",
+// The original five boxes remain set-pure. The sixth is deliberately mixed and
+// may draw from whatever SOR and ASH printings remain after those five.
+const ALLOWED_SETS = {
+  "travel-phoenix-ignition": ["SOR"],
+  "travel-bounty-compound-interest": ["SOR"],
+  "travel-two-fronts-one-rebellion": ["SOR"],
+  "travel-dead-mans-sightline": ["ASH"],
+  "travel-twin-suns-resurgence": ["ASH"],
+  "travel-thrawns-return-protocol": ["SOR", "ASH"],
 };
 
 // Owned on-set substitutes for the off-set cards each deck loses, chosen to
@@ -111,13 +114,15 @@ const ADDITIONS = {
   ],
 };
 
-// The two ASH decks are mono-ASH homebrews now; their one-line identity text
-// should say what they actually are.
+// The two set-pure ASH decks and the mixed sixth deck are collection-constrained
+// homebrews; their one-line identity text should say what they actually are.
 const IDENTITY_UPDATES = {
   "travel-dead-mans-sightline":
     "Cad's repeatable one-damage ping finishes wounded units and changes every combat calculation; an all-ASH shell of Imperial bodies, Advantage tricks, and attack punishment keeps every fight on his terms.",
   "travel-twin-suns-resurgence":
     "Luke converts every attack into durability; an all-ASH shell of Mandalorian tokens, Sentinels, and restore units wins repeated combats before the capital ships close out the game.",
+  "travel-thrawns-return-protocol":
+    "Sloane turns every surviving Imperial into a Sentinel and Overwhelm threat. Cheap troopers and TIEs contest both arenas until the Prestige Foil Thrawn converts Support into repeat attacks.",
 };
 
 const VARIANT_RANK = {
@@ -180,16 +185,23 @@ const aspectPenalty = (cardAspects, icons) => {
 
 // Apply removals (every off-set entry) and additions, then validate counts.
 const removed = {};
+const appliedAdditions = {};
 for (const deck of travel.roster) {
-  const prefix = SET_PREFIX[deck.id];
+  const allowedSets = ALLOWED_SETS[deck.id];
+  if (!allowedSets) throw new Error(`${deck.name}: no allowed-set policy declared`);
+  const isAllowedIdentity = (id) => allowedSets.some((set) => id.startsWith(`${set}-`));
   const keep = [];
   for (const entry of deck.cards) {
-    if (identityOf(entry.id).startsWith(`${prefix}-`)) keep.push({ id: identityOf(entry.id), count: entry.count });
+    if (isAllowedIdentity(identityOf(entry.id))) keep.push({ id: identityOf(entry.id), count: entry.count });
     else removed[deck.id] = [...(removed[deck.id] || []), ...Array(entry.count).fill(entry.id)];
   }
-  for (const added of ADDITIONS[deck.id] || []) {
+  // Once a roster has already been made set-pure, re-running the allocator must
+  // not append the historical replacements a second time.
+  const additions = (removed[deck.id] || []).length > 0 ? (ADDITIONS[deck.id] || []) : [];
+  appliedAdditions[deck.id] = additions;
+  for (const added of additions) {
     const id = identityOf(added);
-    if (!id.startsWith(`${prefix}-`)) throw new Error(`${deck.name}: addition ${added} is not ${prefix}`);
+    if (!isAllowedIdentity(id)) throw new Error(`${deck.name}: addition ${added} is not in ${allowedSets.join("/")}`);
     const existing = keep.find((e) => e.id === id);
     if (existing) existing.count += 1; else keep.push({ id, count: 1 });
   }
@@ -202,7 +214,8 @@ const rosterIdentityUse = new Map();
 const addIdentityUse = (id, n) => rosterIdentityUse.set(id, (rosterIdentityUse.get(id) || 0) + n);
 const problems = [];
 for (const deck of travel.roster) {
-  const prefix = SET_PREFIX[deck.id];
+  const allowedSets = ALLOWED_SETS[deck.id];
+  const isAllowedIdentity = (id) => allowedSets.some((set) => id.startsWith(`${set}-`));
   const leader = db.cards[deck.leader.id];
   const base = db.cards[deck.base.id];
   const icons = [...leader.aspects, ...base.aspects];
@@ -214,7 +227,7 @@ for (const deck of travel.roster) {
     const card = db.cards[entry.id];
     total += entry.count;
     addIdentityUse(entry.id, entry.count);
-    if (!entry.id.startsWith(`${prefix}-`)) problems.push(`${deck.name}: ${entry.id} breaks ${prefix} purity`);
+    if (!isAllowedIdentity(entry.id)) problems.push(`${deck.name}: ${entry.id} is outside ${allowedSets.join("/")}`);
     if (aspectPenalty(card.aspects, icons) > 0) problems.push(`${deck.name}: ${card.name} incurs an aspect penalty`);
     const title = `${card.name}|${card.subtitle}`;
     titles.set(title, (titles.get(title) || 0) + entry.count);
@@ -272,8 +285,9 @@ for (const deck of travel.roster) {
 // Report the swaps for review.
 for (const deck of travel.roster) {
   const gone = removed[deck.id] || [];
-  if (!gone.length && !(ADDITIONS[deck.id] || []).length) { console.log(`- ${deck.name}: unchanged`); continue; }
-  console.log(`- ${deck.name}: removed ${gone.length}, added ${(ADDITIONS[deck.id] || []).length}`);
+  const added = appliedAdditions[deck.id] || [];
+  if (!gone.length && !added.length) { console.log(`- ${deck.name}: unchanged`); continue; }
+  console.log(`- ${deck.name}: removed ${gone.length}, added ${added.length}`);
 }
 
 travel.generatedAt = new Date().toISOString().slice(0, 10);

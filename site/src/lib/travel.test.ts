@@ -15,8 +15,8 @@ const collectionText = readFileSync(path.resolve(__dirname, "../../../data/colle
 const entries = parseCollectionFile(collectionText, db).entries;
 
 describe("travel deck roster", () => {
-  it("ships five legal 50-card decks with zero aspect penalties", () => {
-    expect(travel.roster).toHaveLength(5);
+  it("ships six legal 50-card decks with zero aspect penalties", () => {
+    expect(travel.roster).toHaveLength(6);
     for (const deck of travel.roster) {
       const total = deck.cards.reduce((sum, card) => sum + card.count, 0);
       expect(total, deck.name).toBe(50);
@@ -51,6 +51,6 @@ describe("travel deck roster", () => {
     const check = rosterCheck(travel.roster, entries, db);
     expect(check.conflicts).toEqual([]);
     expect(check.buildable).toBe(true);
-    expect(check.mainCards).toBe(250);
+    expect(check.mainCards).toBe(300);
   });
 });

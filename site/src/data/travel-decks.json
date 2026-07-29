@@ -1,6 +1,6 @@
 {
- "generatedAt": "2026-07-22",
- "note": "The five strongest decks from the portfolio (3 Spark of Rebellion, 2 Ashes of the Empire), fit into five deck boxes at once — each kept as close as possible to its original build, with premium printings applied first.",
+ "generatedAt": "2026-07-29",
+ "note": "Six disjoint decks fit into six boxes at once. The original five remain fixed and set-pure; Thrawn's Return Protocol uses only the remaining Spark of Rebellion and Ashes of the Empire cards. Every card is on-aspect, and premium printings are applied first.",
  "roster": [
   {
    "id": "travel-phoenix-ignition",
@@ -2021,6 +2021,308 @@
      "printings": [
       {
        "key": "ASH-134",
+       "variant": "Standard",
+       "count": 1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "travel-thrawns-return-protocol",
+   "name": "Thrawn's Return Protocol",
+   "archetype": "Midrange · Imperial combat control",
+   "identity": "Sloane turns every surviving Imperial into a Sentinel and Overwhelm threat. Cheap troopers and TIEs contest both arenas until the Prestige Foil Thrawn converts Support into repeat attacks.",
+   "aspects": [
+    "Command",
+    "Villainy",
+    "Aggression"
+   ],
+   "leader": {
+    "id": "ASH-7",
+    "printing": "ASH-271",
+    "variant": "Hyperspace"
+   },
+   "base": {
+    "id": "SOR-27",
+    "printing": "SOR-293",
+    "variant": "Hyperspace"
+   },
+   "cards": [
+    {
+     "id": "SOR-172",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-172",
+       "variant": "Standard Foil",
+       "count": 1
+      },
+      {
+       "key": "SOR-172",
+       "variant": "Standard",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "id": "SOR-126",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-126",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-234",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-234",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-92",
+     "count": 1,
+     "printings": [
+      {
+       "key": "SOR-92",
+       "variant": "Standard",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "id": "SOR-128",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-128",
+       "variant": "Standard",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "id": "SOR-225",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-225",
+       "variant": "Standard",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "id": "SOR-226",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-226",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-79",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-79",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-130",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-130",
+       "variant": "Standard",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "id": "ASH-95",
+     "count": 3,
+     "printings": [
+      {
+       "key": "ASH-359",
+       "variant": "Hyperspace",
+       "count": 1
+      },
+      {
+       "key": "ASH-95",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-227",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-227",
+       "variant": "Standard",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "id": "SOR-228",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-228",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-229",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-229",
+       "variant": "Standard",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "id": "ASH-96",
+     "count": 1,
+     "printings": [
+      {
+       "key": "ASH-598",
+       "variant": "Hyperspace Foil",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "id": "SOR-230",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-230",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-83",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-83",
+       "variant": "Standard",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "id": "SOR-84",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-84",
+       "variant": "Standard",
+       "count": 3
+      }
+     ]
+    },
+    {
+     "id": "SOR-132",
+     "count": 3,
+     "printings": [
+      {
+       "key": "SOR-396",
+       "variant": "Hyperspace",
+       "count": 1
+      },
+      {
+       "key": "SOR-132",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "ASH-130",
+     "count": 1,
+     "printings": [
+      {
+       "key": "ASH-130",
+       "variant": "Standard",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "id": "ASH-99",
+     "count": 1,
+     "printings": [
+      {
+       "key": "ASH-99",
+       "variant": "Standard",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "id": "SOR-85",
+     "count": 2,
+     "printings": [
+      {
+       "key": "SOR-85",
+       "variant": "Standard",
+       "count": 2
+      }
+     ]
+    },
+    {
+     "id": "SOR-86",
+     "count": 1,
+     "printings": [
+      {
+       "key": "SOR-86",
+       "variant": "Standard",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "id": "ASH-33",
+     "count": 1,
+     "printings": [
+      {
+       "key": "ASH-835",
+       "variant": "Prestige Foil",
+       "count": 1
+      }
+     ]
+    },
+    {
+     "id": "ASH-97",
+     "count": 1,
+     "printings": [
+      {
+       "key": "ASH-97",
        "variant": "Standard",
        "count": 1
       }
