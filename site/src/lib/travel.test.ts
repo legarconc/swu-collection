@@ -15,16 +15,22 @@ const collectionText = readFileSync(path.resolve(__dirname, "../../../data/colle
 const entries = parseCollectionFile(collectionText, db).entries;
 
 describe("travel deck roster", () => {
-  it("uses the printed cost for Moff Gideon — Remnant Commander across every ASH printing", () => {
+  it("uses the verified printed metadata for upstream card-data corrections", () => {
     const printings = Object.values(db.cards).filter((card) => card.identityKey === "ASH-97");
     expect(printings).toHaveLength(6);
     for (const printing of printings) {
       expect(printing.cost, printing.key).toBe(3);
     }
+
+    const snapshotPrintings = Object.values(db.cards).filter((card) => card.identityKey === "SOR-215");
+    expect(snapshotPrintings).toHaveLength(2);
+    for (const printing of snapshotPrintings) {
+      expect(printing, printing.key).toMatchObject({ type: "Upgrade", power: 1, hp: 1 });
+    }
   });
 
-  it("ships six legal 50-card decks with zero aspect penalties", () => {
-    expect(travel.roster).toHaveLength(6);
+  it("ships seven legal 50-card decks with zero aspect penalties", () => {
+    expect(travel.roster).toHaveLength(7);
     for (const deck of travel.roster) {
       const total = deck.cards.reduce((sum, card) => sum + card.count, 0);
       expect(total, deck.name).toBe(50);
@@ -55,10 +61,33 @@ describe("travel deck roster", () => {
     expect(new Set(leaders).size).toBe(leaders.length);
   });
 
+  it("keeps the seventh deck's remaining-pool showcase composition", () => {
+    const deck = travel.roster.find((candidate) => candidate.id === "travel-gilded-nevarro-circuit");
+    expect(deck).toBeTruthy();
+
+    const premiumMainCards = deck!.cards.reduce(
+      (total, card) =>
+        total
+        + card.printings
+          .filter((printing) => printing.variant !== "Standard")
+          .reduce((sum, printing) => sum + printing.count, 0),
+      0,
+    );
+    const showcaseRarities = deck!.cards.reduce((total, card) => {
+      const rarity = db.cards[card.id].rarity;
+      return total + (rarity === "Legendary" || rarity === "Special" ? card.count : 0);
+    }, 0);
+
+    expect(premiumMainCards).toBe(26);
+    expect(showcaseRarities).toBe(7);
+    expect(deck!.leader.variant).toBe("Hyperspace");
+    expect(deck!.base.variant).toBe("Hyperspace");
+  });
+
   it("is simultaneously buildable from the published collection", () => {
     const check = rosterCheck(travel.roster, entries, db);
     expect(check.conflicts).toEqual([]);
     expect(check.buildable).toBe(true);
-    expect(check.mainCards).toBe(300);
+    expect(check.mainCards).toBe(350);
   });
 });

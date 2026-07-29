@@ -2,6 +2,11 @@
   "SOR-2": {
     "subtitle": "Inferno Squad Commander"
   },
+  "SOR-215": {
+    "type": "Upgrade",
+    "power": 1,
+    "hp": 1
+  },
   "SOR-238": {
     "name": "C-3PO"
   },

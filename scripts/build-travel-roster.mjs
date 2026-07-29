@@ -1,6 +1,6 @@
 // Rebuilds site/src/data/travel-decks.json as a disjoint roster: the first three
-// decks keep only SOR cards, the next two keep only ASH cards, and the sixth may
-// use the remaining cards from either set. Off-set backfills left over from the
+// decks keep only SOR cards, the next two keep only ASH cards, and the last two
+// may use the remaining cards from either set. Off-set backfills left over from the
 // earlier fair-split allocator are replaced with owned on-set substitutes (see
 // ADDITIONS), then every main-deck entry is
 // re-allocated physical printings fanciest-first (Prestige Foil > Prestige >
@@ -16,8 +16,8 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const db = JSON.parse(await readFile(path.join(root, "data", "cards.json"), "utf8"));
 const travel = JSON.parse(await readFile(path.join(root, "site", "src", "data", "travel-decks.json"), "utf8"));
 
-// The original five boxes remain set-pure. The sixth is deliberately mixed and
-// may draw from whatever SOR and ASH printings remain after those five.
+// The original five boxes remain set-pure. The later boxes are deliberately
+// mixed and may draw from whatever SOR and ASH printings remain before them.
 const ALLOWED_SETS = {
   "travel-phoenix-ignition": ["SOR"],
   "travel-bounty-compound-interest": ["SOR"],
@@ -25,6 +25,7 @@ const ALLOWED_SETS = {
   "travel-dead-mans-sightline": ["ASH"],
   "travel-twin-suns-resurgence": ["ASH"],
   "travel-thrawns-return-protocol": ["SOR", "ASH"],
+  "travel-gilded-nevarro-circuit": ["SOR", "ASH"],
 };
 
 // Owned on-set substitutes for the off-set cards each deck loses, chosen to
@@ -114,7 +115,7 @@ const ADDITIONS = {
   ],
 };
 
-// The two set-pure ASH decks and the mixed sixth deck are collection-constrained
+// The two set-pure ASH decks and the mixed later decks are collection-constrained
 // homebrews; their one-line identity text should say what they actually are.
 const IDENTITY_UPDATES = {
   "travel-dead-mans-sightline":
@@ -123,6 +124,8 @@ const IDENTITY_UPDATES = {
     "Luke converts every attack into durability; an all-ASH shell of Mandalorian tokens, Sentinels, and restore units wins repeated combats before the capital ships close out the game.",
   "travel-thrawns-return-protocol":
     "Sloane turns every surviving Imperial into a Sentinel and Overwhelm threat. Cheap troopers and TIEs contest both arenas until the Prestige Foil Thrawn converts Support into repeat attacks.",
+  "travel-gilded-nevarro-circuit":
+    "Greef turns a newly played unit into immediate Advantage pressure each round. A premium SOR/ASH shell uses cheap space bodies, tempo upgrades, and resilient late threats to keep both arenas productive.",
 };
 
 const VARIANT_RANK = {

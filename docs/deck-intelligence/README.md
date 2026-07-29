@@ -13,7 +13,7 @@ This directory is the durable research layer behind the site's deterministic dec
 ## Sources of truth
 
 1. Official rules and format legality come from Fantasy Flight Games.
-2. Public card metadata comes from generated `data/cards.json`; confirmed upstream name, subtitle, and cost corrections live in `data/card-overrides.json` and are reapplied by every refresh.
+2. Public card metadata comes from generated `data/cards.json`; confirmed upstream metadata corrections live in `data/card-overrides.json` and are reapplied by every refresh.
 3. General recommendations come from the strategy guide and cited historical sources.
 4. Owned quantities and variants come only from ignored local collection exports or on-device collection data.
 5. Published recommendations live in `site/src/data/decks.json`; its `expectedDeckCount` is the explicit portfolio-size contract.
@@ -43,7 +43,7 @@ deck for every newly owned leader, then revisit older decks only when newly
 owned cards materially improve their plan. A new booster does not require
 churning every list merely to show a more recent date.
 
-If a scan disagrees with public metadata, verify the printed card before changing the private collection. A wrong set code or collector number belongs in the collection export; a confirmed API spelling, subtitle, or cost error belongs in `data/card-overrides.json`. Overrides use canonical gameplay identity keys and therefore apply to Standard, Hyperspace, and foil printings together.
+If a scan disagrees with public metadata, verify the printed card before changing the private collection. A wrong set code or collector number belongs in the collection export; a confirmed API metadata error belongs in `data/card-overrides.json`. Overrides use canonical gameplay identity keys and therefore apply to Standard, Hyperspace, and foil printings together.
 
 ## Adding more decks
 

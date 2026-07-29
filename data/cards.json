@@ -164928,13 +164928,13 @@
       "number": 215,
       "name": "Snapshot Reflexes",
       "subtitle": "",
-      "type": "Event",
+      "type": "Upgrade",
       "aspects": [
         "Cunning"
       ],
       "cost": 1,
-      "power": null,
-      "hp": null,
+      "power": 1,
+      "hp": 1,
       "traits": [
         "LEARNED"
       ],
@@ -191332,13 +191332,13 @@
       "number": 477,
       "name": "Snapshot Reflexes",
       "subtitle": "",
-      "type": "Event",
+      "type": "Upgrade",
       "aspects": [
         "Cunning"
       ],
       "cost": 1,
-      "power": null,
-      "hp": null,
+      "power": 1,
+      "hp": 1,
       "traits": [
         "LEARNED"
       ],
