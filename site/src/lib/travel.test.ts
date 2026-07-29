@@ -29,8 +29,8 @@ describe("travel deck roster", () => {
     }
   });
 
-  it("ships seven legal 50-card decks with zero aspect penalties", () => {
-    expect(travel.roster).toHaveLength(7);
+  it("ships ten legal 50-card decks with zero aspect penalties", () => {
+    expect(travel.roster).toHaveLength(10);
     for (const deck of travel.roster) {
       const total = deck.cards.reduce((sum, card) => sum + card.count, 0);
       expect(total, deck.name).toBe(50);
@@ -84,10 +84,34 @@ describe("travel deck roster", () => {
     expect(deck!.base.variant).toBe("Hyperspace");
   });
 
+  it("uses the maximum zero-penalty ASH pool in the three newest decks", () => {
+    const deckIds = new Set([
+      "travel-charming-last-stand",
+      "travel-initiative-is-the-way",
+      "travel-emperors-long-game",
+    ]);
+    const decks = travel.roster.filter((deck) => deckIds.has(deck.id));
+    expect(decks).toHaveLength(3);
+
+    const setCounts = decks
+      .flatMap((deck) => deck.cards)
+      .reduce(
+        (counts, card) => {
+          const set = db.cards[card.id].set as "ASH" | "SOR";
+          counts[set] += card.count;
+          return counts;
+        },
+        { ASH: 0, SOR: 0 },
+      );
+
+    expect(setCounts).toEqual({ ASH: 48, SOR: 102 });
+    expect(decks.flatMap((deck) => deck.cards).some((card) => card.id === "ASH-41")).toBe(false);
+  });
+
   it("is simultaneously buildable from the published collection", () => {
     const check = rosterCheck(travel.roster, entries, db);
     expect(check.conflicts).toEqual([]);
     expect(check.buildable).toBe(true);
-    expect(check.mainCards).toBe(350);
+    expect(check.mainCards).toBe(500);
   });
 });

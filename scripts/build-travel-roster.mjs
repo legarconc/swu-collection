@@ -1,5 +1,5 @@
 // Rebuilds site/src/data/travel-decks.json as a disjoint roster: the first three
-// decks keep only SOR cards, the next two keep only ASH cards, and the last two
+// decks keep only SOR cards, the next two keep only ASH cards, and the last five
 // may use the remaining cards from either set. Off-set backfills left over from the
 // earlier fair-split allocator are replaced with owned on-set substitutes (see
 // ADDITIONS), then every main-deck entry is
@@ -26,6 +26,9 @@ const ALLOWED_SETS = {
   "travel-twin-suns-resurgence": ["ASH"],
   "travel-thrawns-return-protocol": ["SOR", "ASH"],
   "travel-gilded-nevarro-circuit": ["SOR", "ASH"],
+  "travel-charming-last-stand": ["SOR", "ASH"],
+  "travel-initiative-is-the-way": ["SOR", "ASH"],
+  "travel-emperors-long-game": ["SOR", "ASH"],
 };
 
 // Owned on-set substitutes for the off-set cards each deck loses, chosen to
@@ -126,6 +129,12 @@ const IDENTITY_UPDATES = {
     "Sloane turns every surviving Imperial into a Sentinel and Overwhelm threat. Cheap troopers and TIEs contest both arenas until the Prestige Foil Thrawn converts Support into repeat attacks.",
   "travel-gilded-nevarro-circuit":
     "Greef turns a newly played unit into immediate Advantage pressure each round. A premium SOR/ASH shell uses cheap space bodies, tempo upgrades, and resilient late threats to keep both arenas productive.",
+  "travel-charming-last-stand":
+    "Grogu deploys early from seven copies of unique units that cost 4 or more. Sentinel and Ambush bodies hold both arenas while Cunning tempo turns protected attacks into steady board advantage.",
+  "travel-initiative-is-the-way":
+    "The Mandalorian rewards claiming initiative with extra cards. Support, Ambush, and ready effects compress attacks into fewer actions, while a compact Mandalorian package and Command finishers keep the pressure from running dry.",
+  "travel-emperors-long-game":
+    "Palpatine turns a wide board of cheap units into massive Advantage attacks. Thirty early plays establish both arenas, instant-attack effects spend temporary power quickly, and Command ramp reaches the late Imperial finishers.",
 };
 
 const VARIANT_RANK = {
