@@ -15,6 +15,14 @@ const collectionText = readFileSync(path.resolve(__dirname, "../../../data/colle
 const entries = parseCollectionFile(collectionText, db).entries;
 
 describe("travel deck roster", () => {
+  it("uses the printed cost for Moff Gideon — Remnant Commander across every ASH printing", () => {
+    const printings = Object.values(db.cards).filter((card) => card.identityKey === "ASH-97");
+    expect(printings).toHaveLength(6);
+    for (const printing of printings) {
+      expect(printing.cost, printing.key).toBe(3);
+    }
+  });
+
   it("ships six legal 50-card decks with zero aspect penalties", () => {
     expect(travel.roster).toHaveLength(6);
     for (const deck of travel.roster) {

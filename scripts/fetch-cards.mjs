@@ -132,9 +132,12 @@ for (const [identityKey, override] of Object.entries(overrides)) {
   if (!/^[A-Z0-9]+-\d+$/.test(identityKey) || !override || typeof override !== "object" || Array.isArray(override)) {
     throw new Error(`Invalid card metadata override for ${identityKey}`);
   }
-  const fields = Object.keys(override);
-  if (!fields.length || fields.some((field) => !["name", "subtitle"].includes(field) || typeof override[field] !== "string")) {
-    throw new Error(`Card metadata override ${identityKey} may contain only string name/subtitle fields.`);
+  const fields = Object.entries(override);
+  const validField = ([field, value]) =>
+    (["name", "subtitle"].includes(field) && typeof value === "string") ||
+    (field === "cost" && Number.isFinite(value));
+  if (!fields.length || fields.some((field) => !validField(field))) {
+    throw new Error(`Card metadata override ${identityKey} may contain string name/subtitle fields or a numeric cost.`);
   }
   const matching = Object.values(cards).filter((card) => card.identityKey === identityKey);
   if (!matching.length) throw new Error(`Card metadata override ${identityKey} does not match a synced card identity.`);

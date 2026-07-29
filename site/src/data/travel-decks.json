@@ -2225,6 +2225,17 @@
      ]
     },
     {
+     "id": "ASH-97",
+     "count": 1,
+     "printings": [
+      {
+       "key": "ASH-97",
+       "variant": "Standard",
+       "count": 1
+      }
+     ]
+    },
+    {
      "id": "SOR-83",
      "count": 3,
      "printings": [
@@ -2313,17 +2324,6 @@
       {
        "key": "ASH-835",
        "variant": "Prestige Foil",
-       "count": 1
-      }
-     ]
-    },
-    {
-     "id": "ASH-97",
-     "count": 1,
-     "printings": [
-      {
-       "key": "ASH-97",
-       "variant": "Standard",
        "count": 1
       }
      ]
